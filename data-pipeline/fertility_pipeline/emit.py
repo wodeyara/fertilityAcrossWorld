@@ -1,0 +1,70 @@
+import json
+from pathlib import Path
+
+import jsonschema
+
+from . import factors as registry
+
+SCHEMA_DIR = Path(__file__).resolve().parent.parent / "data" / "schema"
+
+
+def _build_factors_json(snapshot_year: int, transform_choice: str) -> dict:
+    return {
+        "snapshotYear": snapshot_year,
+        "target": {
+            "id": registry.TARGET.id,
+            "label": registry.TARGET.label,
+            "transform": transform_choice,
+            "unit": registry.TARGET.unit,
+            "source": registry.TARGET.source,
+        },
+        "factors": [
+            {
+                "id": f.id,
+                "label": f.label,
+                "group": f.group,
+                "unit": f.unit,
+                "direction": f.direction,
+                "source": f.source,
+            }
+            for f in registry.FACTORS
+        ],
+    }
+
+
+def _build_meta(records: list[dict], snapshot_year: int) -> dict:
+    coverage = {fid: 0 for fid in registry.factor_ids()}
+    with_tfr = 0
+    for r in records:
+        if r["tfr"] is not None:
+            with_tfr += 1
+        for fid, val in r["factors"].items():
+            if val is not None:
+                coverage[fid] += 1
+    return {
+        "snapshotYear": snapshot_year,
+        "countryCount": len(records),
+        "withTfr": with_tfr,
+        "coverage": coverage,
+    }
+
+
+def _validate(instance, schema_name: str) -> None:
+    schema = json.loads((SCHEMA_DIR / schema_name).read_text())
+    jsonschema.validate(instance=instance, schema=schema)
+
+
+def write_bundle(records: list[dict], transform_choice: str, snapshot_year: int, out_dir) -> dict:
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    factors_json = _build_factors_json(snapshot_year, transform_choice)
+    meta = _build_meta(records, snapshot_year)
+
+    _validate(records, "countries.schema.json")
+    _validate(factors_json, "factors.schema.json")
+
+    (out / "factors.json").write_text(json.dumps(factors_json, indent=2))
+    (out / "countries.json").write_text(json.dumps(records, indent=2))
+    (out / "meta.json").write_text(json.dumps(meta, indent=2))
+    return meta

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["snapshotYear", "target", "factors"],
+  "properties": {
+    "snapshotYear": {"type": "integer"},
+    "target": {
+      "type": "object",
+      "required": ["id", "label", "transform", "unit", "source"],
+      "properties": {
+        "id": {"type": "string"},
+        "label": {"type": "string"},
+        "transform": {"enum": ["raw", "log"]},
+        "unit": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "group", "unit", "direction", "source"],
+        "properties": {
+          "id": {"type": "string"},
+          "label": {"type": "string"},
+          "group": {"type": "string"},
+          "unit": {"type": "string"},
+          "direction": {"enum": ["positive", "negative", "mixed"]},
+          "source": {"type": "string"}
+        }
+      }
+    }
+  }
+}
