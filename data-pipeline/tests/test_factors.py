@@ -22,6 +22,8 @@ def test_every_factor_has_a_source_code():
     for f in factors.FACTORS:
         assert f.source in {"worldbank", "static"}
         assert f.code, f"{f.id} missing code"
+        assert f.direction in {"positive", "negative", "mixed"}
+        assert f.unit
 
 
 def test_expected_core_factors_present():
