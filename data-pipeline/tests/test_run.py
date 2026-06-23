@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from fertility_pipeline import run, factors
+from fertility_pipeline import run
 
 FIX = Path(__file__).parent / "fixtures"
 
@@ -29,7 +29,7 @@ def test_run_pipeline_offline_produces_valid_bundle(tmp_path):
     by = {c["iso3"]: c for c in countries}
     assert by["USA"]["tfr"] == 1.66
     assert by["NER"]["factors"]["gdp_pc"] is None  # fake_fetch omitted NER
-    assert by["USA"]["factors"]["gii"] == 0.083 or by["USA"]["factors"]["gii"] == 0.179
+    assert by["USA"]["factors"]["gii"] == 0.179
     assert meta["withTfr"] == 3
     assert (tmp_path / "factors.json").exists()
 

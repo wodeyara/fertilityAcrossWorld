@@ -40,7 +40,7 @@ def _build_meta(records: list[dict], snapshot_year: int) -> dict:
             with_tfr += 1
         for fid, val in r["factors"].items():
             if val is not None:
-                coverage[fid] += 1
+                coverage[fid] = coverage.get(fid, 0) + 1
     return {
         "snapshotYear": snapshot_year,
         "countryCount": len(records),

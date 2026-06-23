@@ -73,3 +73,12 @@ def test_paginates_across_pages():
     assert result["USA"] == (1.7, 2020)
     assert result["NER"] == (6.82, 2021)
     assert len(session.calls) == 2
+
+
+def test_pages_as_string_does_not_crash():
+    p1 = [{"page": 1, "pages": "2"}, [{"countryiso3code": "USA", "date": "2020", "value": 1.7}]]
+    p2 = [{"page": 2, "pages": "2"}, [{"countryiso3code": "NER", "date": "2021", "value": 6.82}]]
+    session = PagedSession([p1, p2])
+    result = worldbank.fetch_indicator("X", 2015, 2024, session=session)
+    assert result["USA"] == (1.7, 2020)
+    assert result["NER"] == (6.82, 2021)

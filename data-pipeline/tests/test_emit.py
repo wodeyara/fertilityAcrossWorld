@@ -25,6 +25,7 @@ def test_meta_counts(tmp_path):
     assert meta["countryCount"] == 2
     assert meta["withTfr"] == 1
     assert meta["coverage"]["gdp_pc"] == 1  # only USA non-null
+    assert all(v == 1 for v in meta["coverage"].values())
 
 
 def test_factors_json_records_transform(tmp_path):

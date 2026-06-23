@@ -36,7 +36,7 @@ def fetch_indicator(code: str, start: int, end: int, session=None) -> dict[str, 
             if iso3 not in latest or year > latest[iso3][1]:
                 latest[iso3] = (float(value), year)
 
-        total_pages = meta.get("pages", 1) if isinstance(meta, dict) else 1
+        total_pages = int(meta.get("pages", 1) or 1) if isinstance(meta, dict) else 1
         if page >= total_pages:
             break
         page += 1

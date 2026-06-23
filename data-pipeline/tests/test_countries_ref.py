@@ -40,3 +40,10 @@ def test_normalizes_iso3_whitespace_and_case(tmp_path):
     refs = countries_ref.load_countries_ref(f)
     assert "USA" in refs
     assert refs["USA"].iso_num == 840
+
+
+def test_invalid_iso_num_raises(tmp_path):
+    bad = tmp_path / "badnum.csv"
+    bad.write_text("iso3,iso_num,name,region\nUSA,abc,United States,North America\n")
+    with pytest.raises(ValueError, match="Invalid iso_num"):
+        countries_ref.load_countries_ref(bad)
