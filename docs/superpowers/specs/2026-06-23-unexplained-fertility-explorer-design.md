@@ -157,42 +157,42 @@ wealthy countries — itself one of the interesting "unexplained" stories.
 - An advanced opt-in allows including policy as a covariate, with an explicit
   reverse-causality warning.
 
-## 7. Temporal design — three generational snapshots
+## 7. Temporal design — two generational snapshots
 
-Three discrete snapshots roughly one generation (~20 years) apart: **~1982,
-~2004, ~now (latest reliable harmonized year, ~2023)**. No continuous time
-slider. Each year uses a ±2-year window to fill gaps.
+Two discrete snapshots one generation (~20 years) apart: **~2004 and ~now**
+(now = latest reliable harmonized year). No continuous time slider, and **no 1982
+snapshot** — pre-1990s coverage for the key factors (and especially the
+Possibility Index) is too weak to be worth the caveats. Each year uses a ±2-year
+window to fill gaps.
 
 ### 7.1 Per-era factor availability
 
-| Factor | ~Now | 2004 | 1982 |
-|---|:--:|:--:|:--:|
-| TFR (target) | yes | yes | yes |
-| GDP per capita, urbanisation | yes | yes | yes |
-| Female schooling (Barro-Lee) | yes | yes | yes (1980) |
-| Child mortality, adolescent fertility | yes | yes | yes |
-| Female labour-force participation | yes | yes | partial |
-| Contraceptive prevalence, Gini | yes | partial | sparse |
-| Gender Inequality Index | yes | yes | unavailable |
-| Community / social cohesion | yes | partial | thin |
-| Possibility Index | yes | weak | unavailable |
+| Factor | ~Now | 2004 |
+|---|:--:|:--:|
+| TFR (target) | yes | yes |
+| GDP per capita, urbanisation | yes | yes |
+| Female schooling | yes | yes |
+| Child mortality, adolescent fertility | yes | yes |
+| Female labour-force participation | yes | yes |
+| Gender Inequality Index | yes | yes |
+| Contraceptive prevalence, Gini | yes | partial |
+| Community / social cohesion | yes | partial |
+| Possibility Index | yes | weak |
 
 ### 7.2 Handling uneven coverage
 
-- Factors with no reliable data for the selected era are **disabled/greyed with a
+- Factors with weaker data in the 2004 snapshot are **flagged/greyed with a
   tooltip** explaining why; the model fits on whatever is available and selected.
 - The **Possibility Index is a present-day lens**: full strength now, a degraded
-  version (density + early internet) for 2004, unavailable in 1982. No historical
-  proxies are fabricated.
-- A **"lock to common factors" toggle** restricts all three snapshots to the
-  factor set present in every era, so cross-time residual comparison is
-  apples-to-apples. Off by default (richer per-era insight); on for fair time
-  comparison.
+  version (density + early internet) for 2004. No historical proxies are
+  fabricated.
+- A **"lock to common factors" toggle** restricts both snapshots to the factor
+  set present in each era, so cross-time residual comparison is apples-to-apples.
+  Off by default (richer per-era insight); on for fair time comparison.
 - The **pronatalist-policy overlay reaches back** — the UN has tracked population
-  policies since 1976 — so policy stances can be compared across all three
-  snapshots.
-- **Sub-national history is patchier** (US: 1980 census / 2000 census / modern
-  ACS; Eurostat thin pre-2000; DHS from mid-1980s). Earlier sub-national coverage
+  policies since 1976 — so policy stances can be compared across both snapshots.
+- **Sub-national history is patchier** (US: 2000 census / modern ACS; Eurostat
+  thin pre-2000; DHS from mid-1980s). The earlier snapshot's sub-national coverage
   is limited and labeled.
 
 ## 8. Data sources
@@ -234,7 +234,7 @@ prepares and bundles all data; the **browser** does all modeling and rendering.
 - **Control panel:** mode toggle (raw/residual), grouped factor toggles,
   Possibility Index (experimental), policy overlay toggle, "lock common factors"
   toggle, advanced options (imputation).
-- **Era toggle:** 1982 / 2004 / now, driving per-era factor availability.
+- **Era toggle:** 2004 / now, driving per-era factor availability.
 - **Detail panel:** selected-region actual vs. predicted, residual, per-factor
   contribution bars, policy note.
 - **Scatter view:** Gapminder-style (e.g., residual vs. Possibility Index, or any
@@ -279,7 +279,8 @@ docs/superpowers/specs/
 
 ## 10. Non-goals (YAGNI)
 
-- No continuous year slider (three discrete generational snapshots only).
+- No continuous year slider and no 1982 snapshot (two discrete generational
+  snapshots only: ~2004 and ~now).
 - No runtime backend / live API (static site; pipeline is offline).
 - No fabricated historical data for the Possibility Index.
 - No globally-uniform sub-national coverage (data-driven, labeled gaps).
@@ -298,11 +299,14 @@ docs/superpowers/specs/
 
 1. **Phase 1 — Country core (present snapshot):** pipeline for country factors +
    TFR; OLS engine; raw + residual map; control panel; detail panel; scatter +
-   table; methodology page.
-2. **Phase 2 — Generations:** add 1982 + 2004 snapshots; per-era availability;
-   "lock common factors" toggle.
-3. **Phase 3 — Possibility Index:** OSM extraction + composite construction
-   pipeline; integrate as a factor (present-day, degraded 2004).
+   table; methodology page. Architecture explicitly designed to receive the
+   Possibility Index as a drop-in factor.
+2. **Phase 2 — Possibility Index (priority feature):** OSM amenity extraction +
+   composite construction pipeline; integrate as a present-day factor. Pulled
+   ahead of the time and sub-national work because it is the project's most novel
+   and most-wanted contribution.
+3. **Phase 3 — Generations:** add the ~2004 snapshot; per-era availability
+   handling; "lock common factors" toggle.
 4. **Phase 4 — Sub-national:** US, EU NUTS, India, DHS layers + zoom; per-scale
    models.
 5. **Phase 5 — Policy overlay:** UN/OECD policy data; overlay rendering + detail;
