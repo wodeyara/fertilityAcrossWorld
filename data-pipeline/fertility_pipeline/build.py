@@ -1,10 +1,22 @@
+from __future__ import annotations
+
 from . import factors as registry
+from .countries_ref import CountryRef
 
 
-def build_records(refs, tfr_result, wb_results, static_data) -> list[dict]:
+def build_records(
+    refs: dict[str, CountryRef],
+    tfr_result: dict[str, tuple[float, int]],
+    wb_results: dict[str, dict[str, tuple[float, int]]],
+    static_data: dict[str, dict[str, float | None]],
+) -> list[dict]:
     all_ids = registry.factor_ids()
     wb_ids = [f.id for f in registry.worldbank_factors()]
     static_ids = [f.id for f in registry.static_factors()]
+
+    overlap = set(wb_ids) & set(static_ids)
+    if overlap:
+        raise ValueError(f"Factor ids assigned to multiple sources: {sorted(overlap)}")
 
     records: list[dict] = []
     for iso3, ref in sorted(refs.items()):

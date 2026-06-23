@@ -1,3 +1,5 @@
+import pytest
+
 from fertility_pipeline import build
 from fertility_pipeline.countries_ref import CountryRef
 
@@ -46,3 +48,13 @@ def test_all_registry_factor_ids_present_in_each_record():
     records = build.build_records(REFS, TFR, WB, STATIC)
     for r in records:
         assert set(r["factors"]) == set(factors.factor_ids())
+
+
+def test_raises_if_factor_in_multiple_sources(monkeypatch):
+    from fertility_pipeline import factors
+    dup = factors.Factor(id="gdp_pc", label="x", group="Economic", source="static",
+                         code="gdp_pc", direction="negative", unit="x")
+    original = factors.static_factors()
+    monkeypatch.setattr(factors, "static_factors", lambda: original + [dup])
+    with pytest.raises(ValueError, match="multiple sources"):
+        build.build_records(REFS, TFR, WB, STATIC)
