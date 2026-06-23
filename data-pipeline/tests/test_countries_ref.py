@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pytest
+
 from fertility_pipeline import countries_ref
 
 FIXTURE = Path(__file__).parent / "fixtures" / "countries_ref_sample.csv"
@@ -27,8 +29,14 @@ def test_rejects_duplicate_iso3(tmp_path):
     bad.write_text("iso3,iso_num,name,region\n"
                    "USA,840,United States,North America\n"
                    "USA,841,Dup,North America\n")
-    try:
+    with pytest.raises(ValueError, match="duplicate iso3"):
         countries_ref.load_countries_ref(bad)
-        assert False, "expected ValueError on duplicate iso3"
-    except ValueError:
-        pass
+
+
+def test_normalizes_iso3_whitespace_and_case(tmp_path):
+    f = tmp_path / "norm.csv"
+    f.write_text("iso3,iso_num,name,region\n"
+                 "  usa ,840,United States,North America\n")
+    refs = countries_ref.load_countries_ref(f)
+    assert "USA" in refs
+    assert refs["USA"].iso_num == 840

@@ -21,7 +21,7 @@ def load_countries_ref(path: str | Path) -> dict[str, CountryRef]:
                 raise ValueError(f"duplicate iso3 in reference: {iso3}")
             refs[iso3] = CountryRef(
                 iso3=iso3,
-                iso_num=int(row["iso_num"]),
+                iso_num=int(row["iso_num"].strip()),
                 name=row["name"].strip(),
                 region=row["region"].strip(),
             )
