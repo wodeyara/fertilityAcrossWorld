@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Data pipeline raw downloads / cache (regenerated, can be large)
+data-pipeline/.cache/
+data-pipeline/out/raw/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
