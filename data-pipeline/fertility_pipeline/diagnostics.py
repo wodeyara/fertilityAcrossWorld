@@ -1,3 +1,5 @@
+import math
+
 import numpy as np
 from scipy import stats
 
@@ -33,18 +35,23 @@ def _fit_residuals(y, Xz):
 
 def choose_tfr_transform(records, factor_ids):
     y, X = _design(records, factor_ids)
+    if len(y) == 0:
+        raise ValueError("no complete records to choose a transform")
+
     Xz = _standardize(X)
     details = {}
     for name, target in (("raw", y), ("log", np.log(y))):
         resid = _fit_residuals(target, Xz)
-        if len(resid) >= 3:
-            normality_p = float(stats.normaltest(resid).pvalue)
-        else:
-            normality_p = float("nan")
+        # skew needs >=3 points and meaningful residual variance;
+        # normaltest (scipy) requires >=8 samples or it raises.
+        resid_skew = float(stats.skew(resid)) if len(resid) >= 3 else float("nan")
+        normality_p = float(stats.normaltest(resid).pvalue) if len(resid) >= 8 else float("nan")
         details[name] = {
-            "resid_skew": float(stats.skew(resid)),
+            "resid_skew": resid_skew,
             "normality_p": normality_p,
             "n": int(len(resid)),
         }
-    choice = min(details, key=lambda k: abs(details[k]["resid_skew"]))
+
+    valid = {k: v for k, v in details.items() if not math.isnan(v["resid_skew"])}
+    choice = min(valid, key=lambda k: abs(valid[k]["resid_skew"])) if valid else "raw"
     return choice, details

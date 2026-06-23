@@ -1,4 +1,6 @@
 import math
+
+import pytest
 import numpy as np
 
 from fertility_pipeline import diagnostics
@@ -31,3 +33,9 @@ def test_drops_rows_with_missing_values():
     ]
     _choice, details = diagnostics.choose_tfr_transform(records, ["x"])
     assert details["raw"]["n"] == 2  # only A and D are complete
+
+
+def test_raises_on_no_complete_records():
+    records = [{"iso3": "A", "tfr": None, "factors": {"x": 1.0}}]
+    with pytest.raises(ValueError, match="no complete records"):
+        diagnostics.choose_tfr_transform(records, ["x"])
