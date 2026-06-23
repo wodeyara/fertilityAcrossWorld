@@ -1,0 +1,10 @@
+[
+  {"page": 1, "pages": 1, "per_page": 20000, "total": 4},
+  [
+    {"countryiso3code": "USA", "date": "2022", "value": 1.66},
+    {"countryiso3code": "USA", "date": "2021", "value": 1.66},
+    {"countryiso3code": "ISR", "date": "2022", "value": 2.89},
+    {"countryiso3code": "NER", "date": "2021", "value": 6.82},
+    {"countryiso3code": "NER", "date": "2022", "value": null}
+  ]
+]
