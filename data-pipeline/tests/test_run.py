@@ -43,3 +43,19 @@ def test_transform_choice_is_written(tmp_path):
     )
     fj = json.loads((tmp_path / "factors.json").read_text())
     assert fj["target"]["transform"] in {"raw", "log"}
+
+
+def test_run_pipeline_with_empty_static_factors(tmp_path):
+    # Static factors entirely unpopulated must NOT empty the transform-decision
+    # sample; the pipeline should still produce a bundle.
+    empty_static = tmp_path / "empty_static.csv"
+    empty_static.write_text("iso3,fem_years_schooling,gii,social_cohesion\n")
+    meta = run.run_pipeline(
+        refs_path=FIX / "countries_ref_sample.csv",
+        static_path=empty_static,
+        out_dir=tmp_path, start=2015, end=2024, snapshot_year=2023,
+        fetch=fake_fetch,
+    )
+    assert meta["withTfr"] == 3
+    fj = json.loads((tmp_path / "factors.json").read_text())
+    assert fj["target"]["transform"] in {"raw", "log"}

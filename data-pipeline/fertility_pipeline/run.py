@@ -3,6 +3,27 @@ import argparse
 from . import factors as registry
 from . import worldbank, countries_ref, static_factors, build, diagnostics, emit
 
+TRANSFORM_MIN_COVERAGE = 0.6
+
+
+def _transform_factor_ids(records):
+    """Factor ids present for at least TRANSFORM_MIN_COVERAGE of TFR-bearing countries.
+
+    The transform decision needs rows complete across the chosen factors; restricting
+    to well-covered factors keeps that sample large instead of letting one sparse (or
+    not-yet-populated) factor empty it.
+    """
+    n_tfr = sum(1 for r in records if r["tfr"] is not None)
+    if n_tfr == 0:
+        return []
+    covered = []
+    for fid in registry.factor_ids():
+        cov = sum(1 for r in records
+                  if r["tfr"] is not None and r["factors"].get(fid) is not None)
+        if cov >= TRANSFORM_MIN_COVERAGE * n_tfr:
+            covered.append(fid)
+    return covered
+
 
 def run_pipeline(refs_path, static_path, out_dir, start, end, snapshot_year, fetch=None) -> dict:
     if fetch is None:
@@ -18,7 +39,7 @@ def run_pipeline(refs_path, static_path, out_dir, start, end, snapshot_year, fet
         wb_results[f.id] = fetch(f.code, start, end)
 
     records = build.build_records(refs, tfr_result, wb_results, static_data)
-    choice, _details = diagnostics.choose_tfr_transform(records, registry.factor_ids())
+    choice, _details = diagnostics.choose_tfr_transform(records, _transform_factor_ids(records))
     return emit.write_bundle(records, choice, snapshot_year, out_dir)
 
 
