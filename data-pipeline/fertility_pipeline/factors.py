@@ -21,11 +21,13 @@ GROUPS = [
     "Community",
 ]
 
+# Mirrors the World Bank's current region taxonomy (Afghanistan & Pakistan were
+# moved from South Asia into the renamed MENAAP region in the 2024-25 update).
 REGIONS = [
     "East Asia & Pacific",
     "Europe & Central Asia",
     "Latin America & Caribbean",
-    "Middle East & North Africa",
+    "Middle East, North Africa, Afghanistan & Pakistan",
     "North America",
     "South Asia",
     "Sub-Saharan Africa",

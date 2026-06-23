@@ -1,0 +1,18 @@
+{
+  "snapshotYear": 2023,
+  "countryCount": 215,
+  "withTfr": 215,
+  "coverage": {
+    "gdp_pc": 198,
+    "gini": 150,
+    "fem_sec_enroll": 191,
+    "fem_years_schooling": 0,
+    "flfp": 186,
+    "gii": 0,
+    "contraceptive": 119,
+    "child_mortality": 195,
+    "adolescent_fertility": 215,
+    "urbanisation": 215,
+    "social_cohesion": 0
+  }
+}

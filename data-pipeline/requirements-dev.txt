@@ -1,0 +1,4 @@
+# Build-only dependencies (not needed at pipeline runtime).
+# Used by scripts/build_reference_data.py to regenerate data/countries_ref.csv.
+-r requirements.txt
+pycountry==24.6.1
