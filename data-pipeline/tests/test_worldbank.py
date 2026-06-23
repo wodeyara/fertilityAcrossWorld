@@ -27,6 +27,16 @@ class FakeSession:
         return FakeResponse(self._payload)
 
 
+class PagedSession:
+    def __init__(self, pages):
+        self.pages = pages
+        self.calls = []
+
+    def get(self, url, params=None, timeout=None):
+        self.calls.append(params)
+        return FakeResponse(self.pages[params["page"] - 1])
+
+
 def _payload():
     return json.loads(FIXTURE.read_text())
 
@@ -51,3 +61,15 @@ def test_builds_expected_url_and_params():
     assert url.endswith("/country/all/indicator/SP.DYN.TFRT.IN")
     assert params["date"] == "2015:2024"
     assert params["format"] == "json"
+    assert params["per_page"] == 20000
+    assert params["source"] == 2
+
+
+def test_paginates_across_pages():
+    p1 = [{"page": 1, "pages": 2}, [{"countryiso3code": "USA", "date": "2020", "value": 1.7}]]
+    p2 = [{"page": 2, "pages": 2}, [{"countryiso3code": "NER", "date": "2021", "value": 6.82}]]
+    session = PagedSession([p1, p2])
+    result = worldbank.fetch_indicator("X", 2015, 2024, session=session)
+    assert result["USA"] == (1.7, 2020)
+    assert result["NER"] == (6.82, 2021)
+    assert len(session.calls) == 2
