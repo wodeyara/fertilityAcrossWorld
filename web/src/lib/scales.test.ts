@@ -18,7 +18,11 @@ test("raw color is a valid hex over the domain", () => {
   expect(rawColor(7, false)).toMatch(/^#[0-9a-f]{6}$/i);
 });
 
-test("legend stops are non-empty and ordered", () => {
-  expect(residualLegendStops().length).toBeGreaterThanOrEqual(5);
-  expect(rawLegendStops().length).toBeGreaterThanOrEqual(5);
+test("legend stops are non-empty and strictly ordered", () => {
+  const res = residualLegendStops();
+  const raw = rawLegendStops();
+  expect(res.length).toBeGreaterThanOrEqual(5);
+  expect(raw.length).toBeGreaterThanOrEqual(5);
+  for (let i = 1; i < res.length; i++) expect(res[i].value).toBeGreaterThan(res[i - 1].value);
+  for (let i = 1; i < raw.length; i++) expect(raw[i].value).toBeGreaterThan(raw[i - 1].value);
 });
