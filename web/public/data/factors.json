@@ -1,0 +1,100 @@
+{
+  "snapshotYear": 2023,
+  "target": {
+    "id": "tfr",
+    "label": "Total fertility rate",
+    "transform": "log",
+    "unit": "births per woman",
+    "source": "worldbank"
+  },
+  "factors": [
+    {
+      "id": "gdp_pc",
+      "label": "GDP per capita (PPP)",
+      "group": "Economic",
+      "unit": "constant int'l $",
+      "direction": "negative",
+      "source": "worldbank"
+    },
+    {
+      "id": "gini",
+      "label": "Income inequality (Gini)",
+      "group": "Economic",
+      "unit": "index 0-100",
+      "direction": "mixed",
+      "source": "worldbank"
+    },
+    {
+      "id": "fem_sec_enroll",
+      "label": "Female secondary enrolment",
+      "group": "Education",
+      "unit": "% gross",
+      "direction": "negative",
+      "source": "worldbank"
+    },
+    {
+      "id": "fem_years_schooling",
+      "label": "Female mean years of schooling",
+      "group": "Education",
+      "unit": "years",
+      "direction": "negative",
+      "source": "static"
+    },
+    {
+      "id": "flfp",
+      "label": "Female labour-force participation",
+      "group": "Women's work & agency",
+      "unit": "% of women 15+",
+      "direction": "negative",
+      "source": "worldbank"
+    },
+    {
+      "id": "gii",
+      "label": "Gender Inequality Index",
+      "group": "Women's work & agency",
+      "unit": "index 0-1",
+      "direction": "positive",
+      "source": "static"
+    },
+    {
+      "id": "contraceptive",
+      "label": "Contraceptive prevalence",
+      "group": "Health & access",
+      "unit": "% of women 15-49",
+      "direction": "negative",
+      "source": "worldbank"
+    },
+    {
+      "id": "child_mortality",
+      "label": "Child mortality (under-5)",
+      "group": "Health & access",
+      "unit": "per 1,000 live births",
+      "direction": "positive",
+      "source": "worldbank"
+    },
+    {
+      "id": "adolescent_fertility",
+      "label": "Adolescent birth rate",
+      "group": "Health & access",
+      "unit": "births per 1,000 women 15-19",
+      "direction": "positive",
+      "source": "worldbank"
+    },
+    {
+      "id": "urbanisation",
+      "label": "Urbanisation",
+      "group": "Structure",
+      "unit": "% urban",
+      "direction": "negative",
+      "source": "worldbank"
+    },
+    {
+      "id": "social_cohesion",
+      "label": "Social cohesion / support",
+      "group": "Community",
+      "unit": "index 0-100",
+      "direction": "mixed",
+      "source": "static"
+    }
+  ]
+}
