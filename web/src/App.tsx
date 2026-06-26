@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { loadBundle } from "./data/loadBundle";
 import { fitModel } from "./lib/regression";
+import { indexByIsoNum } from "./lib/geo";
 import { ControlPanel } from "./components/ControlPanel";
 import { MapView } from "./components/MapView";
 import { Legend } from "./components/Legend";
@@ -31,11 +32,10 @@ export default function App() {
     () => (bundle ? fitModel(bundle.countries, factorIds, bundle.target.transform) : null),
     [bundle, factorIds],
   );
-  const byIsoNum = useMemo(() => {
-    const m = new Map<number, Country>();
-    bundle?.countries.forEach((c) => m.set(c.iso_num, c));
-    return m;
-  }, [bundle]);
+  const byIsoNum = useMemo(
+    () => (bundle ? indexByIsoNum(bundle.countries) : new Map<number, Country>()),
+    [bundle],
+  );
 
   if (!bundle || !fit) return <div>Loading…</div>;
 

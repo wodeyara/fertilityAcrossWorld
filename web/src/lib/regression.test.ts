@@ -31,6 +31,21 @@ test("excludes countries missing the selected factor or tfr (no imputation)", ()
   expect(fit.n).toBe(3); // A, D, E
   expect(fit.fits.has("B")).toBe(false);
   expect(fit.fits.has("C")).toBe(false);
+  expect(fit.fits.has("A")).toBe(true);
+  expect(fit.fits.has("D")).toBe(true);
+  expect(fit.fits.has("E")).toBe(true);
+});
+
+test("excludes countries with tfr <= 0 (log-safe)", () => {
+  const countries = [
+    country("A", 1, 2.0, 1),
+    country("B", 2, 0, 2),    // tfr 0 -> dropped (log(0) would be -Infinity)
+    country("C", 3, 3.0, 3),
+    country("D", 4, 2.5, 1.5),
+  ];
+  const fit = fitModel(countries, ["x"], "log");
+  expect(fit.fits.has("B")).toBe(false);
+  expect(fit.n).toBe(3);
 });
 
 test("returns r2=null when there are too few complete cases", () => {

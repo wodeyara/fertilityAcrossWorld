@@ -44,13 +44,13 @@ export function MapView(props: MapViewProps) {
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="World choropleth of fertility">
-      {features.map((feat) => {
+      {features.map((feat, i) => {
         const isoNum = Number(feat.id);
         const c = byIsoNum.get(isoNum);
         const selected = c != null && c.iso3 === selectedIso3;
         return (
           <path
-            key={feat.id}
+            key={feat.id != null ? String(feat.id) : `noid-${i}`}
             d={path(feat as any) ?? undefined}
             fill={fillFor(isoNum)}
             stroke={selected ? (dark ? "#fff" : "#111") : dark ? "rgba(255,255,255,.16)" : "rgba(255,255,255,.85)"}

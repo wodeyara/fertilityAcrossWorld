@@ -1,5 +1,7 @@
 import { loadBundle } from "./loadBundle";
-import { test, expect, vi } from "vitest";
+import { afterEach, test, expect, vi } from "vitest";
+
+afterEach(() => { vi.unstubAllGlobals(); });
 
 const FACTORS = {
   snapshotYear: 2023,

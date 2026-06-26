@@ -1,5 +1,8 @@
+import { afterEach, vi } from "vitest";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import App from "./App";
+
+afterEach(() => { vi.unstubAllGlobals(); });
 
 const FACTORS = {
   snapshotYear: 2023,

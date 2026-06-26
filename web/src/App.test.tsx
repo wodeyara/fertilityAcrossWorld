@@ -1,5 +1,8 @@
+import { afterEach, vi } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import App from "./App";
+
+afterEach(() => { vi.unstubAllGlobals(); });
 
 test("renders the app title", async () => {
   // Mock fetch for the bundle and topo

@@ -53,3 +53,26 @@ test("clicking a country calls onSelect with its iso3", () => {
   fireEvent.click(container.querySelectorAll("path")[0]); // first feature is USA (id 840)
   expect(onSelect).toHaveBeenCalledWith("USA");
 });
+
+test("renders a feature with an undefined id without key collision (insufficient color)", () => {
+  const topoNoId = {
+    type: "Topology",
+    arcs: [[[0, 0], [0, 1], [1, 1], [0, 0]]],
+    objects: {
+      countries: {
+        type: "GeometryCollection",
+        geometries: [
+          { type: "Polygon", id: "840", arcs: [[0]], properties: { name: "United States of America" } },
+          { type: "Polygon", arcs: [[0]], properties: { name: "N. Cyprus" } },
+        ],
+      },
+    },
+  };
+  const { container } = render(
+    <MapView topo={topoNoId} byIsoNum={byIsoNum} fit={fit} mode="residual" selectedIso3={null} onSelect={() => {}} dark={false} />,
+  );
+  const paths = container.querySelectorAll("path");
+  expect(paths.length).toBe(2);
+  const fills = [...paths].map((p) => p.getAttribute("fill"));
+  expect(fills).toContain(INSUFFICIENT_COLOR(false));
+});
