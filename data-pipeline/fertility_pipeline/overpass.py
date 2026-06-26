@@ -15,7 +15,7 @@ def build_query(iso2: str) -> str:
     return (
         "[out:json][timeout:180];"
         f'area["ISO3166-1:alpha2"="{iso2}"]->.a;'
-        f'(node["amenity"~"{regex}"](area.a);way["amenity"~"{regex}"](area.a););'
+        f'nwr["amenity"~"{regex}"](area.a);'
         "out count;"
     )
 

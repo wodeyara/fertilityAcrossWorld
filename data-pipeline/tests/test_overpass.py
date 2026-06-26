@@ -53,8 +53,10 @@ def test_fetch_all_uses_cache(tmp_path):
     first = overpass.fetch_all_amenity_counts(refs, tmp_path, session=session, sleep=fake_sleep)
     assert first == {"USA": 1350, "FRA": 1350}
     assert len(session.calls) == 2  # one API call per country
+    assert calls["n"] == 2
     # second run hits cache only — no new API calls
     session.calls.clear()
     second = overpass.fetch_all_amenity_counts(refs, tmp_path, session=session, sleep=fake_sleep)
     assert second == {"USA": 1350, "FRA": 1350}
     assert len(session.calls) == 0
+    assert calls["n"] == 2
