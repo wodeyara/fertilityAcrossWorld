@@ -19,6 +19,7 @@ GROUPS = [
     "Health & access",
     "Structure",
     "Community",
+    "Possibility",
 ]
 
 # Mirrors the World Bank's current region taxonomy (Afghanistan & Pakistan were
@@ -66,6 +67,8 @@ FACTORS = [
            code="SP.URB.TOTL.IN.ZS", direction="negative", unit="% urban"),
     Factor(id="social_cohesion", label="Social cohesion / support", group="Community", source="static",
            code="social_cohesion", direction="mixed", unit="index 0-100"),
+    Factor(id="possibility", label="Possibility index", group="Possibility", source="computed",
+           code="possibility", direction="negative", unit="z-score index"),
 ]
 
 
@@ -79,3 +82,7 @@ def worldbank_factors() -> list[Factor]:
 
 def static_factors() -> list[Factor]:
     return [f for f in FACTORS if f.source == "static"]
+
+
+def computed_factors() -> list[Factor]:
+    return [f for f in FACTORS if f.source == "computed"]
