@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
+import { vi } from "vitest";
 import { ControlPanel } from "./ControlPanel";
 import type { FactorMeta } from "../types";
 
@@ -25,4 +26,14 @@ test("shows em dash when r2 is null", () => {
       mode="raw" onSetMode={() => {}} r2={null} n={0} />,
   );
   expect(screen.getByTestId("r2-readout")).toHaveTextContent("—");
+});
+
+test("clicking a mode button reports the new mode", () => {
+  const onSetMode = vi.fn();
+  render(
+    <ControlPanel factors={factors} selected={new Set()} onToggleFactor={() => {}}
+      mode="residual" onSetMode={onSetMode} r2={null} n={0} />,
+  );
+  fireEvent.click(screen.getByText("Raw fertility"));
+  expect(onSetMode).toHaveBeenCalledWith("raw");
 });
