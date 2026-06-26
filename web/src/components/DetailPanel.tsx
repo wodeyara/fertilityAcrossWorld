@@ -26,19 +26,22 @@ export function DetailPanel({ country, fit, factors }: DetailPanelProps) {
     <div style={{ fontSize: 13 }}>
       <strong>{country.name}</strong> <span style={{ opacity: 0.6 }}>{country.region}</span>
       <div style={{ display: "flex", gap: 12, margin: "8px 0" }}>
-        <div>Actual TFR<br /><strong>{country.tfr?.toFixed(2)}</strong></div>
+        <div>Actual TFR<br /><strong>{country.tfr?.toFixed(2) ?? "—"}</strong></div>
         <div>Model predicts<br /><strong>{cf.predictedTfr.toFixed(2)}</strong></div>
       </div>
       <div>
         {cf.residualTfr >= 0 ? "+" : ""}{cf.residualTfr.toFixed(2)} · ~{Math.abs(pct)}% {dir}
       </div>
       <div style={{ marginTop: 8, opacity: 0.7, fontSize: 11 }}>factor contributions (transform space)</div>
-      {fit.factorIds.map((id) => (
-        <div key={id} style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>{label(id)}</span>
-          <span>{cf.contributions[id] >= 0 ? "+" : ""}{cf.contributions[id].toFixed(2)}</span>
-        </div>
-      ))}
+      {fit.factorIds.map((id) => {
+        const v = cf.contributions[id] ?? 0;
+        return (
+          <div key={id} style={{ display: "flex", justifyContent: "space-between" }}>
+            <span>{label(id)}</span>
+            <span>{v >= 0 ? "+" : ""}{v.toFixed(2)}</span>
+          </div>
+        );
+      })}
     </div>
   );
 }

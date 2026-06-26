@@ -11,3 +11,8 @@ test("raw legend shows numeric bounds", () => {
   render(<Legend mode="raw" />);
   expect(screen.getByText("7+")).toBeInTheDocument();
 });
+
+test("raw legend shows the lower numeric bound", () => {
+  render(<Legend mode="raw" />);
+  expect(screen.getByText("0.8")).toBeInTheDocument();
+});
