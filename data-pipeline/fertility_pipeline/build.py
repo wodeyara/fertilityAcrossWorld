@@ -9,12 +9,15 @@ def build_records(
     tfr_result: dict[str, tuple[float, int]],
     wb_results: dict[str, dict[str, tuple[float, int]]],
     static_data: dict[str, dict[str, float | None]],
+    computed_data: dict[str, dict[str, float | None]] | None = None,
 ) -> list[dict]:
+    computed_data = computed_data or {}
     all_ids = registry.factor_ids()
     wb_ids = [f.id for f in registry.worldbank_factors()]
     static_ids = [f.id for f in registry.static_factors()]
+    computed_ids = [f.id for f in registry.computed_factors()]
 
-    overlap = set(wb_ids) & set(static_ids)
+    overlap = (set(wb_ids) & set(static_ids)) | (set(wb_ids) & set(computed_ids)) | (set(static_ids) & set(computed_ids))
     if overlap:
         raise ValueError(f"Factor ids assigned to multiple sources: {sorted(overlap)}")
 
@@ -31,6 +34,10 @@ def build_records(
         country_static = static_data.get(iso3, {})
         for fid in static_ids:
             factor_values[fid] = country_static.get(fid)
+
+        country_computed = computed_data.get(iso3, {})
+        for fid in computed_ids:
+            factor_values[fid] = country_computed.get(fid)
 
         records.append({
             "iso3": ref.iso3,
