@@ -1,7 +1,8 @@
-import { render } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import { MapView } from "./MapView";
 import type { Country } from "../types";
 import type { FitResult } from "../lib/regression";
+import { INSUFFICIENT_COLOR } from "../lib/scales";
 
 // Minimal fake topo with two square "countries" keyed by numeric id.
 const topo = {
@@ -33,4 +34,22 @@ test("renders one path per non-Antarctica country", () => {
     <MapView topo={topo} byIsoNum={byIsoNum} fit={fit} mode="residual" selectedIso3={null} onSelect={() => {}} dark={false} />,
   );
   expect(container.querySelectorAll("path").length).toBe(2);
+});
+
+test("residual mode: a country with no fit renders the insufficient color", () => {
+  const { container } = render(
+    <MapView topo={topo} byIsoNum={byIsoNum} fit={fit} mode="residual" selectedIso3={null} onSelect={() => {}} dark={false} />,
+  );
+  const fills = [...container.querySelectorAll("path")].map((p) => p.getAttribute("fill"));
+  expect(fills).toContain(INSUFFICIENT_COLOR(false)); // NER has no fit
+  expect(fills.some((f) => f !== INSUFFICIENT_COLOR(false))).toBe(true); // USA has a fit
+});
+
+test("clicking a country calls onSelect with its iso3", () => {
+  const onSelect = vi.fn();
+  const { container } = render(
+    <MapView topo={topo} byIsoNum={byIsoNum} fit={fit} mode="residual" selectedIso3={null} onSelect={onSelect} dark={false} />,
+  );
+  fireEvent.click(container.querySelectorAll("path")[0]); // first feature is USA (id 840)
+  expect(onSelect).toHaveBeenCalledWith("USA");
 });

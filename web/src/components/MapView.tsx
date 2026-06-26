@@ -32,7 +32,7 @@ export function MapView(props: MapViewProps) {
     const projection = geoNaturalEarth1().fitSize([W, H], { type: "FeatureCollection", features } as any);
     return geoPath(projection);
   }, [features]);
-  const maxAbs = useMemo(() => maxAbsResidual(fit), [fit]);
+  const maxAbs = maxAbsResidual(fit);
 
   const fillFor = (isoNum: number): string => {
     const c = byIsoNum.get(isoNum);

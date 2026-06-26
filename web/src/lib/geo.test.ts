@@ -1,4 +1,4 @@
-import { indexByIsoNum } from "./geo";
+import { indexByIsoNum, featuresFromTopo } from "./geo";
 import type { Country } from "../types";
 
 test("indexes countries by numeric iso code", () => {
@@ -9,4 +9,23 @@ test("indexes countries by numeric iso code", () => {
   const idx = indexByIsoNum(countries);
   expect(idx.get(840)?.iso3).toBe("USA");
   expect(idx.get(562)?.iso3).toBe("NER");
+});
+
+test("featuresFromTopo returns features and drops Antarctica", () => {
+  const topo = {
+    type: "Topology",
+    arcs: [[[0, 0], [0, 1], [1, 1], [0, 0]]],
+    objects: {
+      countries: {
+        type: "GeometryCollection",
+        geometries: [
+          { type: "Polygon", id: "840", arcs: [[0]], properties: { name: "United States of America" } },
+          { type: "Polygon", id: "010", arcs: [[0]], properties: { name: "Antarctica" } },
+        ],
+      },
+    },
+  };
+  const feats = featuresFromTopo(topo);
+  expect(feats.length).toBe(1);
+  expect(feats[0].properties.name).toBe("United States of America");
 });
