@@ -1,0 +1,6 @@
+{
+  "version": 0.6,
+  "elements": [
+    { "type": "count", "id": 0, "tags": { "nodes": "1200", "ways": "150", "relations": "0", "total": "1350" } }
+  ]
+}
