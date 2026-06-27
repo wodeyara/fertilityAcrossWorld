@@ -55,13 +55,16 @@ def fetch_all_amenity_counts(iso2_by_iso3, cache_dir, session=None, sleep=None) 
     for iso3, iso2 in sorted(iso2_by_iso3.items()):
         cache_file = cache / f"{iso2}.json"
         if cache_file.exists():
-            out[iso3] = int(json.loads(cache_file.read_text())["total"])
+            total = json.loads(cache_file.read_text()).get("total")
+            if total is not None:  # null total = known-missing (timed out before); skip
+                out[iso3] = int(total)
             continue
         try:
             count = fetch_amenity_count(iso2, session=session)
+            cache_file.write_text(json.dumps({"iso2": iso2, "total": count}))
+            out[iso3] = count
         except (OverpassError, requests.RequestException):
-            continue  # best-effort: skip countries whose query times out / errors
-        cache_file.write_text(json.dumps({"iso2": iso2, "total": count}))
-        out[iso3] = count
+            # negative cache: record the miss so future runs don't re-attempt a slow timeout
+            cache_file.write_text(json.dumps({"iso2": iso2, "total": None}))
         sleep(1.0)
     return out

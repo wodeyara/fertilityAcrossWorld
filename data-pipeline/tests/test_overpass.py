@@ -92,3 +92,9 @@ def test_fetch_all_skips_failures(tmp_path):
     refs = {"LUX": "LU", "FRA": "FR"}
     out = overpass.fetch_all_amenity_counts(refs, tmp_path, session=session, sleep=lambda s: None)
     assert out == {"LUX": 1350}  # FRA timed out -> skipped, not cached as 0
+    # FRA is negative-cached (total null), so a re-run does not re-attempt it
+    assert json.loads((tmp_path / "FR.json").read_text())["total"] is None
+    session.calls.clear()
+    out2 = overpass.fetch_all_amenity_counts(refs, tmp_path, session=session, sleep=lambda s: None)
+    assert out2 == {"LUX": 1350}
+    assert session.calls == []  # LU count cached, FR negative-cached -> no API calls
