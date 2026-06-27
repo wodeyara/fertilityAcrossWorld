@@ -35,7 +35,7 @@ def build_possibility(iso2_by_iso3, cache_dir, fetch=None, osm_fetch=None):
 
     def wb_val(name, iso3):
         hit = wb[name].get(iso3)
-        return hit[0] if hit else None
+        return hit[0] if hit is not None else None
 
     population = {iso3: wb_val("population", iso3) for iso3 in iso2_by_iso3}
     amenity_density = {}
@@ -44,12 +44,18 @@ def build_possibility(iso2_by_iso3, cache_dir, fetch=None, osm_fetch=None):
         cnt = counts.get(iso3)
         amenity_density[iso3] = (cnt / pop * 1000.0) if (pop and cnt is not None and pop > 0) else None
 
+    net_migration_pc = {}
+    for iso3 in iso2_by_iso3:
+        pop = population.get(iso3)
+        nm = wb_val("net_migration", iso3)
+        net_migration_pc[iso3] = (nm / pop * 1000.0) if (pop and nm is not None) else None
+
     components = {
         "amenity_density": amenity_density,
         "internet": {iso3: wb_val("internet", iso3) for iso3 in iso2_by_iso3},
         "mobile": {iso3: wb_val("mobile", iso3) for iso3 in iso2_by_iso3},
         "pop_density": {iso3: wb_val("pop_density", iso3) for iso3 in iso2_by_iso3},
-        "net_migration": {iso3: wb_val("net_migration", iso3) for iso3 in iso2_by_iso3},
+        "net_migration": net_migration_pc,
     }
     values = possibility.compute_possibility(components)
     return {iso3: {"possibility": values.get(iso3)} for iso3 in iso2_by_iso3}
