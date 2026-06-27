@@ -3,6 +3,8 @@ import time
 from pathlib import Path
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+USER_AGENT = "fertility-explorer/0.1 (research project; +https://github.com/)"
+HEADERS = {"User-Agent": USER_AGENT}
 
 AMENITY_TAGS = [
     "bar", "pub", "cafe", "restaurant", "fast_food",
@@ -31,7 +33,7 @@ def fetch_amenity_count(iso2: str, session=None, url: str = OVERPASS_URL) -> int
     if session is None:
         import requests
         session = requests
-    resp = session.post(url, data={"data": build_query(iso2)}, timeout=200)
+    resp = session.post(url, data={"data": build_query(iso2)}, headers=HEADERS, timeout=200)
     resp.raise_for_status()
     return parse_count(resp.json())
 

@@ -22,8 +22,8 @@ class FakeSession:
         self._p = payload
         self.calls = []
 
-    def post(self, url, data=None, timeout=None):
-        self.calls.append((url, data))
+    def post(self, url, data=None, headers=None, timeout=None):
+        self.calls.append((url, data, headers))
         return FakeResp(self._p)
 
 
@@ -43,6 +43,15 @@ def test_fetch_amenity_count_posts_query():
     n = overpass.fetch_amenity_count("US", session=session)
     assert n == 1350
     assert session.calls[0][1]["data"]  # query body posted
+
+
+def test_fetch_sends_user_agent():
+    session = FakeSession(FIXTURE)
+    overpass.fetch_amenity_count("US", session=session)
+    headers = session.calls[0][2]
+    assert headers is not None
+    assert "User-Agent" in headers
+    assert headers["User-Agent"]
 
 
 def test_fetch_all_uses_cache(tmp_path):
