@@ -69,3 +69,26 @@ def test_fetch_all_uses_cache(tmp_path):
     assert second == {"USA": 1350, "FRA": 1350}
     assert len(session.calls) == 0
     assert calls["n"] == 2
+
+
+def test_parse_count_raises_on_remark():
+    import pytest
+    with pytest.raises(overpass.OverpassError):
+        overpass.parse_count({"remark": "runtime error: Query timed out", "elements": []})
+
+
+def test_fetch_all_skips_failures(tmp_path):
+    class FlakySession:
+        def __init__(self):
+            self.calls = []
+
+        def post(self, url, data=None, headers=None, timeout=None):
+            self.calls.append(data)
+            if "FR" in data["data"]:
+                return FakeResp({"remark": "timed out", "elements": []})
+            return FakeResp(FIXTURE)
+
+    session = FlakySession()
+    refs = {"LUX": "LU", "FRA": "FR"}
+    out = overpass.fetch_all_amenity_counts(refs, tmp_path, session=session, sleep=lambda s: None)
+    assert out == {"LUX": 1350}  # FRA timed out -> skipped, not cached as 0
