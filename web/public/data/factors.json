@@ -3,7 +3,7 @@
   "target": {
     "id": "tfr",
     "label": "Total fertility rate",
-    "transform": "raw",
+    "transform": "log",
     "unit": "births per woman",
     "source": "worldbank"
   },
