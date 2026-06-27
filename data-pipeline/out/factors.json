@@ -3,7 +3,7 @@
   "target": {
     "id": "tfr",
     "label": "Total fertility rate",
-    "transform": "log",
+    "transform": "raw",
     "unit": "births per woman",
     "source": "worldbank"
   },
@@ -95,6 +95,14 @@
       "unit": "index 0-100",
       "direction": "mixed",
       "source": "static"
+    },
+    {
+      "id": "possibility",
+      "label": "Possibility index",
+      "group": "Possibility",
+      "unit": "z-score index",
+      "direction": "negative",
+      "source": "computed"
     }
   ]
 }

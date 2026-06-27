@@ -13,6 +13,7 @@
     "child_mortality": 195,
     "adolescent_fertility": 215,
     "urbanisation": 215,
-    "social_cohesion": 0
+    "social_cohesion": 0,
+    "possibility": 212
   }
 }

@@ -17,7 +17,8 @@
       "child_mortality": null,
       "adolescent_fertility": 18.021,
       "urbanisation": 61.7909396819594,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.0189924863998874
     }
   },
   {
@@ -38,7 +39,8 @@
       "child_mortality": 53.0,
       "adolescent_fertility": 61.501,
       "urbanisation": 25.7007352636188,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8594881116008816
     }
   },
   {
@@ -59,7 +61,8 @@
       "child_mortality": 49.0,
       "adolescent_fertility": 139.388,
       "urbanisation": 70.6551379036435,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.6098815530672435
     }
   },
   {
@@ -80,7 +83,8 @@
       "child_mortality": 9.2,
       "adolescent_fertility": 12.399,
       "urbanisation": 58.5463634043555,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.00010970356633984712
     }
   },
   {
@@ -101,7 +105,8 @@
       "child_mortality": 2.5,
       "adolescent_fertility": 3.4,
       "urbanisation": 88.8850044816278,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.109259375706949
     }
   },
   {
@@ -122,7 +127,8 @@
       "child_mortality": 4.8,
       "adolescent_fertility": 2.817,
       "urbanisation": 85.8171088279791,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.0969072444917571
     }
   },
   {
@@ -143,7 +149,8 @@
       "child_mortality": 9.5,
       "adolescent_fertility": 25.56,
       "urbanisation": 92.2742315972952,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.11890527127136474
     }
   },
   {
@@ -164,7 +171,8 @@
       "child_mortality": 9.6,
       "adolescent_fertility": 12.823,
       "urbanisation": 65.8113671449901,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.1481257504481505
     }
   },
   {
@@ -185,7 +193,8 @@
       "child_mortality": null,
       "adolescent_fertility": 34.749,
       "urbanisation": 80.9446986961818,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": null
     }
   },
   {
@@ -206,7 +215,8 @@
       "child_mortality": 9.1,
       "adolescent_fertility": 32.078,
       "urbanisation": 24.3906919254799,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5460676696811013
     }
   },
   {
@@ -227,7 +237,8 @@
       "child_mortality": 3.6,
       "adolescent_fertility": 6.419,
       "urbanisation": 87.6021469990446,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.35978742304779365
     }
   },
   {
@@ -248,7 +259,8 @@
       "child_mortality": 3.3,
       "adolescent_fertility": 3.605,
       "urbanisation": 69.4658181096788,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.574537244016035
     }
   },
   {
@@ -269,7 +281,8 @@
       "child_mortality": 17.9,
       "adolescent_fertility": 34.856,
       "urbanisation": 58.573795837717,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.04432573096233068
     }
   },
   {
@@ -290,7 +303,8 @@
       "child_mortality": 47.1,
       "adolescent_fertility": 52.49,
       "urbanisation": 24.8302838651025,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8792622688503551
     }
   },
   {
@@ -311,7 +325,8 @@
       "child_mortality": 3.7,
       "adolescent_fertility": 3.504,
       "urbanisation": 87.6126557010527,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2725615092559315
     }
   },
   {
@@ -332,7 +347,8 @@
       "child_mortality": 74.7,
       "adolescent_fertility": 76.407,
       "urbanisation": 52.5455354818423,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4348599641346572
     }
   },
   {
@@ -353,7 +369,8 @@
       "child_mortality": 74.9,
       "adolescent_fertility": 85.533,
       "urbanisation": 28.3352514896662,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4748146102200767
     }
   },
   {
@@ -374,7 +391,8 @@
       "child_mortality": 30.5,
       "adolescent_fertility": 70.813,
       "urbanisation": 32.6783196323307,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.17090666148565198
     }
   },
   {
@@ -395,7 +413,8 @@
       "child_mortality": 5.7,
       "adolescent_fertility": 38.035,
       "urbanisation": 73.9499356882481,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.1376983988794112
     }
   },
   {
@@ -416,7 +435,8 @@
       "child_mortality": 8.8,
       "adolescent_fertility": 7.225,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.8699029152277437
     }
   },
   {
@@ -437,7 +457,8 @@
       "child_mortality": 12.4,
       "adolescent_fertility": 24.519,
       "urbanisation": 81.3249262966481,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.1478055168486882
     }
   },
   {
@@ -458,7 +479,8 @@
       "child_mortality": 6.9,
       "adolescent_fertility": 10.783,
       "urbanisation": 52.1224302754935,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.09049617455244537
     }
   },
   {
@@ -479,7 +501,8 @@
       "child_mortality": 2.3,
       "adolescent_fertility": 8.171,
       "urbanisation": 79.1551015210848,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2467006284734026
     }
   },
   {
@@ -500,7 +523,8 @@
       "child_mortality": 12.7,
       "adolescent_fertility": 55.6,
       "urbanisation": 41.7532107338224,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.15782225156173507
     }
   },
   {
@@ -521,7 +545,8 @@
       "child_mortality": null,
       "adolescent_fertility": 1.527,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.360707827656494
     }
   },
   {
@@ -542,7 +567,8 @@
       "child_mortality": 15.7,
       "adolescent_fertility": 64.437,
       "urbanisation": 71.2361453773988,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.054365311450527344
     }
   },
   {
@@ -563,7 +589,8 @@
       "child_mortality": 14.2,
       "adolescent_fertility": 41.459,
       "urbanisation": 87.8958549533146,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.012557137127526933
     }
   },
   {
@@ -584,7 +611,8 @@
       "child_mortality": 9.8,
       "adolescent_fertility": 45.008,
       "urbanisation": 59.5397032429174,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.10857458487475721
     }
   },
   {
@@ -605,7 +633,8 @@
       "child_mortality": 9.9,
       "adolescent_fertility": 8.051,
       "urbanisation": 74.8983133873697,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.39287907833019714
     }
   },
   {
@@ -626,7 +655,8 @@
       "child_mortality": 17.2,
       "adolescent_fertility": 8.712,
       "urbanisation": 42.5645249803412,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.06300094295126477
     }
   },
   {
@@ -647,7 +677,8 @@
       "child_mortality": 33.3,
       "adolescent_fertility": 53.45,
       "urbanisation": 67.4623537838418,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.1538152271229525
     }
   },
   {
@@ -668,7 +699,8 @@
       "child_mortality": 89.7,
       "adolescent_fertility": 161.348,
       "urbanisation": 44.1243555638904,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -1.0524409066261577
     }
   },
   {
@@ -689,7 +721,8 @@
       "child_mortality": 5.4,
       "adolescent_fertility": 4.501,
       "urbanisation": 82.7002565766633,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.33909646935530097
     }
   },
   {
@@ -710,7 +743,8 @@
       "child_mortality": 3.9,
       "adolescent_fertility": 1.48,
       "urbanisation": 85.4615370020764,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6368201866732218
     }
   },
   {
@@ -731,7 +765,8 @@
       "child_mortality": 6.8,
       "adolescent_fertility": 5.608,
       "urbanisation": 88.9950908479196,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2429183596453711
     }
   },
   {
@@ -752,7 +787,8 @@
       "child_mortality": 5.7,
       "adolescent_fertility": 5.202,
       "urbanisation": 65.8946980998325,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.24440124287130727
     }
   },
   {
@@ -773,7 +809,8 @@
       "child_mortality": 64.5,
       "adolescent_fertility": 90.556,
       "urbanisation": 53.9733113940142,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.107187128567958
     }
   },
   {
@@ -794,7 +831,8 @@
       "child_mortality": 64.8,
       "adolescent_fertility": 105.389,
       "urbanisation": 55.4031748609078,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4098281473729924
     }
   },
   {
@@ -815,7 +853,8 @@
       "child_mortality": 89.7,
       "adolescent_fertility": 105.224,
       "urbanisation": 44.7455804408753,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8206653921606005
     }
   },
   {
@@ -836,7 +875,8 @@
       "child_mortality": 39.1,
       "adolescent_fertility": 108.099,
       "urbanisation": 63.8866111699904,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4561276575870578
     }
   },
   {
@@ -857,7 +897,8 @@
       "child_mortality": 11.5,
       "adolescent_fertility": 58.393,
       "urbanisation": 78.5210811866115,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.22342022843351242
     }
   },
   {
@@ -878,7 +919,8 @@
       "child_mortality": 39.0,
       "adolescent_fertility": 53.797,
       "urbanisation": 33.5392215673301,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5127221871485637
     }
   },
   {
@@ -899,7 +941,8 @@
       "child_mortality": 11.1,
       "adolescent_fertility": 37.942,
       "urbanisation": 76.7721471004354,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.008874430378089809
     }
   },
   {
@@ -920,7 +963,8 @@
       "child_mortality": 10.4,
       "adolescent_fertility": 24.838,
       "urbanisation": 79.3107672397967,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.22486002677909242
     }
   },
   {
@@ -941,7 +985,8 @@
       "child_mortality": 8.6,
       "adolescent_fertility": 48.236,
       "urbanisation": 77.1664929228275,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.30607000288437997
     }
   },
   {
@@ -962,7 +1007,8 @@
       "child_mortality": null,
       "adolescent_fertility": 12.469,
       "urbanisation": 91.4321812441765,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.039464693826224986
     }
   },
   {
@@ -983,7 +1029,8 @@
       "child_mortality": null,
       "adolescent_fertility": 10.525,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6868602659145664
     }
   },
   {
@@ -1004,7 +1051,8 @@
       "child_mortality": 5.0,
       "adolescent_fertility": 6.981,
       "urbanisation": 66.6824259192483,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.7670215477777458
     }
   },
   {
@@ -1025,7 +1073,8 @@
       "child_mortality": 2.6,
       "adolescent_fertility": 5.754,
       "urbanisation": 72.7947984592185,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.05135084678298492
     }
   },
   {
@@ -1046,7 +1095,8 @@
       "child_mortality": 3.7,
       "adolescent_fertility": 5.237,
       "urbanisation": 82.0211432579125,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.27693860324795255
     }
   },
   {
@@ -1067,7 +1117,8 @@
       "child_mortality": 48.9,
       "adolescent_fertility": 19.098,
       "urbanisation": 72.9052635052978,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4912246009230857
     }
   },
   {
@@ -1088,7 +1139,8 @@
       "child_mortality": 35.7,
       "adolescent_fertility": 33.973,
       "urbanisation": 73.5449839980866,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.12915094710657804
     }
   },
   {
@@ -1109,7 +1161,8 @@
       "child_mortality": 4.0,
       "adolescent_fertility": 1.06,
       "urbanisation": 88.6960552688405,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4285536843570089
     }
   },
   {
@@ -1130,7 +1183,8 @@
       "child_mortality": 30.6,
       "adolescent_fertility": 50.163,
       "urbanisation": 72.4121874752151,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.022672717479717677
     }
   },
   {
@@ -1151,7 +1205,8 @@
       "child_mortality": 21.6,
       "adolescent_fertility": 8.582,
       "urbanisation": 75.2792907190618,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.14215531247640947
     }
   },
   {
@@ -1172,7 +1227,8 @@
       "child_mortality": 12.9,
       "adolescent_fertility": 54.309,
       "urbanisation": 63.2376932397602,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.10273400496505317
     }
   },
   {
@@ -1193,7 +1249,8 @@
       "child_mortality": 22.4,
       "adolescent_fertility": 41.126,
       "urbanisation": 42.8004363938404,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.20653598963793424
     }
   },
   {
@@ -1214,7 +1271,8 @@
       "child_mortality": 34.3,
       "adolescent_fertility": 65.157,
       "urbanisation": 34.5365524291992,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.9320198136339828
     }
   },
   {
@@ -1235,7 +1293,8 @@
       "child_mortality": 3.2,
       "adolescent_fertility": 4.85,
       "urbanisation": 80.315199821207,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.34137359000907463
     }
   },
   {
@@ -1256,7 +1315,8 @@
       "child_mortality": 2.0,
       "adolescent_fertility": 4.675,
       "urbanisation": 70.6981161541961,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.24152769512116676
     }
   },
   {
@@ -1277,7 +1337,8 @@
       "child_mortality": 44.5,
       "adolescent_fertility": 68.198,
       "urbanisation": 23.6222839355469,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.7415917575371932
     }
   },
   {
@@ -1298,7 +1359,8 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 2.987,
       "urbanisation": 74.2637190463636,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4608661644566544
     }
   },
   {
@@ -1319,7 +1381,8 @@
       "child_mortality": 29.1,
       "adolescent_fertility": 20.905,
       "urbanisation": 59.0766602292457,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.5741528846682669
     }
   },
   {
@@ -1340,7 +1403,8 @@
       "child_mortality": 4.3,
       "adolescent_fertility": 3.302,
       "urbanisation": 78.7999750964116,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.18250436317895338
     }
   },
   {
@@ -1361,7 +1425,8 @@
       "child_mortality": null,
       "adolescent_fertility": 4.403,
       "urbanisation": 39.4132325882965,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5395970397894183
     }
   },
   {
@@ -1382,7 +1447,8 @@
       "child_mortality": 22.4,
       "adolescent_fertility": 43.692,
       "urbanisation": 22.4562830235421,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.9682520061887712
     }
   },
   {
@@ -1403,7 +1469,8 @@
       "child_mortality": 32.6,
       "adolescent_fertility": 89.467,
       "urbanisation": 91.8632094677575,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.0077162838882798845
     }
   },
   {
@@ -1424,7 +1491,8 @@
       "child_mortality": 4.7,
       "adolescent_fertility": 7.817,
       "urbanisation": 83.2429544416085,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4310779579693739
     }
   },
   {
@@ -1445,7 +1513,8 @@
       "child_mortality": 8.6,
       "adolescent_fertility": 19.373,
       "urbanisation": 61.0789605093733,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.31844572239946506
     }
   },
   {
@@ -1466,7 +1535,8 @@
       "child_mortality": 35.9,
       "adolescent_fertility": 57.447,
       "urbanisation": 58.3654868038581,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.03829738623892939
     }
   },
   {
@@ -1487,7 +1557,8 @@
       "child_mortality": null,
       "adolescent_fertility": 8.534,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.0237062964458918
     }
   },
   {
@@ -1508,7 +1579,8 @@
       "child_mortality": 92.1,
       "adolescent_fertility": 116.768,
       "urbanisation": 38.0713036688655,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5116514570032488
     }
   },
   {
@@ -1529,7 +1601,8 @@
       "child_mortality": 42.4,
       "adolescent_fertility": 56.138,
       "urbanisation": 64.2994103409645,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.3169231296529746
     }
   },
   {
@@ -1550,7 +1623,8 @@
       "child_mortality": 67.3,
       "adolescent_fertility": 80.292,
       "urbanisation": 46.113204421822,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4044389831110153
     }
   },
   {
@@ -1571,7 +1645,8 @@
       "child_mortality": 68.0,
       "adolescent_fertility": 152.865,
       "urbanisation": 71.3574028749806,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.45437057982625173
     }
   },
   {
@@ -1592,7 +1667,8 @@
       "child_mortality": 3.8,
       "adolescent_fertility": 6.847,
       "urbanisation": 78.9967856500534,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2511778944020285
     }
   },
   {
@@ -1613,7 +1689,8 @@
       "child_mortality": 18.0,
       "adolescent_fertility": 28.617,
       "urbanisation": 36.5628000454229,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.05897011338917074
     }
   },
   {
@@ -1634,7 +1711,8 @@
       "child_mortality": null,
       "adolescent_fertility": 35.05,
       "urbanisation": 88.3195347935238,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.19554132443611982
     }
   },
   {
@@ -1655,7 +1733,8 @@
       "child_mortality": 20.5,
       "adolescent_fertility": 67.865,
       "urbanisation": 55.9547027274763,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2579975931245799
     }
   },
   {
@@ -1676,7 +1755,8 @@
       "child_mortality": null,
       "adolescent_fertility": 31.509,
       "urbanisation": 94.1726346571831,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.0059503525742378395
     }
   },
   {
@@ -1697,7 +1777,8 @@
       "child_mortality": 25.2,
       "adolescent_fertility": 68.46,
       "urbanisation": 26.477717988557,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.19419778102004165
     }
   },
   {
@@ -1718,7 +1799,8 @@
       "child_mortality": null,
       "adolescent_fertility": 1.151,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.7006202051262953
     }
   },
   {
@@ -1739,7 +1821,8 @@
       "child_mortality": 15.0,
       "adolescent_fertility": 81.254,
       "urbanisation": 58.7850728104829,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.443731331077814
     }
   },
   {
@@ -1760,7 +1843,8 @@
       "child_mortality": 5.6,
       "adolescent_fertility": 6.309,
       "urbanisation": 57.5158981711443,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4255550236295882
     }
   },
   {
@@ -1781,7 +1865,8 @@
       "child_mortality": 52.8,
       "adolescent_fertility": 49.26,
       "urbanisation": 55.0372652481002,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.583104977586825
     }
   },
   {
@@ -1802,7 +1887,8 @@
       "child_mortality": 3.7,
       "adolescent_fertility": 17.392,
       "urbanisation": 70.491825943218,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.27905924836451645
     }
   },
   {
@@ -1823,7 +1909,8 @@
       "child_mortality": 17.7,
       "adolescent_fertility": 25.646,
       "urbanisation": 58.7509635387997,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.017719454620919343
     }
   },
   {
@@ -1844,7 +1931,8 @@
       "child_mortality": null,
       "adolescent_fertility": 8.498,
       "urbanisation": 52.1633405796294,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.7673862607937271
     }
   },
   {
@@ -1865,7 +1953,8 @@
       "child_mortality": 26.6,
       "adolescent_fertility": 13.036,
       "urbanisation": 35.3788972368389,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2340015656680728
     }
   },
   {
@@ -1886,7 +1975,8 @@
       "child_mortality": 3.9,
       "adolescent_fertility": 4.009,
       "urbanisation": 64.3470379255585,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5468821639814305
     }
   },
   {
@@ -1907,7 +1997,8 @@
       "child_mortality": 11.3,
       "adolescent_fertility": 25.787,
       "urbanisation": 77.0201263427734,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.21229810441190572
     }
   },
   {
@@ -1928,7 +2019,8 @@
       "child_mortality": 21.8,
       "adolescent_fertility": 57.308,
       "urbanisation": 69.8861494108913,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.14832016489637664
     }
   },
   {
@@ -1949,7 +2041,8 @@
       "child_mortality": 2.8,
       "adolescent_fertility": 3.074,
       "urbanisation": 94.1819039916522,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6880162481152894
     }
   },
   {
@@ -1970,7 +2063,8 @@
       "child_mortality": 3.3,
       "adolescent_fertility": 5.695,
       "urbanisation": 91.536188843818,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.31337389606733645
     }
   },
   {
@@ -1991,7 +2085,8 @@
       "child_mortality": 2.7,
       "adolescent_fertility": 2.871,
       "urbanisation": 69.6047535143071,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2825367541482324
     }
   },
   {
@@ -2012,7 +2107,8 @@
       "child_mortality": 17.8,
       "adolescent_fertility": 36.095,
       "urbanisation": 58.9301585439922,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.04278995603214911
     }
   },
   {
@@ -2033,7 +2129,8 @@
       "child_mortality": 12.9,
       "adolescent_fertility": 17.722,
       "urbanisation": 92.9501393764286,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.48416582521261403
     }
   },
   {
@@ -2054,7 +2151,8 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 1.631,
       "urbanisation": 92.1901718034531,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4753591149338232
     }
   },
   {
@@ -2075,7 +2173,8 @@
       "child_mortality": 9.4,
       "adolescent_fertility": 17.436,
       "urbanisation": 62.072531584162,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2136861181670667
     }
   },
   {
@@ -2096,7 +2195,8 @@
       "child_mortality": 38.8,
       "adolescent_fertility": 54.498,
       "urbanisation": 31.8937831721599,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.42886883520511204
     }
   },
   {
@@ -2117,7 +2217,8 @@
       "child_mortality": 16.8,
       "adolescent_fertility": 27.534,
       "urbanisation": 34.7219977865937,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.0035190455750216927
     }
   },
   {
@@ -2138,7 +2239,8 @@
       "child_mortality": 18.4,
       "adolescent_fertility": 47.306,
       "urbanisation": 40.8727033252729,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.21420488223270837
     }
   },
   {
@@ -2159,7 +2261,8 @@
       "child_mortality": 53.1,
       "adolescent_fertility": 44.037,
       "urbanisation": 62.4620431275642,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.25446841869083064
     }
   },
   {
@@ -2180,7 +2283,8 @@
       "child_mortality": 15.9,
       "adolescent_fertility": 36.413,
       "urbanisation": 31.795061903951,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6050260249918475
     }
   },
   {
@@ -2201,7 +2305,8 @@
       "child_mortality": 2.8,
       "adolescent_fertility": 0.532,
       "urbanisation": 81.1682528469686,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5953709628501982
     }
   },
   {
@@ -2222,7 +2327,8 @@
       "child_mortality": 8.1,
       "adolescent_fertility": 1.431,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5887272693339662
     }
   },
   {
@@ -2243,7 +2349,8 @@
       "child_mortality": 29.4,
       "adolescent_fertility": 81.928,
       "urbanisation": 39.5552154401406,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.3802812008776018
     }
   },
   {
@@ -2264,7 +2371,8 @@
       "child_mortality": 17.6,
       "adolescent_fertility": 20.667,
       "urbanisation": 90.703695784554,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2433680231496457
     }
   },
   {
@@ -2285,7 +2393,8 @@
       "child_mortality": 86.4,
       "adolescent_fertility": 124.74,
       "urbanisation": 55.5387986654968,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8575900891670233
     }
   },
   {
@@ -2306,7 +2415,8 @@
       "child_mortality": 9.8,
       "adolescent_fertility": 5.827,
       "urbanisation": 87.8854066107749,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.23637264095657132
     }
   },
   {
@@ -2327,7 +2437,8 @@
       "child_mortality": 17.2,
       "adolescent_fertility": 27.167,
       "urbanisation": 29.0973354237452,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.22604642000620495
     }
   },
   {
@@ -2348,7 +2459,8 @@
       "child_mortality": null,
       "adolescent_fertility": 1.801,
       "urbanisation": 14.657584904886,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6301016960927703
     }
   },
   {
@@ -2369,7 +2481,8 @@
       "child_mortality": 5.9,
       "adolescent_fertility": 14.719,
       "urbanisation": 20.2996997058686,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.22905341426206954
     }
   },
   {
@@ -2390,7 +2503,8 @@
       "child_mortality": 60.0,
       "adolescent_fertility": 69.55,
       "urbanisation": 43.6780334209246,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5559426739077505
     }
   },
   {
@@ -2411,7 +2525,8 @@
       "child_mortality": 3.4,
       "adolescent_fertility": 5.52,
       "urbanisation": 68.8285833315315,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2717324510994089
     }
   },
   {
@@ -2432,7 +2547,8 @@
       "child_mortality": 2.2,
       "adolescent_fertility": 3.996,
       "urbanisation": 94.8438702866393,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6403211358443222
     }
   },
   {
@@ -2453,7 +2569,8 @@
       "child_mortality": 2.5,
       "adolescent_fertility": 7.25,
       "urbanisation": 68.4839492628509,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.1569250487452769
     }
   },
   {
@@ -2474,7 +2591,8 @@
       "child_mortality": null,
       "adolescent_fertility": 0.478,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 2.468355989524964
     }
   },
   {
@@ -2495,7 +2613,8 @@
       "child_mortality": null,
       "adolescent_fertility": 13.22,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": null
     }
   },
   {
@@ -2516,7 +2635,8 @@
       "child_mortality": 15.7,
       "adolescent_fertility": 24.763,
       "urbanisation": 62.7998124018197,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.3018964043237768
     }
   },
   {
@@ -2537,7 +2657,8 @@
       "child_mortality": 2.7,
       "adolescent_fertility": 9.297,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 2.625372000805212
     }
   },
   {
@@ -2558,7 +2679,8 @@
       "child_mortality": 16.5,
       "adolescent_fertility": 22.661,
       "urbanisation": 43.516471862793,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.18453918826493781
     }
   },
   {
@@ -2579,7 +2701,8 @@
       "child_mortality": 62.4,
       "adolescent_fertility": 128.691,
       "urbanisation": 32.4339893339844,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.7465064710268822
     }
   },
   {
@@ -2600,7 +2723,8 @@
       "child_mortality": 5.4,
       "adolescent_fertility": 5.027,
       "urbanisation": 41.9982152717385,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.39005640170221917
     }
   },
   {
@@ -2621,7 +2745,8 @@
       "child_mortality": 13.1,
       "adolescent_fertility": 59.316,
       "urbanisation": 79.7538805976118,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.07462380467334981
     }
   },
   {
@@ -2642,7 +2767,8 @@
       "child_mortality": 26.7,
       "adolescent_fertility": 71.255,
       "urbanisation": 78.7325660244112,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -1.5183893698029458
     }
   },
   {
@@ -2663,7 +2789,8 @@
       "child_mortality": 2.8,
       "adolescent_fertility": 12.425,
       "urbanisation": 62.5645376928533,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.025814335162700496
     }
   },
   {
@@ -2684,7 +2811,8 @@
       "child_mortality": 73.0,
       "adolescent_fertility": 135.911,
       "urbanisation": 31.6075621182225,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.44671960337622435
     }
   },
   {
@@ -2705,7 +2833,8 @@
       "child_mortality": 5.3,
       "adolescent_fertility": 10.0,
       "urbanisation": 95.6546264490509,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.8436303337916682
     }
   },
   {
@@ -2726,7 +2855,8 @@
       "child_mortality": 36.9,
       "adolescent_fertility": 33.193,
       "urbanisation": 30.4499084074136,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.3090005576146661
     }
   },
   {
@@ -2747,7 +2877,8 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 8.711,
       "urbanisation": 65.5422314706266,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.8479851096767673
     }
   },
   {
@@ -2768,7 +2899,8 @@
       "child_mortality": 13.4,
       "adolescent_fertility": 19.045,
       "urbanisation": 70.9566040039062,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.08350934847142559
     }
   },
   {
@@ -2789,7 +2921,8 @@
       "child_mortality": null,
       "adolescent_fertility": 25.313,
       "urbanisation": 92.0747260922394,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.9426995364745809
     }
   },
   {
@@ -2810,7 +2943,8 @@
       "child_mortality": 59.4,
       "adolescent_fertility": 151.875,
       "urbanisation": 36.4332337447237,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8795272434317927
     }
   },
   {
@@ -2831,7 +2965,8 @@
       "child_mortality": 36.9,
       "adolescent_fertility": 87.574,
       "urbanisation": 60.6068586411829,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.49142293308534607
     }
   },
   {
@@ -2852,7 +2987,8 @@
       "child_mortality": 15.4,
       "adolescent_fertility": 19.204,
       "urbanisation": 39.0162147027917,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2617353871081144
     }
   },
   {
@@ -2873,7 +3009,8 @@
       "child_mortality": 48.8,
       "adolescent_fertility": 113.322,
       "urbanisation": 17.268503531213,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.761368359635424
     }
   },
   {
@@ -2894,7 +3031,8 @@
       "child_mortality": 8.3,
       "adolescent_fertility": 5.72,
       "urbanisation": 76.9170296648992,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.32781409148213875
     }
   },
   {
@@ -2915,7 +3053,8 @@
       "child_mortality": 39.5,
       "adolescent_fertility": 65.946,
       "urbanisation": 50.4088030252155,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2939547888979472
     }
   },
   {
@@ -2936,7 +3075,8 @@
       "child_mortality": null,
       "adolescent_fertility": 11.7,
       "urbanisation": 67.9514695585577,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.07704690231072461
     }
   },
   {
@@ -2957,7 +3097,8 @@
       "child_mortality": 110.7,
       "adolescent_fertility": 141.551,
       "urbanisation": 18.0497398450803,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8442591630824026
     }
   },
   {
@@ -2978,7 +3119,8 @@
       "child_mortality": 115.6,
       "adolescent_fertility": 83.959,
       "urbanisation": 62.9755675573659,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5852604116409099
     }
   },
   {
@@ -2999,7 +3141,8 @@
       "child_mortality": 11.2,
       "adolescent_fertility": 93.174,
       "urbanisation": 59.2628402709961,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2719933993297433
     }
   },
   {
@@ -3020,7 +3163,8 @@
       "child_mortality": 3.9,
       "adolescent_fertility": 1.748,
       "urbanisation": 95.6396517079336,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5680954857949783
     }
   },
   {
@@ -3041,7 +3185,8 @@
       "child_mortality": 2.5,
       "adolescent_fertility": 1.284,
       "urbanisation": 83.3293737928469,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4045519738428678
     }
   },
   {
@@ -3062,7 +3207,8 @@
       "child_mortality": 25.1,
       "adolescent_fertility": 66.489,
       "urbanisation": 66.772343163029,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.7043505794216985
     }
   },
   {
@@ -3083,7 +3229,8 @@
       "child_mortality": 8.3,
       "adolescent_fertility": 75.269,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.1869741946923222
     }
   },
   {
@@ -3104,7 +3251,8 @@
       "child_mortality": 4.7,
       "adolescent_fertility": 10.254,
       "urbanisation": 83.9370658833132,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4645337676713601
     }
   },
   {
@@ -3125,7 +3273,8 @@
       "child_mortality": 10.3,
       "adolescent_fertility": 5.646,
       "urbanisation": 79.4440302814714,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.0803009434297977
     }
   },
   {
@@ -3146,7 +3295,8 @@
       "child_mortality": 56.0,
       "adolescent_fertility": 39.856,
       "urbanisation": 39.1734368360905,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.557787031155316
     }
   },
   {
@@ -3167,7 +3317,8 @@
       "child_mortality": 15.3,
       "adolescent_fertility": 55.851,
       "urbanisation": 65.9958447685488,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.11488371450598973
     }
   },
   {
@@ -3188,7 +3339,8 @@
       "child_mortality": 12.9,
       "adolescent_fertility": 42.926,
       "urbanisation": 85.1912729600355,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.12099193799212651
     }
   },
   {
@@ -3209,7 +3361,8 @@
       "child_mortality": 26.5,
       "adolescent_fertility": 31.316,
       "urbanisation": 55.4520983215477,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.17776953985486837
     }
   },
   {
@@ -3230,7 +3383,8 @@
       "child_mortality": 21.4,
       "adolescent_fertility": 30.178,
       "urbanisation": 79.2095042878667,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.43801741825457496
     }
   },
   {
@@ -3251,7 +3405,8 @@
       "child_mortality": 39.4,
       "adolescent_fertility": 53.518,
       "urbanisation": 15.4061816403333,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.898974781398849
     }
   },
   {
@@ -3272,7 +3427,8 @@
       "child_mortality": 4.2,
       "adolescent_fertility": 5.849,
       "urbanisation": 59.9705468695101,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.05125689531220928
     }
   },
   {
@@ -3293,7 +3449,8 @@
       "child_mortality": null,
       "adolescent_fertility": 13.295,
       "urbanisation": 94.2539505199436,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.3134645372235451
     }
   },
   {
@@ -3314,7 +3471,8 @@
       "child_mortality": 16.7,
       "adolescent_fertility": 0.505,
       "urbanisation": 63.8589748211522,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.6207876107373752
     }
   },
   {
@@ -3335,7 +3493,8 @@
       "child_mortality": 3.2,
       "adolescent_fertility": 6.567,
       "urbanisation": 61.3281907341332,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.5478820995593523
     }
   },
   {
@@ -3356,7 +3515,8 @@
       "child_mortality": 16.3,
       "adolescent_fertility": 70.22,
       "urbanisation": 69.8622585886961,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.07398717731715904
     }
   },
   {
@@ -3377,7 +3537,8 @@
       "child_mortality": 37.9,
       "adolescent_fertility": 35.326,
       "urbanisation": 87.1196014117004,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.21698202462742783
     }
   },
   {
@@ -3398,7 +3559,8 @@
       "child_mortality": null,
       "adolescent_fertility": 23.844,
       "urbanisation": 61.7191984724331,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.1384617347793676
     }
   },
   {
@@ -3419,7 +3581,8 @@
       "child_mortality": 5.9,
       "adolescent_fertility": 5.491,
       "urbanisation": 99.3219891728394,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.9050504624024812
     }
   },
   {
@@ -3440,7 +3603,8 @@
       "child_mortality": 7.3,
       "adolescent_fertility": 32.78,
       "urbanisation": 52.1674778928768,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.13376871676569713
     }
   },
   {
@@ -3461,7 +3625,8 @@
       "child_mortality": 5.2,
       "adolescent_fertility": 12.157,
       "urbanisation": 75.1119136177067,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4825234632218184
     }
   },
   {
@@ -3482,7 +3647,8 @@
       "child_mortality": 37.7,
       "adolescent_fertility": 30.587,
       "urbanisation": 29.8849714294083,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5588146645449786
     }
   },
   {
@@ -3503,7 +3669,8 @@
       "child_mortality": 6.0,
       "adolescent_fertility": 11.076,
       "urbanisation": 84.4554020211443,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2919324557609678
     }
   },
   {
@@ -3524,7 +3691,8 @@
       "child_mortality": 61.6,
       "adolescent_fertility": 64.535,
       "urbanisation": 34.8673015510839,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -1.0342750805266516
     }
   },
   {
@@ -3545,7 +3713,8 @@
       "child_mortality": 36.5,
       "adolescent_fertility": 59.144,
       "urbanisation": 55.2368169057304,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.11640618934486899
     }
   },
   {
@@ -3566,7 +3735,8 @@
       "child_mortality": 2.7,
       "adolescent_fertility": 2.214,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.2746142698356988
     }
   },
   {
@@ -3587,7 +3757,8 @@
       "child_mortality": 20.0,
       "adolescent_fertility": 49.388,
       "urbanisation": 30.6617188562194,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.6793996933355493
     }
   },
   {
@@ -3608,7 +3779,8 @@
       "child_mortality": 90.5,
       "adolescent_fertility": 91.187,
       "urbanisation": 45.3626823156371,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5483546408555491
     }
   },
   {
@@ -3629,7 +3801,8 @@
       "child_mortality": 10.0,
       "adolescent_fertility": 53.452,
       "urbanisation": 75.0674905102199,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.13337910286255994
     }
   },
   {
@@ -3650,7 +3823,8 @@
       "child_mortality": 1.3,
       "adolescent_fertility": 1.173,
       "urbanisation": 97.1560555881096,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4490318701675883
     }
   },
   {
@@ -3671,7 +3845,8 @@
       "child_mortality": 101.1,
       "adolescent_fertility": 115.425,
       "urbanisation": 54.6176465524521,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.7375482125694752
     }
   },
   {
@@ -3692,7 +3867,8 @@
       "child_mortality": 5.4,
       "adolescent_fertility": 13.11,
       "urbanisation": 62.3830029804177,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.1762846699863354
     }
   },
   {
@@ -3713,7 +3889,8 @@
       "child_mortality": 96.7,
       "adolescent_fertility": 96.276,
       "urbanisation": 21.3768190444906,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.9330915438073891
     }
   },
   {
@@ -3734,7 +3911,8 @@
       "child_mortality": 13.6,
       "adolescent_fertility": 85.183,
       "urbanisation": 68.8710170184884,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4650454930778285
     }
   },
   {
@@ -3755,7 +3933,8 @@
       "child_mortality": 15.8,
       "adolescent_fertility": 46.857,
       "urbanisation": 65.7641857200885,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.09643608121737439
     }
   },
   {
@@ -3776,7 +3955,8 @@
       "child_mortality": 6.3,
       "adolescent_fertility": 24.477,
       "urbanisation": 53.1919702985684,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.15007269161085454
     }
   },
   {
@@ -3797,7 +3977,8 @@
       "child_mortality": 2.3,
       "adolescent_fertility": 3.379,
       "urbanisation": 55.7577708405917,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4245433433104262
     }
   },
   {
@@ -3818,7 +3999,8 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 1.695,
       "urbanisation": 88.8559748346228,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.4728576755014268
     }
   },
   {
@@ -3839,7 +4021,8 @@
       "child_mortality": 45.1,
       "adolescent_fertility": 68.156,
       "urbanisation": 26.2498461258639,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.2805404456337939
     }
   },
   {
@@ -3860,7 +4043,8 @@
       "child_mortality": null,
       "adolescent_fertility": 16.636,
       "urbanisation": 100.0,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 1.8953977298189697
     }
   },
   {
@@ -3881,7 +4065,8 @@
       "child_mortality": 14.0,
       "adolescent_fertility": 53.47,
       "urbanisation": 45.2898622460415,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.6743870059823374
     }
   },
   {
@@ -3902,7 +4087,8 @@
       "child_mortality": 18.4,
       "adolescent_fertility": 38.618,
       "urbanisation": 72.0761345758254,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.10699982512489434
     }
   },
   {
@@ -3923,7 +4109,8 @@
       "child_mortality": 4.7,
       "adolescent_fertility": 15.647,
       "urbanisation": 94.1670917861964,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": null
     }
   },
   {
@@ -3944,7 +4131,8 @@
       "child_mortality": 97.3,
       "adolescent_fertility": 132.131,
       "urbanisation": 26.9315292389497,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5769098738781108
     }
   },
   {
@@ -3965,7 +4153,8 @@
       "child_mortality": 56.1,
       "adolescent_fertility": 76.383,
       "urbanisation": 43.8148491605996,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5560170126518387
     }
   },
   {
@@ -3986,7 +4175,8 @@
       "child_mortality": 9.0,
       "adolescent_fertility": 25.045,
       "urbanisation": 61.8689338391321,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2231790919049724
     }
   },
   {
@@ -4007,7 +4197,8 @@
       "child_mortality": 28.1,
       "adolescent_fertility": 39.436,
       "urbanisation": 26.1788063651548,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4957584242484342
     }
   },
   {
@@ -4028,7 +4219,8 @@
       "child_mortality": 39.0,
       "adolescent_fertility": 20.145,
       "urbanisation": 47.0875253910294,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.6539919282452364
     }
   },
   {
@@ -4049,7 +4241,8 @@
       "child_mortality": 47.6,
       "adolescent_fertility": 26.784,
       "urbanisation": 28.6641074179574,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.4801477853073256
     }
   },
   {
@@ -4070,7 +4263,8 @@
       "child_mortality": 9.5,
       "adolescent_fertility": 25.067,
       "urbanisation": 21.1505271125521,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.7846360659279031
     }
   },
   {
@@ -4091,7 +4285,8 @@
       "child_mortality": 18.8,
       "adolescent_fertility": 36.03,
       "urbanisation": 53.961056681951,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.13725341033742253
     }
   },
   {
@@ -4112,7 +4307,8 @@
       "child_mortality": 12.1,
       "adolescent_fertility": 4.207,
       "urbanisation": 70.3585355691955,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.011792191792912639
     }
   },
   {
@@ -4133,7 +4329,8 @@
       "child_mortality": 9.6,
       "adolescent_fertility": 11.182,
       "urbanisation": 89.3443122873887,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.11454138744359921
     }
   },
   {
@@ -4154,7 +4351,8 @@
       "child_mortality": 19.2,
       "adolescent_fertility": 26.789,
       "urbanisation": 64.7254793441291,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -1.0038991950649994
     }
   },
   {
@@ -4175,7 +4373,8 @@
       "child_mortality": 37.0,
       "adolescent_fertility": 112.612,
       "urbanisation": 36.1684458862992,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.45247813266464104
     }
   },
   {
@@ -4196,7 +4395,8 @@
       "child_mortality": 48.7,
       "adolescent_fertility": 104.733,
       "urbanisation": 31.2777698213557,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.832235660635163
     }
   },
   {
@@ -4217,7 +4417,8 @@
       "child_mortality": 7.9,
       "adolescent_fertility": 10.939,
       "urbanisation": 69.5315643200148,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.8020383645537622
     }
   },
   {
@@ -4238,7 +4439,8 @@
       "child_mortality": 7.4,
       "adolescent_fertility": 25.096,
       "urbanisation": 95.5981951588181,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.15011993661207648
     }
   },
   {
@@ -4259,7 +4461,8 @@
       "child_mortality": 6.5,
       "adolescent_fertility": 12.412,
       "urbanisation": 80.1247798047184,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.2856525124645464
     }
   },
   {
@@ -4280,7 +4483,8 @@
       "child_mortality": 13.4,
       "adolescent_fertility": 34.138,
       "urbanisation": 50.9986686706543,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.05057850641106615
     }
   },
   {
@@ -4301,7 +4505,8 @@
       "child_mortality": 11.3,
       "adolescent_fertility": 40.774,
       "urbanisation": 47.8487050456749,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.019402433217558208
     }
   },
   {
@@ -4322,7 +4527,8 @@
       "child_mortality": 24.2,
       "adolescent_fertility": 73.189,
       "urbanisation": 89.285859883201,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.3949356662997583
     }
   },
   {
@@ -4343,7 +4549,8 @@
       "child_mortality": 12.4,
       "adolescent_fertility": 15.143,
       "urbanisation": 56.5072068980827,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.42198578756476096
     }
   },
   {
@@ -4364,7 +4571,8 @@
       "child_mortality": null,
       "adolescent_fertility": 31.142,
       "urbanisation": 95.3312197036061,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.31021631751431195
     }
   },
   {
@@ -4385,7 +4593,8 @@
       "child_mortality": 17.3,
       "adolescent_fertility": 33.948,
       "urbanisation": 38.4900703430176,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.008206096777605918
     }
   },
   {
@@ -4406,7 +4615,8 @@
       "child_mortality": 17.1,
       "adolescent_fertility": 65.766,
       "urbanisation": 22.2866933360645,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.6044750988103595
     }
   },
   {
@@ -4427,7 +4637,8 @@
       "child_mortality": 14.9,
       "adolescent_fertility": 43.53,
       "urbanisation": 17.5029115108018,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.7545996640104542
     }
   },
   {
@@ -4448,7 +4659,8 @@
       "child_mortality": 38.1,
       "adolescent_fertility": 73.887,
       "urbanisation": 36.8077517596594,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.8620459334707113
     }
   },
   {
@@ -4469,7 +4681,8 @@
       "child_mortality": 35.1,
       "adolescent_fertility": 51.844,
       "urbanisation": 63.6917984858172,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": 0.1861959431424075
     }
   },
   {
@@ -4490,7 +4703,8 @@
       "child_mortality": 48.4,
       "adolescent_fertility": 115.479,
       "urbanisation": 45.4703838491279,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.6264406906576288
     }
   },
   {
@@ -4511,7 +4725,8 @@
       "child_mortality": 64.7,
       "adolescent_fertility": 95.524,
       "urbanisation": 39.8933716820696,
-      "social_cohesion": null
+      "social_cohesion": null,
+      "possibility": -0.5911262625213459
     }
   }
 ]
