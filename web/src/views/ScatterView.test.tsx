@@ -33,7 +33,7 @@ test("renders one circle per plottable country and reports clicks", () => {
   const circles = container.querySelectorAll("circle");
   expect(circles.length).toBe(2);
   fireEvent.click(circles[0]);
-  expect(onSelect).toHaveBeenCalled();
+  expect(onSelect).toHaveBeenCalledWith("USA");
 });
 
 test("changing the X-axis factor select reports it", () => {
@@ -44,4 +44,14 @@ test("changing the X-axis factor select reports it", () => {
   );
   fireEvent.change(screen.getByLabelText(/x-axis/i), { target: { value: "gdp_pc" } });
   expect(onSetXFactor).toHaveBeenCalledWith("gdp_pc");
+});
+
+test("shows a no-data message when no points are plottable", () => {
+  const emptyFit = { ...fit, fits: new Map() };
+  const { container } = render(
+    <ScatterView bundle={bundle} fit={emptyFit} mode="residual" xFactorId="possibility"
+      onSetXFactor={() => {}} selectedIso3={null} onSelect={() => {}} dark={false} />,
+  );
+  expect(container.querySelectorAll("circle").length).toBe(0);
+  expect(screen.getByText(/no countries have data/i)).toBeInTheDocument();
 });

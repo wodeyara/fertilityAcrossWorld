@@ -50,36 +50,42 @@ export function ScatterView(props: ScatterViewProps) {
           ))}
         </select>
       </label>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={`Scatter of ${yLabel} versus ${xLabel}`}>
-        {y.ticks(5).map((t) => (
-          <g key={`y${t}`}>
-            <line x1={M.left} x2={W - M.right} y1={y(t)} y2={y(t)} stroke={axis} strokeOpacity={0.15} />
-            <text x={M.left - 6} y={y(t)} textAnchor="end" dominantBaseline="middle" fontSize={10} fill={axis}>{t}</text>
-          </g>
-        ))}
-        {x.ticks(6).map((t) => (
-          <text key={`x${t}`} x={x(t)} y={H - M.bottom + 16} textAnchor="middle" fontSize={10} fill={axis}>{t}</text>
-        ))}
-        {points.map((p) => {
-          const selected = p.iso3 === selectedIso3;
-          return (
-            <circle
-              key={p.iso3}
-              cx={x(p.x)}
-              cy={y(p.y)}
-              r={selected ? 6 : 3.5}
-              fill={selected ? (dark ? "#fff" : "#111") : dark ? "#5ba3d0" : "#378add"}
-              fillOpacity={0.75}
-              style={{ cursor: "pointer" }}
-              onClick={() => onSelect(p.iso3)}
-            >
-              <title>{p.name}</title>
-            </circle>
-          );
-        })}
-        <text x={(W) / 2} y={H - 6} textAnchor="middle" fontSize={12} fill={axis}>{xLabel}</text>
-        <text x={-(H / 2)} y={14} transform="rotate(-90)" textAnchor="middle" fontSize={12} fill={axis}>{yLabel}</text>
-      </svg>
+      {points.length === 0 ? (
+        <p style={{ fontSize: 13, opacity: 0.7 }}>No countries have data for this factor in this mode.</p>
+      ) : (
+        <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={`Scatter of ${yLabel} versus ${xLabel}`}>
+          {y.ticks(5).map((t) => (
+            <g key={`y${t}`}>
+              <line x1={M.left} x2={W - M.right} y1={y(t)} y2={y(t)} stroke={axis} strokeOpacity={0.15} />
+              <text x={M.left - 6} y={y(t)} textAnchor="end" dominantBaseline="middle" fontSize={10} fill={axis}>{t}</text>
+            </g>
+          ))}
+          {x.ticks(6).map((t) => (
+            <text key={`x${t}`} x={x(t)} y={H - M.bottom + 16} textAnchor="middle" fontSize={10} fill={axis}>{t}</text>
+          ))}
+          {points.map((p) => {
+            const selected = p.iso3 === selectedIso3;
+            return (
+              <circle
+                key={p.iso3}
+                cx={x(p.x)}
+                cy={y(p.y)}
+                r={selected ? 6 : 3.5}
+                fill={selected ? (dark ? "#fff" : "#111") : dark ? "#5ba3d0" : "#378add"}
+                fillOpacity={0.75}
+                stroke={selected ? (dark ? "#fff" : "#111") : "none"}
+                strokeWidth={selected ? 2 : 0}
+                style={{ cursor: "pointer" }}
+                onClick={() => onSelect(p.iso3)}
+              >
+                <title>{p.name}</title>
+              </circle>
+            );
+          })}
+          <text x={(M.left + W - M.right) / 2} y={H - 6} textAnchor="middle" fontSize={12} fill={axis}>{xLabel}</text>
+          <text x={-(H / 2)} y={14} transform="rotate(-90)" textAnchor="middle" fontSize={12} fill={axis}>{yLabel}</text>
+        </svg>
+      )}
     </div>
   );
 }
