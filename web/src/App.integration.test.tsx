@@ -39,3 +39,15 @@ test("toggling the only factor off drops the model to insufficient", async () =>
   fireEvent.click(screen.getByLabelText("GDP per capita")); // deselect
   await waitFor(() => expect(screen.getByTestId("r2-readout")).toHaveTextContent("—"));
 });
+
+test("tab bar switches to the table and about views", async () => {
+  vi.stubGlobal("fetch", mockFetch({
+    "factors.json": FACTORS, "countries.json": COUNTRIES, "meta.json": META, "countries-110m.json": TOPO,
+  }));
+  render(<App />);
+  await waitFor(() => expect(screen.getByTestId("r2-readout")).toBeInTheDocument());
+  fireEvent.click(screen.getByRole("button", { name: /^table$/i }));
+  expect(screen.getByRole("table")).toBeInTheDocument();
+  fireEvent.click(screen.getByRole("button", { name: /^about$/i }));
+  expect(screen.getByRole("heading", { name: /methodology/i })).toBeInTheDocument();
+});

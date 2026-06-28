@@ -37,3 +37,15 @@ test("clicking a mode button reports the new mode", () => {
   fireEvent.click(screen.getByText("Raw fertility"));
   expect(onSetMode).toHaveBeenCalledWith("raw");
 });
+
+test("shows an experimental badge for Possibility-group factors", () => {
+  const withPoss: FactorMeta[] = [
+    ...factors,
+    { id: "possibility", label: "Possibility index", group: "Possibility", unit: "z", direction: "negative", source: "computed" },
+  ];
+  render(
+    <ControlPanel factors={withPoss} selected={new Set()} onToggleFactor={() => {}}
+      mode="residual" onSetMode={() => {}} r2={null} n={0} />,
+  );
+  expect(screen.getByText(/^exp$/i)).toBeInTheDocument(); // anchored: avoid matching "Unexplained"
+});

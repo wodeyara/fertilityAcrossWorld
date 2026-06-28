@@ -38,6 +38,9 @@ export function ControlPanel(props: ControlPanelProps) {
                 onChange={() => onToggleFactor(f.id)}
               />{" "}
               {f.label}
+              {f.group === "Possibility" && (
+                <span style={{ marginLeft: 4, fontSize: 10, padding: "0 4px", borderRadius: 4, background: "#f0c98044", color: "inherit" }}>exp</span>
+              )}
             </label>
           ))}
         </fieldset>

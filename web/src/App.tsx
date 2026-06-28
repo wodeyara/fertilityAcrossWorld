@@ -6,6 +6,9 @@ import { ControlPanel } from "./components/ControlPanel";
 import { MapView } from "./components/MapView";
 import { Legend } from "./components/Legend";
 import { DetailPanel } from "./components/DetailPanel";
+import { ScatterView } from "./views/ScatterView";
+import { TableView } from "./views/TableView";
+import { AboutView } from "./views/AboutView";
 import type { Bundle, Country } from "./types";
 
 const DEFAULT_FACTORS = ["gdp_pc", "fem_sec_enroll", "flfp", "child_mortality", "urbanisation"];
@@ -16,6 +19,8 @@ export default function App() {
   const [selected, setSelected] = useState<Set<string>>(new Set(DEFAULT_FACTORS));
   const [mode, setMode] = useState<"raw" | "residual">("residual");
   const [selectedIso3, setSelectedIso3] = useState<string | null>(null);
+  const [view, setView] = useState<"map" | "scatter" | "table" | "about">("map");
+  const [xFactorId, setXFactorId] = useState("possibility");
 
   useEffect(() => {
     loadBundle("/data").then(setBundle);
@@ -51,34 +56,53 @@ export default function App() {
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 16, fontFamily: "system-ui, sans-serif" }}>
       <h1 style={{ fontSize: 22 }}>Where fertility defies the numbers</h1>
-      <div style={{ display: "flex", gap: 16 }}>
-        <ControlPanel
-          factors={bundle.factors}
-          selected={selected}
-          onToggleFactor={toggle}
-          mode={mode}
-          onSetMode={setMode}
-          r2={fit.r2}
-          n={fit.n}
-        />
-        <div style={{ flex: 1 }}>
-          {topo && (
-            <MapView
-              topo={topo}
-              byIsoNum={byIsoNum}
-              fit={fit}
-              mode={mode}
-              selectedIso3={selectedIso3}
-              onSelect={setSelectedIso3}
-              dark={!!dark}
-            />
-          )}
-          <Legend mode={mode} />
-          <div style={{ marginTop: 12 }}>
-            <DetailPanel country={selectedCountry} fit={fit} factors={bundle.factors} />
+      <nav style={{ display: "flex", gap: 4, margin: "8px 0 16px" }}>
+        {(["map", "scatter", "table", "about"] as const).map((v) => (
+          <button key={v} aria-pressed={view === v} onClick={() => setView(v)}
+            style={{ textTransform: "capitalize", fontWeight: view === v ? 500 : 400 }}>
+            {v}
+          </button>
+        ))}
+      </nav>
+      {(view === "map" || view === "scatter") && (
+        <div style={{ display: "flex", gap: 16 }}>
+          <ControlPanel
+            factors={bundle.factors}
+            selected={selected}
+            onToggleFactor={toggle}
+            mode={mode}
+            onSetMode={setMode}
+            r2={fit.r2}
+            n={fit.n}
+          />
+          <div style={{ flex: 1 }}>
+            {view === "map" ? (
+              <>
+                {topo && (
+                  <MapView
+                    topo={topo}
+                    byIsoNum={byIsoNum}
+                    fit={fit}
+                    mode={mode}
+                    selectedIso3={selectedIso3}
+                    onSelect={setSelectedIso3}
+                    dark={!!dark}
+                  />
+                )}
+                <Legend mode={mode} />
+              </>
+            ) : (
+              <ScatterView bundle={bundle} fit={fit} mode={mode} xFactorId={xFactorId}
+                onSetXFactor={setXFactorId} selectedIso3={selectedIso3} onSelect={setSelectedIso3} dark={!!dark} />
+            )}
+            <div style={{ marginTop: 12 }}>
+              <DetailPanel country={selectedCountry} fit={fit} factors={bundle.factors} />
+            </div>
           </div>
         </div>
-      </div>
+      )}
+      {view === "table" && <TableView bundle={bundle} fit={fit} selectedIso3={selectedIso3} onSelect={setSelectedIso3} />}
+      {view === "about" && <AboutView bundle={bundle} />}
     </div>
   );
 }
