@@ -32,6 +32,7 @@ export function sortRows(rows: TableRow[], key: keyof TableRow, dir: "asc" | "de
     if (av == null && bv == null) return 0;
     if (av == null) return 1; // nulls last regardless of dir
     if (bv == null) return -1;
+    if (typeof av === "string" && typeof bv === "string") return av.localeCompare(bv) * sign;
     if (av < bv) return -1 * sign;
     if (av > bv) return 1 * sign;
     return 0;

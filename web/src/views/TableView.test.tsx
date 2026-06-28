@@ -32,11 +32,15 @@ test("renders a row per country and reports row clicks", () => {
 
 test("clicking the residual header sorts the rows", () => {
   render(<TableView bundle={bundle} fit={fit} selectedIso3={null} onSelect={() => {}} />);
+  let rows = screen.getAllByRole("row").slice(1); // skip header
+  expect(within(rows[0]).getByText("Niger")).toBeInTheDocument(); // default: residual desc
+
   const header = screen.getByRole("button", { name: /residual/i });
-  fireEvent.click(header); // asc -> USA (0.2) before NER (0.3)
-  let rows = screen.getAllByRole("row").slice(1); // skip header row
+  fireEvent.click(header); // -> asc: USA (0.2) first
+  rows = screen.getAllByRole("row").slice(1);
   expect(within(rows[0]).getByText("United States")).toBeInTheDocument();
-  fireEvent.click(header); // desc -> NER first
+
+  fireEvent.click(header); // -> desc: Niger first
   rows = screen.getAllByRole("row").slice(1);
   expect(within(rows[0]).getByText("Niger")).toBeInTheDocument();
 });

@@ -40,9 +40,9 @@ export function TableView({ bundle, fit, selectedIso3, onSelect }: TableViewProp
       <thead>
         <tr>
           {COLUMNS.map((c) => (
-            <th key={c.key} style={{ textAlign: c.numeric ? "right" : "left", borderBottom: "1px solid #8884", padding: "4px 8px" }}>
+            <th key={c.key} style={{ textAlign: c.numeric ? "right" : "left", borderBottom: "1px solid #8884", padding: "4px 8px" }} aria-sort={sortKey === c.key ? (dir === "asc" ? "ascending" : "descending") : "none"}>
               <button onClick={() => toggle(c.key)} style={{ background: "none", border: 0, cursor: "pointer", font: "inherit" }}>
-                {c.label}{sortKey === c.key ? (dir === "asc" ? " ▲" : " ▼") : ""}
+                {c.label}{sortKey === c.key ? <span aria-hidden="true">{dir === "asc" ? " ▲" : " ▼"}</span> : ""}
               </button>
             </th>
           ))}
@@ -53,6 +53,8 @@ export function TableView({ bundle, fit, selectedIso3, onSelect }: TableViewProp
           <tr
             key={r.iso3}
             onClick={() => onSelect(r.iso3)}
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === "Enter") onSelect(r.iso3); }}
             style={{ cursor: "pointer", background: r.iso3 === selectedIso3 ? "#8882" : undefined }}
           >
             <td style={{ padding: "4px 8px" }}>{r.name}</td>
