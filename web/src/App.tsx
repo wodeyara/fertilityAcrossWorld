@@ -56,7 +56,7 @@ export default function App() {
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 16, fontFamily: "system-ui, sans-serif" }}>
       <h1 style={{ fontSize: 22 }}>Where fertility defies the numbers</h1>
-      <nav style={{ display: "flex", gap: 4, margin: "8px 0 16px" }}>
+      <nav aria-label="Views" style={{ display: "flex", gap: 4, margin: "8px 0 16px" }}>
         {(["map", "scatter", "table", "about"] as const).map((v) => (
           <button key={v} aria-pressed={view === v} onClick={() => setView(v)}
             style={{ textTransform: "capitalize", fontWeight: view === v ? 500 : 400 }}>
