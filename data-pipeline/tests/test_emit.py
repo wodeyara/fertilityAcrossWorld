@@ -43,3 +43,21 @@ def test_invalid_record_fails_schema_validation(tmp_path):
             "tfr": 1.0, "tfr_year": 2022, "factors": {}}]  # iso3 too long
     with pytest.raises(jsonschema.ValidationError):
         emit.write_bundle(bad, "raw", 2023, tmp_path)
+
+
+def test_write_bundle_accepts_us_registry(tmp_path):
+    from fertility_pipeline import factors_us, emit
+    records = [{
+        "iso3": "CA", "iso_num": 6, "name": "California", "region": "West",
+        "tfr": 1.52, "tfr_year": 2022,
+        "factors": {fid: None for fid in factors_us.factor_ids()},
+    }]
+    records[0]["factors"]["income_pc"] = 41000.0
+    records[0]["factors"]["possibility"] = 0.8
+    meta = emit.write_bundle(records, "raw", 2022, tmp_path, registry=factors_us)
+    import json
+    factors_doc = json.loads((tmp_path / "factors.json").read_text())
+    assert factors_doc["target"]["id"] == "tfr"
+    assert {f["id"] for f in factors_doc["factors"]} == set(factors_us.factor_ids())
+    assert meta["coverage"]["income_pc"] == 1
+    assert meta["coverage"]["home_value"] == 0

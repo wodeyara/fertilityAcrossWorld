@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from . import factors as registry
+from . import factors as _default_registry
 from .countries_ref import CountryRef
 
 
@@ -10,6 +10,7 @@ def build_records(
     wb_results: dict[str, dict[str, tuple[float, int]]],
     static_data: dict[str, dict[str, float | None]],
     computed_data: dict[str, dict[str, float | None]] | None = None,
+    registry=_default_registry,
 ) -> list[dict]:
     computed_data = computed_data or {}
     all_ids = registry.factor_ids()
