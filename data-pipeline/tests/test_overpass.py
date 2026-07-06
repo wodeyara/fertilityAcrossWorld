@@ -98,3 +98,20 @@ def test_fetch_all_skips_failures(tmp_path):
     out2 = overpass.fetch_all_amenity_counts(refs, tmp_path, session=session, sleep=lambda s: None)
     assert out2 == {"LUX": 1350}
     assert session.calls == []  # LU count cached, FR negative-cached -> no API calls
+
+
+def test_query_supports_iso3166_2_tag():
+    q = overpass.build_query("US-CA", tag="ISO3166-2")
+    assert '["ISO3166-2"="US-CA"]' in q
+    assert "out count;" in q
+
+
+def test_fetch_all_threads_tag_and_keys_by_mapping_key(tmp_path):
+    session = FakeSession(FIXTURE)
+    out = overpass.fetch_all_amenity_counts(
+        {"CA": "US-CA"}, tmp_path, session=session, sleep=lambda s: None, tag="ISO3166-2",
+    )
+    assert out == {"CA": 1350}
+    # query used the state tag; cache file named by the area value
+    assert '["ISO3166-2"="US-CA"]' in session.calls[0][1]["data"]
+    assert (tmp_path / "US-CA.json").exists()

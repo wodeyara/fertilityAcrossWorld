@@ -19,11 +19,11 @@ class OverpassError(Exception):
     pass
 
 
-def build_query(iso2: str) -> str:
+def build_query(value: str, tag: str = "ISO3166-1:alpha2") -> str:
     regex = "^(" + "|".join(AMENITY_TAGS) + ")$"
     return (
         f"[out:json][timeout:{QUERY_TIMEOUT}];"
-        f'area["ISO3166-1:alpha2"="{iso2}"]->.a;'
+        f'area["{tag}"="{value}"]->.a;'
         f'nwr["amenity"~"{regex}"](area.a);'
         "out count;"
     )
@@ -38,33 +38,33 @@ def parse_count(payload: dict) -> int:
     return 0
 
 
-def fetch_amenity_count(iso2: str, session=None, url: str = OVERPASS_URL) -> int:
+def fetch_amenity_count(value: str, session=None, url: str = OVERPASS_URL, tag: str = "ISO3166-1:alpha2") -> int:
     if session is None:
         session = requests
-    resp = session.post(url, data={"data": build_query(iso2)}, headers=HEADERS, timeout=QUERY_TIMEOUT + 30)
+    resp = session.post(url, data={"data": build_query(value, tag=tag)}, headers=HEADERS, timeout=QUERY_TIMEOUT + 30)
     resp.raise_for_status()
     return parse_count(resp.json())
 
 
-def fetch_all_amenity_counts(iso2_by_iso3, cache_dir, session=None, sleep=None) -> dict[str, int]:
+def fetch_all_amenity_counts(mapping, cache_dir, session=None, sleep=None, tag: str = "ISO3166-1:alpha2") -> dict[str, int]:
     cache = Path(cache_dir)
     cache.mkdir(parents=True, exist_ok=True)
     if sleep is None:
         sleep = lambda s: time.sleep(s)
     out: dict[str, int] = {}
-    for iso3, iso2 in sorted(iso2_by_iso3.items()):
-        cache_file = cache / f"{iso2}.json"
+    for key, value in sorted(mapping.items()):
+        cache_file = cache / f"{value}.json"
         if cache_file.exists():
             total = json.loads(cache_file.read_text()).get("total")
             if total is not None:  # null total = known-missing (timed out before); skip
-                out[iso3] = int(total)
+                out[key] = int(total)
             continue
         try:
-            count = fetch_amenity_count(iso2, session=session)
-            cache_file.write_text(json.dumps({"iso2": iso2, "total": count}))
-            out[iso3] = count
+            count = fetch_amenity_count(value, session=session, tag=tag)
+            cache_file.write_text(json.dumps({"value": value, "total": count}))
+            out[key] = count
         except (OverpassError, requests.RequestException):
             # negative cache: record the miss so future runs don't re-attempt a slow timeout
-            cache_file.write_text(json.dumps({"iso2": iso2, "total": None}))
+            cache_file.write_text(json.dumps({"value": value, "total": None}))
         sleep(1.0)
     return out
