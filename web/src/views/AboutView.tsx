@@ -30,6 +30,28 @@ export function AboutView({ bundle }: { bundle: Bundle }) {
         other components.
       </p>
 
+      <section>
+        <h3>Sub-national: United States</h3>
+        <p>
+          Use the <strong>Scale</strong> selector to drill from the world into US states
+          (50 states + DC). This is a <strong>present-day</strong> snapshot only; there is
+          no historical view yet.
+        </p>
+        <p>
+          Each scale is a <strong>separate model</strong>: the US map is fit only on US
+          states with a state-specific factor set — per-capita income, median home value,
+          women's bachelor's attainment, female labour-force participation, urbanisation,
+          the Social Capital Project index, and a state Possibility index (per-capita
+          cultural/social amenities from OpenStreetMap plus broadband access). Covariates
+          are not comparable across scales, so the country and state models are never mixed.
+        </p>
+        <p>
+          Sources: Census ACS (2022), CDC NCHS natality, the JEC Social Capital Project,
+          OpenStreetMap, and (where available) the Pew Religious Landscape Study. Missing
+          values are shown as "insufficient data," never imputed.
+        </p>
+      </section>
+
       <h3>Limitations</h3>
       <ul>
         <li>Coverage is uneven — countries missing a selected factor are shown as "insufficient data," never imputed.</li>

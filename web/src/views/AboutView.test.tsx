@@ -20,3 +20,10 @@ test("renders methodology sections and the transform", () => {
   expect(screen.getByRole("heading", { name: /limitations/i })).toBeInTheDocument();
   expect(screen.getByText("Possibility index")).toBeInTheDocument(); // factor listed
 });
+
+it("documents the US-states sub-national layer", () => {
+  render(<AboutView bundle={bundle as any} />);
+  expect(screen.getByText(/sub-national/i)).toBeInTheDocument();
+  expect(screen.getByText(/present-day/i)).toBeInTheDocument();
+  expect(screen.getByText(/separate model/i)).toBeInTheDocument();
+});
