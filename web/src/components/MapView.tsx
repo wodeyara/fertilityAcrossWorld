@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { geoNaturalEarth1, geoPath } from "d3-geo";
+import { geoNaturalEarth1, geoAlbersUsa, geoPath } from "d3-geo";
 import { featuresFromTopo } from "../lib/geo";
 import { rawColor, residualColor, INSUFFICIENT_COLOR } from "../lib/scales";
 import type { Country } from "../types";
@@ -13,6 +13,8 @@ export interface MapViewProps {
   selectedIso3: string | null;
   onSelect: (iso3: string) => void;
   dark: boolean;
+  projectionKind?: "world" | "albersUsa";
+  objectName?: string;
 }
 
 const W = 880;
@@ -26,12 +28,17 @@ function maxAbsResidual(fit: FitResult): number {
 }
 
 export function MapView(props: MapViewProps) {
-  const { topo, byIsoNum, fit, mode, selectedIso3, onSelect, dark } = props;
-  const features = useMemo(() => featuresFromTopo(topo), [topo]);
+  const { topo, byIsoNum, fit, mode, selectedIso3, onSelect, dark,
+          projectionKind = "world", objectName = "countries" } = props;
+  const features = useMemo(
+    () => featuresFromTopo(topo, objectName, projectionKind === "world" ? "Antarctica" : undefined),
+    [topo, objectName, projectionKind],
+  );
   const path = useMemo(() => {
-    const projection = geoNaturalEarth1().fitSize([W, H], { type: "FeatureCollection", features } as any);
+    const base = projectionKind === "albersUsa" ? geoAlbersUsa() : geoNaturalEarth1();
+    const projection = base.fitSize([W, H], { type: "FeatureCollection", features } as any);
     return geoPath(projection);
-  }, [features]);
+  }, [features, projectionKind]);
   const maxAbs = maxAbsResidual(fit);
 
   const fillFor = (isoNum: number): string => {

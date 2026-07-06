@@ -76,3 +76,23 @@ test("renders a feature with an undefined id without key collision (insufficient
   const fills = [...paths].map((p) => p.getAttribute("fill"));
   expect(fills).toContain(INSUFFICIENT_COLOR(false));
 });
+
+it("renders US states with the albersUsa projection", () => {
+  // minimal 1-feature states topojson (object key "states", id = FIPS string)
+  const statesTopo = {
+    type: "Topology",
+    arcs: [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]],
+    objects: { states: { type: "GeometryCollection", geometries: [
+      { type: "Polygon", id: "06", arcs: [[0]], properties: { name: "California" } },
+    ] } },
+    transform: { scale: [1, 1], translate: [0, 0] },
+  };
+  const unit = { iso3: "CA", iso_num: 6, name: "California", region: "West", tfr: 1.5, tfr_year: 2022, factors: {} };
+  const byIsoNum = new Map([[6, unit]]);
+  const fit = { factorIds: [], transform: "raw", n: 0, r2: null, intercept: NaN, coefficients: {}, fits: new Map() };
+  const { container } = render(
+    <MapView topo={statesTopo} byIsoNum={byIsoNum as any} fit={fit as any} mode="raw"
+      selectedIso3={null} onSelect={() => {}} dark={false} projectionKind="albersUsa" objectName="states" />,
+  );
+  expect(container.querySelectorAll("path").length).toBe(1);
+});

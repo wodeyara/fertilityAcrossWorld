@@ -8,9 +8,9 @@ export interface GeoFeature {
   [k: string]: unknown;
 }
 
-export function featuresFromTopo(topo: any): GeoFeature[] {
-  const fc = feature(topo, topo.objects.countries) as unknown as { features: GeoFeature[] };
-  return fc.features.filter((f) => f.properties?.name !== "Antarctica");
+export function featuresFromTopo(topo: any, objectName = "countries", excludeName?: string): GeoFeature[] {
+  const fc = feature(topo, topo.objects[objectName]) as unknown as { features: GeoFeature[] };
+  return excludeName ? fc.features.filter((f) => f.properties?.name !== excludeName) : fc.features;
 }
 
 export function indexByIsoNum(countries: Country[]): Map<number, Country> {

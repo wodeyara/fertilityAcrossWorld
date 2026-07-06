@@ -25,7 +25,7 @@ test("featuresFromTopo returns features and drops Antarctica", () => {
       },
     },
   };
-  const feats = featuresFromTopo(topo);
+  const feats = featuresFromTopo(topo, "countries", "Antarctica");
   expect(feats.length).toBe(1);
   expect(feats[0].properties.name).toBe("United States of America");
 });
