@@ -1,0 +1,5 @@
+iso3,iso_num,name,region,tfr,tfr_year,population,broadband,income_pc,home_value,fem_bachelors,flfp,urbanisation,social_capital,religiosity
+CA,6,California,West,1.52,2022,39000000,89.0,41000,700000,36.0,58.0,95.0,-0.2,0.28
+UT,49,Utah,West,1.92,2022,3300000,91.0,32000,420000,34.0,61.0,90.0,1.1,0.66
+VT,50,Vermont,Northeast,1.48,2022,647000,85.0,38000,270000,42.0,60.0,35.0,1.4,0.34
+TX,48,Texas,South,1.86,2022,30000000,86.0,34000,300000,32.0,59.0,84.0,-0.1,0.47
