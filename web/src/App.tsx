@@ -12,6 +12,7 @@ import { AboutView } from "./views/AboutView";
 import type { Bundle, Country } from "./types";
 
 const DEFAULT_FACTORS = ["gdp_pc", "fem_sec_enroll", "flfp", "child_mortality", "urbanisation"];
+const DEFAULT_FACTORS_US = ["income_pc", "fem_bachelors", "flfp", "urbanisation", "social_capital"];
 
 export default function App() {
   const [bundle, setBundle] = useState<Bundle | null>(null);
@@ -22,27 +23,44 @@ export default function App() {
   const [view, setView] = useState<"map" | "scatter" | "table" | "about">("map");
   const [xFactorId, setXFactorId] = useState("possibility");
 
+  // Scale selector state
+  const [scale, setScale] = useState<"world" | "us">("world");
+  const [usBundle, setUsBundle] = useState<Bundle | null>(null);
+  const [usTopo, setUsTopo] = useState<object | null>(null);
+
   useEffect(() => {
     loadBundle("/data").then(setBundle);
     fetch("/data/countries-110m.json").then((r) => r.json()).then(setTopo);
   }, []);
 
+  // Lazy-load US assets on first switch
+  useEffect(() => {
+    if (scale === "us" && !usBundle) loadBundle("/data/us").then(setUsBundle);
+    if (scale === "us" && !usTopo) fetch("/data/us-states-10m.json").then((r) => r.json()).then(setUsTopo);
+  }, [scale, usBundle, usTopo]);
+
   const dark = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches;
 
+  // Active bundle/topo/projection derived from scale
+  const activeBundle = scale === "us" ? usBundle : bundle;
+  const activeTopo = scale === "us" ? usTopo : topo;
+  const projectionKind = scale === "us" ? "albersUsa" : "world";
+  const objectName = scale === "us" ? "states" : "countries";
+
   const factorIds = useMemo(
-    () => (bundle ? bundle.factors.filter((f) => selected.has(f.id)).map((f) => f.id) : []),
-    [bundle, selected],
+    () => (activeBundle ? activeBundle.factors.filter((f) => selected.has(f.id)).map((f) => f.id) : []),
+    [activeBundle, selected],
   );
   const fit = useMemo(
-    () => (bundle ? fitModel(bundle.countries, factorIds, bundle.target.transform) : null),
-    [bundle, factorIds],
+    () => (activeBundle ? fitModel(activeBundle.countries, factorIds, activeBundle.target.transform) : null),
+    [activeBundle, factorIds],
   );
   const byIsoNum = useMemo(
-    () => (bundle ? indexByIsoNum(bundle.countries) : new Map<number, Country>()),
-    [bundle],
+    () => (activeBundle ? indexByIsoNum(activeBundle.countries) : new Map<number, Country>()),
+    [activeBundle],
   );
 
-  if (!bundle || !fit) return <div>Loading…</div>;
+  if (!activeBundle || !fit) return <div>Loading…</div>;
 
   const toggle = (id: string) =>
     setSelected((prev) => {
@@ -51,11 +69,24 @@ export default function App() {
       return next;
     });
 
-  const selectedCountry = selectedIso3 ? bundle.countries.find((c) => c.iso3 === selectedIso3) ?? null : null;
+  const switchScale = (s: "world" | "us") => {
+    setScale(s);
+    setSelected(new Set(s === "us" ? DEFAULT_FACTORS_US : DEFAULT_FACTORS));
+    setSelectedIso3(null);
+  };
+
+  const selectedCountry = selectedIso3 ? activeBundle.countries.find((c) => c.iso3 === selectedIso3) ?? null : null;
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 16, fontFamily: "system-ui, sans-serif" }}>
       <h1 style={{ fontSize: 22 }}>Where fertility defies the numbers</h1>
+      <nav aria-label="Scale" style={{ display: "flex", gap: 4, marginBottom: 8 }}>
+        {(["world", "us"] as const).map((s) => (
+          <button key={s} aria-pressed={scale === s} onClick={() => switchScale(s)}>
+            {s === "world" ? "World" : "United States"}
+          </button>
+        ))}
+      </nav>
       <nav aria-label="Views" style={{ display: "flex", gap: 4, margin: "8px 0 16px" }}>
         {(["map", "scatter", "table", "about"] as const).map((v) => (
           <button key={v} aria-pressed={view === v} onClick={() => setView(v)}
@@ -67,7 +98,7 @@ export default function App() {
       {(view === "map" || view === "scatter") && (
         <div style={{ display: "flex", gap: 16 }}>
           <ControlPanel
-            factors={bundle.factors}
+            factors={activeBundle.factors}
             selected={selected}
             onToggleFactor={toggle}
             mode={mode}
@@ -78,31 +109,33 @@ export default function App() {
           <div style={{ flex: 1 }}>
             {view === "map" ? (
               <>
-                {topo && (
+                {activeTopo && (
                   <MapView
-                    topo={topo}
+                    topo={activeTopo}
                     byIsoNum={byIsoNum}
                     fit={fit}
                     mode={mode}
                     selectedIso3={selectedIso3}
                     onSelect={setSelectedIso3}
                     dark={!!dark}
+                    projectionKind={projectionKind}
+                    objectName={objectName}
                   />
                 )}
                 <Legend mode={mode} />
               </>
             ) : (
-              <ScatterView bundle={bundle} fit={fit} mode={mode} xFactorId={xFactorId}
+              <ScatterView bundle={activeBundle} fit={fit} mode={mode} xFactorId={xFactorId}
                 onSetXFactor={setXFactorId} selectedIso3={selectedIso3} onSelect={setSelectedIso3} dark={!!dark} />
             )}
             <div style={{ marginTop: 12 }}>
-              <DetailPanel country={selectedCountry} fit={fit} factors={bundle.factors} />
+              <DetailPanel country={selectedCountry} fit={fit} factors={activeBundle.factors} />
             </div>
           </div>
         </div>
       )}
-      {view === "table" && <TableView bundle={bundle} fit={fit} selectedIso3={selectedIso3} onSelect={setSelectedIso3} />}
-      {view === "about" && <AboutView bundle={bundle} />}
+      {view === "table" && <TableView bundle={activeBundle} fit={fit} selectedIso3={selectedIso3} onSelect={setSelectedIso3} />}
+      {view === "about" && <AboutView bundle={activeBundle} />}
     </div>
   );
 }

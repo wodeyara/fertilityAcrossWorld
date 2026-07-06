@@ -51,3 +51,53 @@ test("tab bar switches to the table and about views", async () => {
   fireEvent.click(screen.getByRole("button", { name: /^about$/i }));
   expect(screen.getByRole("heading", { name: /methodology/i })).toBeInTheDocument();
 });
+
+const US_FACTORS = {
+  snapshotYear: 2023,
+  target: { id: "tfr", label: "Total fertility rate", transform: "log", unit: "births", source: "CDC" },
+  factors: [{ id: "social_capital", label: "Social Capital", group: "Social", unit: "index", direction: "positive", source: "OECD" }],
+};
+const US_COUNTRIES = [
+  { iso3: "CA", iso_num: 6, name: "California", region: "West", tfr: 1.5, tfr_year: 2022, factors: { social_capital: 40 } },
+  { iso3: "UT", iso_num: 49, name: "Utah", region: "West", tfr: 2.0, tfr_year: 2022, factors: { social_capital: 72 } },
+];
+const US_META = { snapshotYear: 2023, countryCount: 2, withTfr: 2, coverage: { social_capital: 2 } };
+const US_TOPO = {
+  type: "Topology",
+  arcs: [],
+  objects: { states: { type: "GeometryCollection", geometries: [] } },
+};
+
+it("switches to the US scale and renders state units", async () => {
+  vi.stubGlobal("fetch", (url: string) => {
+    let data: unknown;
+    if (url.includes("/us/")) {
+      const filename = url.split("/").pop()!;
+      if (filename === "factors.json") data = US_FACTORS;
+      else if (filename === "countries.json") data = US_COUNTRIES;
+      else if (filename === "meta.json") data = US_META;
+    } else if (url.includes("us-states-10m.json")) {
+      data = US_TOPO;
+    } else {
+      const filename = url.split("/").pop()!;
+      const worldMap: Record<string, unknown> = {
+        "factors.json": FACTORS,
+        "countries.json": COUNTRIES,
+        "meta.json": META,
+        "countries-110m.json": TOPO,
+      };
+      data = worldMap[filename];
+    }
+    return Promise.resolve({ ok: true, json: () => Promise.resolve(data) } as Response);
+  });
+
+  render(<App />);
+  await screen.findByText(/where fertility defies/i);
+  // switch scale
+  fireEvent.click(screen.getByRole("button", { name: /united states/i }));
+  // a US-only factor label appears in the control panel
+  expect(await screen.findByText(/social capital/i)).toBeInTheDocument();
+  // a state name appears (table view or detail); use the table tab
+  fireEvent.click(screen.getByRole("button", { name: /^table$/i }));
+  expect(await screen.findByText(/california/i)).toBeInTheDocument();
+});
