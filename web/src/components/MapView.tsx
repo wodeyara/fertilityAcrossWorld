@@ -4,6 +4,7 @@ import { featuresFromTopo } from "../lib/geo";
 import { rawColor, residualColor, INSUFFICIENT_COLOR } from "../lib/scales";
 import type { Country } from "../types";
 import type { FitResult } from "../lib/regression";
+import type { Policy } from "../lib/policy";
 
 export interface MapViewProps {
   topo: unknown;
@@ -15,6 +16,8 @@ export interface MapViewProps {
   dark: boolean;
   projectionKind?: "world" | "albersUsa";
   objectName?: string;
+  policyByIsoNum?: Map<number, Policy>;
+  policyOn?: boolean;
 }
 
 const W = 880;
@@ -29,7 +32,7 @@ function maxAbsResidual(fit: FitResult): number {
 
 export function MapView(props: MapViewProps) {
   const { topo, byIsoNum, fit, mode, selectedIso3, onSelect, dark,
-          projectionKind = "world", objectName = "countries" } = props;
+          projectionKind = "world", objectName = "countries", policyByIsoNum, policyOn } = props;
   const features = useMemo(
     () => featuresFromTopo(topo, objectName, projectionKind === "world" ? "Antarctica" : undefined),
     [topo, objectName, projectionKind],
@@ -51,6 +54,11 @@ export function MapView(props: MapViewProps) {
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="World choropleth of fertility">
+      <defs>
+        <pattern id="policy-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="6" stroke={dark ? "#fff" : "#111"} strokeWidth="1.3" strokeOpacity="0.55" />
+        </pattern>
+      </defs>
       {features.map((feat, i) => {
         const isoNum = Number(feat.id);
         const c = byIsoNum.get(isoNum);
@@ -64,6 +72,19 @@ export function MapView(props: MapViewProps) {
             strokeWidth={selected ? 1.4 : 0.4}
             style={{ cursor: c ? "pointer" : "default" }}
             onClick={() => c && onSelect(c.iso3)}
+          />
+        );
+      })}
+      {policyOn && policyByIsoNum && features.map((feat, i) => {
+        const p = policyByIsoNum.get(Number(feat.id));
+        if (!p || p.stance !== "raise") return null;
+        return (
+          <path
+            key={`pol-${feat.id != null ? String(feat.id) : i}`}
+            d={path(feat as any) ?? undefined}
+            fill="url(#policy-hatch)"
+            stroke="none"
+            pointerEvents="none"
           />
         );
       })}

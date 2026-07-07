@@ -1,7 +1,7 @@
 import { afterEach, test, expect, vi } from "vitest";
 import { loadPolicies, indexPoliciesByIsoNum, type Policy } from "./policy";
 
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => { vi.unstubAllGlobals(); });
 
 const SAMPLE: Policy[] = [
   { iso_num: 250, iso3: "FRA", stance: "raise",

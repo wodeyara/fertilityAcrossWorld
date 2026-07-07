@@ -96,3 +96,51 @@ it("renders US states with the albersUsa projection", () => {
   );
   expect(container.querySelectorAll("path").length).toBe(1);
 });
+
+test("renders a policy hatch overlay only for raise countries when policyOn", () => {
+  const topo = {
+    type: "Topology",
+    arcs: [[[0, 0], [10, 0], [10, 10], [0, 10], [0, 0]]],
+    objects: { countries: { type: "GeometryCollection", geometries: [
+      { type: "Polygon", id: "250", arcs: [[0]], properties: { name: "France" } },
+      { type: "Polygon", id: "840", arcs: [[0]], properties: { name: "United States" } },
+    ] } },
+  };
+  const byIsoNum = new Map<number, any>([
+    [250, { iso3: "FRA", iso_num: 250, name: "France", region: "R", tfr: 1.8, tfr_year: 2022, factors: {} }],
+    [840, { iso3: "USA", iso_num: 840, name: "USA", region: "R", tfr: 1.6, tfr_year: 2022, factors: {} }],
+  ]);
+  const policyByIsoNum = new Map<number, any>([
+    [250, { iso_num: 250, iso3: "FRA", stance: "raise", measures: {}, notes: null }],
+    [840, { iso_num: 840, iso3: "USA", stance: "none", measures: {}, notes: null }],
+  ]);
+  const fit = { factorIds: [], transform: "raw" as const, n: 0, r2: null, intercept: NaN, coefficients: {}, fits: new Map() };
+  const { container } = render(
+    <MapView topo={topo} byIsoNum={byIsoNum} fit={fit} mode="raw" selectedIso3={null}
+      onSelect={() => {}} dark={false} policyByIsoNum={policyByIsoNum} policyOn />
+  );
+  const hatch = container.querySelectorAll('path[fill="url(#policy-hatch)"]');
+  expect(hatch.length).toBe(1); // only FRA (raise); USA (none) gets none
+});
+
+test("no policy hatch overlay when policyOn is false", () => {
+  const topo = {
+    type: "Topology",
+    arcs: [[[0, 0], [10, 0], [10, 10], [0, 10], [0, 0]]],
+    objects: { countries: { type: "GeometryCollection", geometries: [
+      { type: "Polygon", id: "250", arcs: [[0]], properties: { name: "France" } },
+    ] } },
+  };
+  const byIsoNum = new Map<number, any>([
+    [250, { iso3: "FRA", iso_num: 250, name: "France", region: "R", tfr: 1.8, tfr_year: 2022, factors: {} }],
+  ]);
+  const policyByIsoNum = new Map<number, any>([
+    [250, { iso_num: 250, iso3: "FRA", stance: "raise", measures: {}, notes: null }],
+  ]);
+  const fit = { factorIds: [], transform: "raw" as const, n: 0, r2: null, intercept: NaN, coefficients: {}, fits: new Map() };
+  const { container } = render(
+    <MapView topo={topo} byIsoNum={byIsoNum} fit={fit} mode="raw" selectedIso3={null}
+      onSelect={() => {}} dark={false} policyByIsoNum={policyByIsoNum} policyOn={false} />
+  );
+  expect(container.querySelectorAll('path[fill="url(#policy-hatch)"]').length).toBe(0);
+});
