@@ -1,0 +1,2582 @@
+[
+  {
+    "iso_num": 533,
+    "iso3": "ABW",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 4,
+    "iso3": "AFG",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 24,
+    "iso3": "AGO",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 8,
+    "iso3": "ALB",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 20,
+    "iso3": "AND",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 784,
+    "iso3": "ARE",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 32,
+    "iso3": "ARG",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 51,
+    "iso3": "ARM",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 16,
+    "iso3": "ASM",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 28,
+    "iso3": "ATG",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 36,
+    "iso3": "AUS",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 40,
+    "iso3": "AUT",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 31,
+    "iso3": "AZE",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 108,
+    "iso3": "BDI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 56,
+    "iso3": "BEL",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 204,
+    "iso3": "BEN",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 854,
+    "iso3": "BFA",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 50,
+    "iso3": "BGD",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 100,
+    "iso3": "BGR",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 48,
+    "iso3": "BHR",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 44,
+    "iso3": "BHS",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 70,
+    "iso3": "BIH",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 112,
+    "iso3": "BLR",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 84,
+    "iso3": "BLZ",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 60,
+    "iso3": "BMU",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 68,
+    "iso3": "BOL",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 76,
+    "iso3": "BRA",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 52,
+    "iso3": "BRB",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 96,
+    "iso3": "BRN",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 64,
+    "iso3": "BTN",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 72,
+    "iso3": "BWA",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 140,
+    "iso3": "CAF",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 124,
+    "iso3": "CAN",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 756,
+    "iso3": "CHE",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 152,
+    "iso3": "CHL",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 156,
+    "iso3": "CHN",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 384,
+    "iso3": "CIV",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 120,
+    "iso3": "CMR",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 180,
+    "iso3": "COD",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 178,
+    "iso3": "COG",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 170,
+    "iso3": "COL",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 174,
+    "iso3": "COM",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 132,
+    "iso3": "CPV",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 188,
+    "iso3": "CRI",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 192,
+    "iso3": "CUB",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 531,
+    "iso3": "CUW",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 136,
+    "iso3": "CYM",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 196,
+    "iso3": "CYP",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 203,
+    "iso3": "CZE",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 276,
+    "iso3": "DEU",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 262,
+    "iso3": "DJI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 212,
+    "iso3": "DMA",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 208,
+    "iso3": "DNK",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 214,
+    "iso3": "DOM",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 12,
+    "iso3": "DZA",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 218,
+    "iso3": "ECU",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 818,
+    "iso3": "EGY",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 232,
+    "iso3": "ERI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 724,
+    "iso3": "ESP",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 233,
+    "iso3": "EST",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 231,
+    "iso3": "ETH",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 246,
+    "iso3": "FIN",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 242,
+    "iso3": "FJI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 250,
+    "iso3": "FRA",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 234,
+    "iso3": "FRO",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 583,
+    "iso3": "FSM",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 266,
+    "iso3": "GAB",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 826,
+    "iso3": "GBR",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 268,
+    "iso3": "GEO",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 288,
+    "iso3": "GHA",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 292,
+    "iso3": "GIB",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 324,
+    "iso3": "GIN",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 270,
+    "iso3": "GMB",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 624,
+    "iso3": "GNB",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 226,
+    "iso3": "GNQ",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 300,
+    "iso3": "GRC",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 308,
+    "iso3": "GRD",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 304,
+    "iso3": "GRL",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 320,
+    "iso3": "GTM",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 316,
+    "iso3": "GUM",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 328,
+    "iso3": "GUY",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 344,
+    "iso3": "HKG",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 340,
+    "iso3": "HND",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 191,
+    "iso3": "HRV",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 332,
+    "iso3": "HTI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 348,
+    "iso3": "HUN",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 360,
+    "iso3": "IDN",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 833,
+    "iso3": "IMN",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 356,
+    "iso3": "IND",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 372,
+    "iso3": "IRL",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 364,
+    "iso3": "IRN",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 368,
+    "iso3": "IRQ",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 352,
+    "iso3": "ISL",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 376,
+    "iso3": "ISR",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 380,
+    "iso3": "ITA",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 388,
+    "iso3": "JAM",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 400,
+    "iso3": "JOR",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 392,
+    "iso3": "JPN",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 398,
+    "iso3": "KAZ",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 404,
+    "iso3": "KEN",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 417,
+    "iso3": "KGZ",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 116,
+    "iso3": "KHM",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 296,
+    "iso3": "KIR",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 659,
+    "iso3": "KNA",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 410,
+    "iso3": "KOR",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 414,
+    "iso3": "KWT",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 418,
+    "iso3": "LAO",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 422,
+    "iso3": "LBN",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 430,
+    "iso3": "LBR",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 434,
+    "iso3": "LBY",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 662,
+    "iso3": "LCA",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 438,
+    "iso3": "LIE",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 144,
+    "iso3": "LKA",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 426,
+    "iso3": "LSO",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 440,
+    "iso3": "LTU",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 442,
+    "iso3": "LUX",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 428,
+    "iso3": "LVA",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 446,
+    "iso3": "MAC",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 663,
+    "iso3": "MAF",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 504,
+    "iso3": "MAR",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 492,
+    "iso3": "MCO",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 498,
+    "iso3": "MDA",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 450,
+    "iso3": "MDG",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 462,
+    "iso3": "MDV",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 484,
+    "iso3": "MEX",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 584,
+    "iso3": "MHL",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 807,
+    "iso3": "MKD",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 466,
+    "iso3": "MLI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 470,
+    "iso3": "MLT",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 104,
+    "iso3": "MMR",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 499,
+    "iso3": "MNE",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 496,
+    "iso3": "MNG",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 580,
+    "iso3": "MNP",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 508,
+    "iso3": "MOZ",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 478,
+    "iso3": "MRT",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 480,
+    "iso3": "MUS",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 454,
+    "iso3": "MWI",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 458,
+    "iso3": "MYS",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 516,
+    "iso3": "NAM",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 540,
+    "iso3": "NCL",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 562,
+    "iso3": "NER",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 566,
+    "iso3": "NGA",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 558,
+    "iso3": "NIC",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 528,
+    "iso3": "NLD",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 578,
+    "iso3": "NOR",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 524,
+    "iso3": "NPL",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 520,
+    "iso3": "NRU",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 554,
+    "iso3": "NZL",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 512,
+    "iso3": "OMN",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 586,
+    "iso3": "PAK",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 591,
+    "iso3": "PAN",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 604,
+    "iso3": "PER",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 608,
+    "iso3": "PHL",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 585,
+    "iso3": "PLW",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 598,
+    "iso3": "PNG",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 616,
+    "iso3": "POL",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 630,
+    "iso3": "PRI",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 408,
+    "iso3": "PRK",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 620,
+    "iso3": "PRT",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 600,
+    "iso3": "PRY",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 275,
+    "iso3": "PSE",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 258,
+    "iso3": "PYF",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 634,
+    "iso3": "QAT",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 642,
+    "iso3": "ROU",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 643,
+    "iso3": "RUS",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 646,
+    "iso3": "RWA",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 682,
+    "iso3": "SAU",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 729,
+    "iso3": "SDN",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 686,
+    "iso3": "SEN",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 702,
+    "iso3": "SGP",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 90,
+    "iso3": "SLB",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 694,
+    "iso3": "SLE",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 222,
+    "iso3": "SLV",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 674,
+    "iso3": "SMR",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 706,
+    "iso3": "SOM",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 688,
+    "iso3": "SRB",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 728,
+    "iso3": "SSD",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 678,
+    "iso3": "STP",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 740,
+    "iso3": "SUR",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 703,
+    "iso3": "SVK",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 705,
+    "iso3": "SVN",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 752,
+    "iso3": "SWE",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 748,
+    "iso3": "SWZ",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 534,
+    "iso3": "SXM",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 690,
+    "iso3": "SYC",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 760,
+    "iso3": "SYR",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 796,
+    "iso3": "TCA",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 148,
+    "iso3": "TCD",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 768,
+    "iso3": "TGO",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 764,
+    "iso3": "THA",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 762,
+    "iso3": "TJK",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 795,
+    "iso3": "TKM",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 626,
+    "iso3": "TLS",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 776,
+    "iso3": "TON",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 780,
+    "iso3": "TTO",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 788,
+    "iso3": "TUN",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 792,
+    "iso3": "TUR",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 798,
+    "iso3": "TUV",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 834,
+    "iso3": "TZA",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 800,
+    "iso3": "UGA",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 804,
+    "iso3": "UKR",
+    "stance": "raise",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 858,
+    "iso3": "URY",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 840,
+    "iso3": "USA",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 860,
+    "iso3": "UZB",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 670,
+    "iso3": "VCT",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 862,
+    "iso3": "VEN",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 92,
+    "iso3": "VGB",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 850,
+    "iso3": "VIR",
+    "stance": null,
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 704,
+    "iso3": "VNM",
+    "stance": "maintain",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 548,
+    "iso3": "VUT",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 882,
+    "iso3": "WSM",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 887,
+    "iso3": "YEM",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 710,
+    "iso3": "ZAF",
+    "stance": "none",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 894,
+    "iso3": "ZMB",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  },
+  {
+    "iso_num": 716,
+    "iso3": "ZWE",
+    "stance": "lower",
+    "measures": {
+      "baby_bonus": null,
+      "parental_leave": null,
+      "childcare_subsidy": null,
+      "tax_incentive": null
+    },
+    "notes": null
+  }
+]
