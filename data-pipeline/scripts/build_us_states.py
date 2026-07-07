@@ -12,8 +12,11 @@ Sources (all authoritative, keyed where noted; no hand-entered values):
                                               (women with a birth in past 12 months / women, by age group;
                                                TFR = sum of age-specific rates x group width)
   urbanisation                             <- 2020 Census DHC table P2 (urban pop / total pop, %)
-  social_capital, religiosity              <- left blank: no authoritative keyless/API source located.
-                                              Shown as "insufficient data" in the app until backfilled.
+  social_capital                           <- JEC Social Capital Project state index ("The Geography of
+                                              Social Capital in America", 2018, Table 3), via the committed
+                                              lookup data/us_social_religion.csv.
+  religiosity                              <- left blank: Pew Religious Landscape Study state figures are
+                                              interactive-only (no fetchable table). Documented backfill.
 
 Run from data-pipeline/:  CENSUS_API_KEY=... .venv/bin/python scripts/build_us_states.py
 """
@@ -125,6 +128,21 @@ def compute_fem_bachelors(row):
     return round(sum(parts) / total * 100.0, 1)
 
 
+def load_social_religion() -> dict[str, dict]:
+    """Committed static lookup: state social_capital (JEC 2018) + religiosity (blank, pending)."""
+    path = DATA / "us_social_religion.csv"
+    if not path.exists():
+        return {}
+    out = {}
+    with open(path, newline="", encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            out[row["iso3"].strip().upper()] = {
+                "social_capital": (row.get("social_capital") or "").strip(),
+                "religiosity": (row.get("religiosity") or "").strip(),
+            }
+    return out
+
+
 def main():
     key = os.environ.get("CENSUS_API_KEY")
     if not key:
@@ -133,6 +151,7 @@ def main():
     detail = fetch(ACS, DETAIL_VARS, key)
     profile = fetch(ACS_PROFILE, ["DP03_0011PE", "DP02_0154PE"], key)
     dec = fetch(DEC, ["P2_001N", "P2_002N"], key)
+    social_religion = load_social_religion()
 
     header = ["iso3", "iso_num", "name", "region", "tfr", "tfr_year", "population", "broadband",
               "income_pc", "home_value", "fem_bachelors", "flfp", "urbanisation",
@@ -151,6 +170,7 @@ def main():
         def fmt(x):
             return "" if x is None else x
 
+        sr = social_religion.get(usps, {})
         rows.append([
             usps, str(int(fips)), name, region,
             fmt(compute_tfr(d)), TFR_YEAR,
@@ -158,7 +178,7 @@ def main():
             fmt(_num(d, "B19301_001E")), fmt(_num(d, "B25077_001E")),
             fmt(compute_fem_bachelors(d)), fmt(_num(p, "DP03_0011PE")),
             urbanisation,
-            "", "",  # social_capital, religiosity: no authoritative source located
+            sr.get("social_capital", ""), sr.get("religiosity", ""),
         ])
 
     with open(DATA / "us_states.csv", "w", newline="", encoding="utf-8") as fh:
