@@ -1,4 +1,5 @@
 import type { FactorMeta } from "../types";
+import { toggleButtonStyle } from "../lib/ui";
 
 export interface ControlPanelProps {
   factors: FactorMeta[];
@@ -17,8 +18,10 @@ export function ControlPanel(props: ControlPanelProps) {
   return (
     <aside style={{ width: 230, fontSize: 13 }}>
       <div style={{ display: "flex", gap: 4, marginBottom: 12 }}>
-        <button aria-pressed={mode === "residual"} onClick={() => onSetMode("residual")}>Unexplained (residual)</button>
-        <button aria-pressed={mode === "raw"} onClick={() => onSetMode("raw")}>Raw fertility</button>
+        <button aria-pressed={mode === "residual"} onClick={() => onSetMode("residual")}
+          style={toggleButtonStyle(mode === "residual")}>Unexplained (residual)</button>
+        <button aria-pressed={mode === "raw"} onClick={() => onSetMode("raw")}
+          style={toggleButtonStyle(mode === "raw")}>Raw fertility</button>
       </div>
       <div style={{ marginBottom: 12 }}>
         <span>explains </span>

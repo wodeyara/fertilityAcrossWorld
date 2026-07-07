@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { loadBundle } from "./data/loadBundle";
 import { fitModel } from "./lib/regression";
 import { indexByIsoNum } from "./lib/geo";
+import { toggleButtonStyle } from "./lib/ui";
 import { ControlPanel } from "./components/ControlPanel";
 import { MapView } from "./components/MapView";
 import { Legend } from "./components/Legend";
@@ -82,7 +83,8 @@ export default function App() {
       <h1 style={{ fontSize: 22 }}>Where fertility defies the numbers</h1>
       <nav aria-label="Scale" style={{ display: "flex", gap: 4, marginBottom: 8 }}>
         {(["world", "us"] as const).map((s) => (
-          <button key={s} aria-pressed={scale === s} onClick={() => switchScale(s)}>
+          <button key={s} aria-pressed={scale === s} onClick={() => switchScale(s)}
+            style={toggleButtonStyle(scale === s)}>
             {s === "world" ? "World" : "United States"}
           </button>
         ))}
@@ -90,7 +92,7 @@ export default function App() {
       <nav aria-label="Views" style={{ display: "flex", gap: 4, margin: "8px 0 16px" }}>
         {(["map", "scatter", "table", "about"] as const).map((v) => (
           <button key={v} aria-pressed={view === v} onClick={() => setView(v)}
-            style={{ textTransform: "capitalize", fontWeight: view === v ? 500 : 400 }}>
+            style={toggleButtonStyle(view === v, { textTransform: "capitalize" })}>
             {v}
           </button>
         ))}
