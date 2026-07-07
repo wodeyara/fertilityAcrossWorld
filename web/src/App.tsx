@@ -140,7 +140,12 @@ export default function App() {
                 onSetXFactor={setXFactorId} selectedIso3={selectedIso3} onSelect={setSelectedIso3} dark={!!dark} />
             )}
             <div style={{ marginTop: 12 }}>
-              <DetailPanel country={selectedCountry} fit={fit} factors={activeBundle.factors} />
+              <DetailPanel
+                country={selectedCountry}
+                fit={fit}
+                factors={activeBundle.factors}
+                policy={scale === "world" && selectedCountry ? policyByIsoNum.get(selectedCountry.iso_num) ?? null : null}
+              />
             </div>
           </div>
         </div>

@@ -27,3 +27,9 @@ it("documents the US-states sub-national layer", () => {
   expect(screen.getByText(/present-day/i)).toBeInTheDocument();
   expect(screen.getByText(/separate model/i)).toBeInTheDocument();
 });
+
+test("explains the pronatalist-policy overlay and that it is not a covariate", () => {
+  render(<AboutView bundle={bundle} />);
+  expect(screen.getByRole("heading", { name: /pronatalist policy/i })).toBeInTheDocument();
+  expect(screen.getByText(/not.*(covariate|predictor)/i)).toBeInTheDocument();
+});

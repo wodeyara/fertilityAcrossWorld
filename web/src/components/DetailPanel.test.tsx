@@ -32,3 +32,16 @@ test("prompts when nothing selected", () => {
   render(<DetailPanel country={null} fit={fit} factors={factors} />);
   expect(screen.getByText(/click a country/i)).toBeInTheDocument();
 });
+
+test("shows the policy stance and measures when a policy is provided", () => {
+  const country = { iso3: "FRA", iso_num: 250, name: "France", region: "Europe & Central Asia",
+    tfr: 1.8, tfr_year: 2022, factors: { gdp_pc: 1 } };
+  const fit = { factorIds: ["gdp_pc"], transform: "raw" as const, n: 3, r2: 0.5, intercept: 0,
+    coefficients: { gdp_pc: -0.1 },
+    fits: new Map([["FRA", { predictedTfr: 1.9, residualTfr: -0.1, contributions: { gdp_pc: -0.1 } }]]) };
+  const policy = { iso_num: 250, iso3: "FRA", stance: "raise" as const,
+    measures: { baby_bonus: true, parental_leave: true, childcare_subsidy: false, tax_incentive: null }, notes: null };
+  render(<DetailPanel country={country} fit={fit} factors={[{ id: "gdp_pc", label: "GDP per capita", group: "Economic", unit: "$", direction: "negative", source: "WB" }]} policy={policy} />);
+  expect(screen.getByText(/raise fertility/i)).toBeInTheDocument();
+  expect(screen.getByText(/baby bonus/i)).toBeInTheDocument();
+});

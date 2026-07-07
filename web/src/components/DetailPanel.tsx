@@ -1,13 +1,28 @@
 import type { Country, FactorMeta } from "../types";
 import type { FitResult } from "../lib/regression";
+import type { Policy } from "../lib/policy";
 
 export interface DetailPanelProps {
   country: Country | null;
   fit: FitResult;
   factors: FactorMeta[];
+  policy?: Policy | null;
 }
 
-export function DetailPanel({ country, fit, factors }: DetailPanelProps) {
+const STANCE_LABEL: Record<string, string> = {
+  raise: "raise fertility",
+  maintain: "maintain fertility",
+  lower: "lower fertility",
+  none: "no intervention",
+};
+const MEASURE_LABEL: Record<string, string> = {
+  baby_bonus: "Baby bonus",
+  parental_leave: "Parental leave",
+  childcare_subsidy: "Childcare subsidy",
+  tax_incentive: "Tax incentives",
+};
+
+export function DetailPanel({ country, fit, factors, policy }: DetailPanelProps) {
   if (!country) return <div style={{ fontSize: 13 }}>Click a country to inspect it.</div>;
   const cf = fit.fits.get(country.iso3);
   if (!cf) {
@@ -42,6 +57,21 @@ export function DetailPanel({ country, fit, factors }: DetailPanelProps) {
           </div>
         );
       })}
+      {policy && (
+        <div style={{ marginTop: 10, borderTop: "1px solid rgba(128,128,128,0.25)", paddingTop: 8 }}>
+          <div style={{ fontSize: 11, opacity: 0.7 }}>pronatalist policy</div>
+          <div>Government policy: <strong>{policy.stance ? STANCE_LABEL[policy.stance] : "no data"}</strong></div>
+          {Object.entries(MEASURE_LABEL).map(([k, lbl]) => {
+            const v = (policy.measures as unknown as Record<string, boolean | null>)[k];
+            return (
+              <div key={k} style={{ display: "flex", justifyContent: "space-between" }}>
+                <span>{lbl}</span>
+                <span>{v == null ? "—" : v ? "yes" : "no"}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

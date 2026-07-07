@@ -31,6 +31,23 @@ export function AboutView({ bundle }: { bundle: Bundle }) {
       </p>
 
       <section>
+        <h3>Pronatalist policy</h3>
+        <p>
+          The optional overlay hatches countries whose government policy is to <em>raise</em>
+          fertility, using the UN World Population Policies database (stance and specific
+          measures such as baby bonuses, parental leave, childcare subsidies, and tax
+          incentives), enriched by the OECD Family Database. Click a country for its stance
+          and measures.
+        </p>
+        <p>
+          Policy is shown as an overlay and is deliberately not a covariate (predictor)
+          in the model: pronatalist policy is usually a reaction to already-low
+          fertility, so including it would produce misleading reverse-causality associations.
+          Coverage is current and partial; a country with no reported policy shows "no data".
+        </p>
+      </section>
+
+      <section>
         <h3>Sub-national: United States</h3>
         <p>
           Use the <strong>Scale</strong> selector to drill from the world into US states
