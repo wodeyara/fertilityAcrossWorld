@@ -12,7 +12,7 @@ import { AboutView } from "./views/AboutView";
 import type { Bundle, Country } from "./types";
 
 const DEFAULT_FACTORS = ["gdp_pc", "fem_sec_enroll", "flfp", "child_mortality", "urbanisation"];
-const DEFAULT_FACTORS_US = ["income_pc", "fem_bachelors", "flfp", "urbanisation", "social_capital"];
+const DEFAULT_FACTORS_US = ["income_pc", "home_value", "fem_bachelors", "flfp", "urbanisation"];
 
 export default function App() {
   const [bundle, setBundle] = useState<Bundle | null>(null);

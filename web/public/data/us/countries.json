@@ -1,0 +1,920 @@
+[
+  {
+    "iso3": "AK",
+    "iso_num": 2,
+    "name": "Alaska",
+    "region": "West",
+    "tfr": 2.023,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 43054.0,
+      "home_value": 336900.0,
+      "fem_bachelors": 33.9,
+      "flfp": 61.9,
+      "urbanisation": 64.9,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.2079906780223983
+    }
+  },
+  {
+    "iso3": "AL",
+    "iso_num": 1,
+    "name": "Alabama",
+    "region": "South",
+    "tfr": 1.862,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 33777.0,
+      "home_value": 200900.0,
+      "fem_bachelors": 29.8,
+      "flfp": 53.8,
+      "urbanisation": 57.7,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -1.0858369784399804
+    }
+  },
+  {
+    "iso3": "AR",
+    "iso_num": 5,
+    "name": "Arkansas",
+    "region": "South",
+    "tfr": 2.047,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 31380.0,
+      "home_value": 179800.0,
+      "fem_bachelors": 27.2,
+      "flfp": 53.0,
+      "urbanisation": 55.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -1.3292527417971876
+    }
+  },
+  {
+    "iso3": "AZ",
+    "iso_num": 4,
+    "name": "Arizona",
+    "region": "West",
+    "tfr": 1.812,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 39819.0,
+      "home_value": 402800.0,
+      "fem_bachelors": 33.2,
+      "flfp": 55.5,
+      "urbanisation": 89.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.21473266397757892
+    }
+  },
+  {
+    "iso3": "CA",
+    "iso_num": 6,
+    "name": "California",
+    "region": "West",
+    "tfr": 1.682,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 46661.0,
+      "home_value": 715900.0,
+      "fem_bachelors": 37.9,
+      "flfp": 58.4,
+      "urbanisation": 94.2,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.9989524045091757
+    }
+  },
+  {
+    "iso3": "CO",
+    "iso_num": 8,
+    "name": "Colorado",
+    "region": "West",
+    "tfr": 1.679,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 49071.0,
+      "home_value": 531100.0,
+      "fem_bachelors": 47.3,
+      "flfp": 63.9,
+      "urbanisation": 86.0,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 1.1174388351435613
+    }
+  },
+  {
+    "iso3": "CT",
+    "iso_num": 9,
+    "name": "Connecticut",
+    "region": "Northeast",
+    "tfr": 1.643,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 51581.0,
+      "home_value": 347200.0,
+      "fem_bachelors": 43.6,
+      "flfp": 61.3,
+      "urbanisation": 86.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.7772736009729746
+    }
+  },
+  {
+    "iso3": "DC",
+    "iso_num": 11,
+    "name": "District of Columbia",
+    "region": "South",
+    "tfr": 1.27,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 71699.0,
+      "home_value": 711100.0,
+      "fem_bachelors": 63.8,
+      "flfp": 70.1,
+      "urbanisation": 100.0,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 3.154915292449907
+    }
+  },
+  {
+    "iso3": "DE",
+    "iso_num": 10,
+    "name": "Delaware",
+    "region": "South",
+    "tfr": 2.015,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 42571.0,
+      "home_value": 337200.0,
+      "fem_bachelors": 37.2,
+      "flfp": 58.9,
+      "urbanisation": 82.6,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.37921634527270276
+    }
+  },
+  {
+    "iso3": "FL",
+    "iso_num": 12,
+    "name": "Florida",
+    "region": "South",
+    "tfr": 1.747,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 40278.0,
+      "home_value": 354100.0,
+      "fem_bachelors": 34.8,
+      "flfp": 55.1,
+      "urbanisation": 91.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.2697099095437528
+    }
+  },
+  {
+    "iso3": "GA",
+    "iso_num": 13,
+    "name": "Georgia",
+    "region": "South",
+    "tfr": 2.014,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38378.0,
+      "home_value": 297400.0,
+      "fem_bachelors": 35.9,
+      "flfp": 59.4,
+      "urbanisation": 74.1,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.14820652863550804
+    }
+  },
+  {
+    "iso3": "HI",
+    "iso_num": 15,
+    "name": "Hawaii",
+    "region": "West",
+    "tfr": 1.766,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 42710.0,
+      "home_value": 820100.0,
+      "fem_bachelors": 37.5,
+      "flfp": 59.0,
+      "urbanisation": 86.1,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.7476122719026391
+    }
+  },
+  {
+    "iso3": "IA",
+    "iso_num": 19,
+    "name": "Iowa",
+    "region": "Midwest",
+    "tfr": 2.071,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38917.0,
+      "home_value": 194600.0,
+      "fem_bachelors": 34.2,
+      "flfp": 62.6,
+      "urbanisation": 63.2,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.41964225259753496
+    }
+  },
+  {
+    "iso3": "ID",
+    "iso_num": 16,
+    "name": "Idaho",
+    "region": "West",
+    "tfr": 2.037,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 35980.0,
+      "home_value": 432500.0,
+      "fem_bachelors": 33.1,
+      "flfp": 57.1,
+      "urbanisation": 69.2,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.15409393003202704
+    }
+  },
+  {
+    "iso3": "IL",
+    "iso_num": 17,
+    "name": "Illinois",
+    "region": "Midwest",
+    "tfr": 1.775,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 43317.0,
+      "home_value": 251600.0,
+      "fem_bachelors": 38.9,
+      "flfp": 60.4,
+      "urbanisation": 86.9,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.3184501730345472
+    }
+  },
+  {
+    "iso3": "IN",
+    "iso_num": 18,
+    "name": "Indiana",
+    "region": "Midwest",
+    "tfr": 2.039,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 35984.0,
+      "home_value": 208700.0,
+      "fem_bachelors": 30.5,
+      "flfp": 59.0,
+      "urbanisation": 71.2,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.4459374601851481
+    }
+  },
+  {
+    "iso3": "KS",
+    "iso_num": 20,
+    "name": "Kansas",
+    "region": "Midwest",
+    "tfr": 1.962,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 37919.0,
+      "home_value": 206600.0,
+      "fem_bachelors": 37.1,
+      "flfp": 60.9,
+      "urbanisation": 72.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.2348381629565026
+    }
+  },
+  {
+    "iso3": "KY",
+    "iso_num": 21,
+    "name": "Kentucky",
+    "region": "South",
+    "tfr": 1.964,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 33980.0,
+      "home_value": 196300.0,
+      "fem_bachelors": 29.2,
+      "flfp": 55.5,
+      "urbanisation": 58.7,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.8502101718936046
+    }
+  },
+  {
+    "iso3": "LA",
+    "iso_num": 22,
+    "name": "Louisiana",
+    "region": "South",
+    "tfr": 2.057,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 32171.0,
+      "home_value": 209200.0,
+      "fem_bachelors": 29.4,
+      "flfp": 56.1,
+      "urbanisation": 71.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -1.1520489502062605
+    }
+  },
+  {
+    "iso3": "MA",
+    "iso_num": 25,
+    "name": "Massachusetts",
+    "region": "Northeast",
+    "tfr": 1.52,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 54025.0,
+      "home_value": 534700.0,
+      "fem_bachelors": 47.5,
+      "flfp": 63.3,
+      "urbanisation": 91.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 1.101101752915551
+    }
+  },
+  {
+    "iso3": "MD",
+    "iso_num": 24,
+    "name": "Maryland",
+    "region": "South",
+    "tfr": 1.76,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 49236.0,
+      "home_value": 398100.0,
+      "fem_bachelors": 45.1,
+      "flfp": 62.8,
+      "urbanisation": 85.6,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.7443606272392553
+    }
+  },
+  {
+    "iso3": "ME",
+    "iso_num": 23,
+    "name": "Maine",
+    "region": "Northeast",
+    "tfr": 1.981,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 41188.0,
+      "home_value": 290600.0,
+      "fem_bachelors": 38.8,
+      "flfp": 59.3,
+      "urbanisation": 38.6,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.547014211167755
+    }
+  },
+  {
+    "iso3": "MI",
+    "iso_num": 26,
+    "name": "Michigan",
+    "region": "Midwest",
+    "tfr": 1.758,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38151.0,
+      "home_value": 224400.0,
+      "fem_bachelors": 33.0,
+      "flfp": 57.3,
+      "urbanisation": 73.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.1848158055210177
+    }
+  },
+  {
+    "iso3": "MN",
+    "iso_num": 27,
+    "name": "Minnesota",
+    "region": "Midwest",
+    "tfr": 1.891,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 45021.0,
+      "home_value": 314600.0,
+      "fem_bachelors": 41.0,
+      "flfp": 64.2,
+      "urbanisation": 71.9,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.22536061833033755
+    }
+  },
+  {
+    "iso3": "MO",
+    "iso_num": 29,
+    "name": "Missouri",
+    "region": "Midwest",
+    "tfr": 1.85,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 36640.0,
+      "home_value": 221200.0,
+      "fem_bachelors": 33.6,
+      "flfp": 58.9,
+      "urbanisation": 69.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.47994703367302743
+    }
+  },
+  {
+    "iso3": "MS",
+    "iso_num": 28,
+    "name": "Mississippi",
+    "region": "South",
+    "tfr": 2.14,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 29045.0,
+      "home_value": 162500.0,
+      "fem_bachelors": 27.5,
+      "flfp": 53.6,
+      "urbanisation": 46.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -1.8659659164431344
+    }
+  },
+  {
+    "iso3": "MT",
+    "iso_num": 30,
+    "name": "Montana",
+    "region": "West",
+    "tfr": 2.418,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38329.0,
+      "home_value": 366400.0,
+      "fem_bachelors": 36.2,
+      "flfp": 60.3,
+      "urbanisation": 53.4,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.7792060162340547
+    }
+  },
+  {
+    "iso3": "NC",
+    "iso_num": 37,
+    "name": "North Carolina",
+    "region": "South",
+    "tfr": 1.812,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38701.0,
+      "home_value": 280600.0,
+      "fem_bachelors": 37.5,
+      "flfp": 58.1,
+      "urbanisation": 66.7,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.2489537074565935
+    }
+  },
+  {
+    "iso3": "ND",
+    "iso_num": 38,
+    "name": "North Dakota",
+    "region": "Midwest",
+    "tfr": 2.049,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 41800.0,
+      "home_value": 243100.0,
+      "fem_bachelors": 36.0,
+      "flfp": 64.5,
+      "urbanisation": 61.0,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.5238945064471773
+    }
+  },
+  {
+    "iso3": "NE",
+    "iso_num": 31,
+    "name": "Nebraska",
+    "region": "Midwest",
+    "tfr": 2.14,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38997.0,
+      "home_value": 232400.0,
+      "fem_bachelors": 36.3,
+      "flfp": 63.5,
+      "urbanisation": 73.0,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.0956836631238446
+    }
+  },
+  {
+    "iso3": "NH",
+    "iso_num": 33,
+    "name": "New Hampshire",
+    "region": "Northeast",
+    "tfr": 1.665,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 49281.0,
+      "home_value": 384700.0,
+      "fem_bachelors": 42.2,
+      "flfp": 61.9,
+      "urbanisation": 58.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.4776640892239248
+    }
+  },
+  {
+    "iso3": "NJ",
+    "iso_num": 34,
+    "name": "New Jersey",
+    "region": "Northeast",
+    "tfr": 1.786,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 51272.0,
+      "home_value": 428900.0,
+      "fem_bachelors": 44.1,
+      "flfp": 60.9,
+      "urbanisation": 93.8,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.8914629716016691
+    }
+  },
+  {
+    "iso3": "NM",
+    "iso_num": 35,
+    "name": "New Mexico",
+    "region": "West",
+    "tfr": 1.857,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 33916.0,
+      "home_value": 243100.0,
+      "fem_bachelors": 32.9,
+      "flfp": 54.2,
+      "urbanisation": 74.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.6312133207909703
+    }
+  },
+  {
+    "iso3": "NV",
+    "iso_num": 32,
+    "name": "Nevada",
+    "region": "West",
+    "tfr": 1.934,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38183.0,
+      "home_value": 434700.0,
+      "fem_bachelors": 28.2,
+      "flfp": 58.6,
+      "urbanisation": 94.1,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.352164766759952
+    }
+  },
+  {
+    "iso3": "NY",
+    "iso_num": 36,
+    "name": "New York",
+    "region": "Northeast",
+    "tfr": 1.757,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 47421.0,
+      "home_value": 400400.0,
+      "fem_bachelors": 41.5,
+      "flfp": 59.0,
+      "urbanisation": 87.4,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.6441775820942208
+    }
+  },
+  {
+    "iso3": "OH",
+    "iso_num": 39,
+    "name": "Ohio",
+    "region": "Midwest",
+    "tfr": 1.941,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 37932.0,
+      "home_value": 204100.0,
+      "fem_bachelors": 33.3,
+      "flfp": 58.8,
+      "urbanisation": 76.3,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.15083891924391246
+    }
+  },
+  {
+    "iso3": "OK",
+    "iso_num": 40,
+    "name": "Oklahoma",
+    "region": "South",
+    "tfr": 2.058,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 32930.0,
+      "home_value": 191700.0,
+      "fem_bachelors": 29.5,
+      "flfp": 55.8,
+      "urbanisation": 64.6,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.9040927867056998
+    }
+  },
+  {
+    "iso3": "OR",
+    "iso_num": 41,
+    "name": "Oregon",
+    "region": "West",
+    "tfr": 1.554,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 42474.0,
+      "home_value": 475600.0,
+      "fem_bachelors": 37.8,
+      "flfp": 58.7,
+      "urbanisation": 80.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.6209760121620307
+    }
+  },
+  {
+    "iso3": "PA",
+    "iso_num": 42,
+    "name": "Pennsylvania",
+    "region": "Northeast",
+    "tfr": 1.827,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 41489.0,
+      "home_value": 245500.0,
+      "fem_bachelors": 36.1,
+      "flfp": 58.7,
+      "urbanisation": 76.5,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.0490263211065897
+    }
+  },
+  {
+    "iso3": "RI",
+    "iso_num": 44,
+    "name": "Rhode Island",
+    "region": "Northeast",
+    "tfr": 1.577,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 44538.0,
+      "home_value": 383900.0,
+      "fem_bachelors": 40.1,
+      "flfp": 61.3,
+      "urbanisation": 91.1,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.42908170007971985
+    }
+  },
+  {
+    "iso3": "SC",
+    "iso_num": 45,
+    "name": "South Carolina",
+    "region": "South",
+    "tfr": 1.879,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 36675.0,
+      "home_value": 254600.0,
+      "fem_bachelors": 33.4,
+      "flfp": 56.5,
+      "urbanisation": 67.9,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.5345221724029834
+    }
+  },
+  {
+    "iso3": "SD",
+    "iso_num": 46,
+    "name": "South Dakota",
+    "region": "Midwest",
+    "tfr": 2.703,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 37618.0,
+      "home_value": 245000.0,
+      "fem_bachelors": 34.5,
+      "flfp": 63.3,
+      "urbanisation": 57.2,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.45217040909033035
+    }
+  },
+  {
+    "iso3": "TN",
+    "iso_num": 47,
+    "name": "Tennessee",
+    "region": "South",
+    "tfr": 1.755,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 36704.0,
+      "home_value": 284800.0,
+      "fem_bachelors": 32.3,
+      "flfp": 57.4,
+      "urbanisation": 66.2,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.5468471856138469
+    }
+  },
+  {
+    "iso3": "TX",
+    "iso_num": 48,
+    "name": "Texas",
+    "region": "South",
+    "tfr": 2.007,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38123.0,
+      "home_value": 275400.0,
+      "fem_bachelors": 34.8,
+      "flfp": 59.3,
+      "urbanisation": 83.7,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.01777977921763957
+    }
+  },
+  {
+    "iso3": "UT",
+    "iso_num": 49,
+    "name": "Utah",
+    "region": "West",
+    "tfr": 2.075,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38514.0,
+      "home_value": 499500.0,
+      "fem_bachelors": 36.5,
+      "flfp": 62.5,
+      "urbanisation": 89.8,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.7368320160796324
+    }
+  },
+  {
+    "iso3": "VA",
+    "iso_num": 51,
+    "name": "Virginia",
+    "region": "South",
+    "tfr": 1.823,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 47199.0,
+      "home_value": 365700.0,
+      "fem_bachelors": 43.1,
+      "flfp": 60.5,
+      "urbanisation": 75.6,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 0.4375976200603853
+    }
+  },
+  {
+    "iso3": "VT",
+    "iso_num": 50,
+    "name": "Vermont",
+    "region": "Northeast",
+    "tfr": 1.77,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 42251.0,
+      "home_value": 304700.0,
+      "fem_bachelors": 48.0,
+      "flfp": 62.7,
+      "urbanisation": 35.1,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.37311292067366486
+    }
+  },
+  {
+    "iso3": "WA",
+    "iso_num": 53,
+    "name": "Washington",
+    "region": "West",
+    "tfr": 1.705,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 50764.0,
+      "home_value": 569500.0,
+      "fem_bachelors": 40.2,
+      "flfp": 58.9,
+      "urbanisation": 83.4,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": 1.1605022470440494
+    }
+  },
+  {
+    "iso3": "WI",
+    "iso_num": 55,
+    "name": "Wisconsin",
+    "region": "Midwest",
+    "tfr": 1.829,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 40188.0,
+      "home_value": 252800.0,
+      "fem_bachelors": 35.4,
+      "flfp": 61.4,
+      "urbanisation": 67.1,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.1006283966890407
+    }
+  },
+  {
+    "iso3": "WV",
+    "iso_num": 54,
+    "name": "West Virginia",
+    "region": "South",
+    "tfr": 1.913,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 31922.0,
+      "home_value": 155100.0,
+      "fem_bachelors": 26.3,
+      "flfp": 49.7,
+      "urbanisation": 44.6,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -1.4487467384102222
+    }
+  },
+  {
+    "iso3": "WY",
+    "iso_num": 56,
+    "name": "Wyoming",
+    "region": "West",
+    "tfr": 2.126,
+    "tfr_year": 2022,
+    "factors": {
+      "income_pc": 38114.0,
+      "home_value": 292300.0,
+      "fem_bachelors": 32.2,
+      "flfp": 61.1,
+      "urbanisation": 62.0,
+      "social_capital": null,
+      "religiosity": null,
+      "possibility": -0.4328307932394297
+    }
+  }
+]

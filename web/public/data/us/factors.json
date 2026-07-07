@@ -1,0 +1,76 @@
+{
+  "snapshotYear": 2022,
+  "target": {
+    "id": "tfr",
+    "label": "Total fertility rate",
+    "transform": "log",
+    "unit": "births per woman",
+    "source": "static"
+  },
+  "factors": [
+    {
+      "id": "income_pc",
+      "label": "Per-capita personal income",
+      "group": "Economic",
+      "unit": "US$",
+      "direction": "negative",
+      "source": "static"
+    },
+    {
+      "id": "home_value",
+      "label": "Median home value",
+      "group": "Economic",
+      "unit": "US$",
+      "direction": "negative",
+      "source": "static"
+    },
+    {
+      "id": "fem_bachelors",
+      "label": "Women 25+ with a bachelor's+",
+      "group": "Education",
+      "unit": "% of women 25+",
+      "direction": "negative",
+      "source": "static"
+    },
+    {
+      "id": "flfp",
+      "label": "Female labour-force participation",
+      "group": "Women's work & agency",
+      "unit": "% of women 16+",
+      "direction": "negative",
+      "source": "static"
+    },
+    {
+      "id": "urbanisation",
+      "label": "Urbanisation",
+      "group": "Structure",
+      "unit": "% urban",
+      "direction": "negative",
+      "source": "static"
+    },
+    {
+      "id": "social_capital",
+      "label": "Social Capital Project index",
+      "group": "Community",
+      "unit": "index (z-like)",
+      "direction": "mixed",
+      "source": "static"
+    },
+    {
+      "id": "religiosity",
+      "label": "Highly religious (Pew)",
+      "group": "Religiosity",
+      "unit": "% highly religious",
+      "direction": "positive",
+      "source": "static"
+    },
+    {
+      "id": "possibility",
+      "label": "Possibility index",
+      "group": "Possibility",
+      "unit": "z-score index",
+      "direction": "negative",
+      "source": "computed"
+    }
+  ]
+}

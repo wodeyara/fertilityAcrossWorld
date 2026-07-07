@@ -1,0 +1,15 @@
+{
+  "snapshotYear": 2022,
+  "countryCount": 51,
+  "withTfr": 51,
+  "coverage": {
+    "income_pc": 51,
+    "home_value": 51,
+    "fem_bachelors": 51,
+    "flfp": 51,
+    "urbanisation": 51,
+    "social_capital": 0,
+    "religiosity": 0,
+    "possibility": 51
+  }
+}
