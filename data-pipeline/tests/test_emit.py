@@ -61,3 +61,41 @@ def test_write_bundle_accepts_us_registry(tmp_path):
     assert {f["id"] for f in factors_doc["factors"]} == set(factors_us.factor_ids())
     assert meta["coverage"]["income_pc"] == 1
     assert meta["coverage"]["home_value"] == 0
+
+
+def test_write_bundle_emits_policies_json(tmp_path):
+    from fertility_pipeline import emit
+    records = [
+        {"iso3": "FRA", "iso_num": 250, "name": "France", "region": "Europe & Central Asia",
+         "tfr": 1.8, "tfr_year": 2022, "factors": {"gdp_pc": 1.0}},
+        {"iso3": "USA", "iso_num": 840, "name": "United States", "region": "North America",
+         "tfr": 1.6, "tfr_year": 2022, "factors": {"gdp_pc": 2.0}},
+    ]
+    policies = {
+        "FRA": {"stance": "raise",
+                "measures": {"baby_bonus": True, "parental_leave": True,
+                             "childcare_subsidy": True, "tax_incentive": True},
+                "notes": "x"},
+    }
+    meta = emit.write_bundle(records, "raw", 2022, tmp_path, policies=policies)
+    import json
+    pol = json.loads((tmp_path / "policies.json").read_text())
+    by_iso = {p["iso3"]: p for p in pol}
+    assert by_iso["FRA"]["iso_num"] == 250
+    assert by_iso["FRA"]["stance"] == "raise"
+    assert by_iso["FRA"]["measures"]["baby_bonus"] is True
+    # country with no policy record still present, all null
+    assert by_iso["USA"]["stance"] is None
+    assert by_iso["USA"]["measures"]["tax_incentive"] is None
+    assert meta["policyCoverage"] == 1
+
+
+def test_write_bundle_without_policies_emits_no_policies_json(tmp_path):
+    from fertility_pipeline import emit
+    records = [
+        {"iso3": "USA", "iso_num": 840, "name": "United States", "region": "North America",
+         "tfr": 1.6, "tfr_year": 2022, "factors": {"gdp_pc": 2.0}},
+    ]
+    meta = emit.write_bundle(records, "raw", 2022, tmp_path)
+    assert not (tmp_path / "policies.json").exists()
+    assert "policyCoverage" not in meta

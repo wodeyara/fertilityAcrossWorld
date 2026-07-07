@@ -1,9 +1,11 @@
 import argparse
 import csv
+import os
 
 from . import factors as registry
 from . import worldbank, countries_ref, static_factors, build, diagnostics, emit
 from . import overpass, possibility
+from . import policies as policies_mod
 
 TRANSFORM_MIN_COVERAGE = 0.6
 
@@ -91,6 +93,7 @@ def run_pipeline(
     iso2_path="data/iso2.csv",
     cache_dir="out/raw/overpass",
     osm_fetch=None,
+    policies_path="data/policies.csv",
 ) -> dict:
     if fetch is None:
         fetch = worldbank.fetch_indicator
@@ -110,7 +113,8 @@ def run_pipeline(
 
     records = build.build_records(refs, tfr_result, wb_results, static_data, computed_data)
     choice, _details = diagnostics.choose_tfr_transform(records, _transform_factor_ids(records))
-    return emit.write_bundle(records, choice, snapshot_year, out_dir)
+    policy_data = policies_mod.load_policies(policies_path) if os.path.exists(policies_path) else {}
+    return emit.write_bundle(records, choice, snapshot_year, out_dir, policies=policy_data)
 
 
 def main(argv=None):
@@ -123,6 +127,7 @@ def main(argv=None):
     parser.add_argument("--snapshot-year", type=int, default=2023)
     parser.add_argument("--iso2", default="data/iso2.csv")
     parser.add_argument("--cache-dir", default="out/raw/overpass")
+    parser.add_argument("--policies", default="data/policies.csv")
     args = parser.parse_args(argv)
 
     meta = run_pipeline(
@@ -130,6 +135,7 @@ def main(argv=None):
         args.start, args.end, args.snapshot_year,
         iso2_path=args.iso2,
         cache_dir=args.cache_dir,
+        policies_path=args.policies,
     )
     print(f"Wrote bundle to {args.out}/ — {meta['countryCount']} countries, "
           f"{meta['withTfr']} with TFR.")
