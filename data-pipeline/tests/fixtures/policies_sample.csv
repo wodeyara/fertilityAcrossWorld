@@ -1,0 +1,7 @@
+iso3,stance,baby_bonus,parental_leave,childcare_subsidy,tax_incentive,notes
+FRA,raise,yes,yes,yes,yes,Strong family policy
+KOR,raise,yes,yes,no,yes,
+USA,none,no,no,no,no,
+IND,lower,no,no,no,no,
+XXX,banana,,,,,unknown stance -> null
+NUL,,,,,
