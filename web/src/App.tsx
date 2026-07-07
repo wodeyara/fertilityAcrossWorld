@@ -3,6 +3,8 @@ import { loadBundle } from "./data/loadBundle";
 import { fitModel } from "./lib/regression";
 import { indexByIsoNum } from "./lib/geo";
 import { toggleButtonStyle } from "./lib/ui";
+import { loadPolicies, indexPoliciesByIsoNum } from "./lib/policy";
+import type { Policy } from "./lib/policy";
 import { ControlPanel } from "./components/ControlPanel";
 import { MapView } from "./components/MapView";
 import { Legend } from "./components/Legend";
@@ -24,6 +26,9 @@ export default function App() {
   const [view, setView] = useState<"map" | "scatter" | "table" | "about">("map");
   const [xFactorId, setXFactorId] = useState("possibility");
 
+  const [policyOn, setPolicyOn] = useState(false);
+  const [policies, setPolicies] = useState<Policy[]>([]);
+
   // Scale selector state
   const [scale, setScale] = useState<"world" | "us">("world");
   const [usBundle, setUsBundle] = useState<Bundle | null>(null);
@@ -32,6 +37,7 @@ export default function App() {
   useEffect(() => {
     loadBundle("/data").then(setBundle);
     fetch("/data/countries-110m.json").then((r) => r.json()).then(setTopo);
+    loadPolicies("/data").then(setPolicies);
   }, []);
 
   // Lazy-load US assets on first switch
@@ -60,6 +66,7 @@ export default function App() {
     () => (activeBundle ? indexByIsoNum(activeBundle.countries) : new Map<number, Country>()),
     [activeBundle],
   );
+  const policyByIsoNum = useMemo(() => indexPoliciesByIsoNum(policies), [policies]);
 
   if (!activeBundle || !fit) return <div>Loading…</div>;
 
@@ -107,6 +114,7 @@ export default function App() {
             onSetMode={setMode}
             r2={fit.r2}
             n={fit.n}
+            {...(scale === "world" ? { policyOn, onSetPolicy: setPolicyOn } : {})}
           />
           <div style={{ flex: 1 }}>
             {view === "map" ? (
@@ -122,9 +130,10 @@ export default function App() {
                     dark={!!dark}
                     projectionKind={projectionKind}
                     objectName={objectName}
+                    {...(scale === "world" ? { policyByIsoNum, policyOn } : {})}
                   />
                 )}
-                <Legend mode={mode} />
+                <Legend mode={mode} {...(scale === "world" ? { policyOn } : {})} />
               </>
             ) : (
               <ScatterView bundle={activeBundle} fit={fit} mode={mode} xFactorId={xFactorId}

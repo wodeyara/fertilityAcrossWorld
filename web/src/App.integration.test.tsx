@@ -101,3 +101,30 @@ it("switches to the US scale and renders state units", async () => {
   fireEvent.click(screen.getByRole("button", { name: /^table$/i }));
   expect(await screen.findByText(/california/i)).toBeInTheDocument();
 });
+
+test("world scale shows a working pronatalist-policy toggle; US scale does not", async () => {
+  const POLICIES = [
+    { iso_num: 900, iso3: "C0", stance: "raise",
+      measures: { baby_bonus: true, parental_leave: null, childcare_subsidy: null, tax_incentive: null }, notes: null },
+  ];
+  vi.stubGlobal("fetch", (url: string) => {
+    const body = url.includes("/us/")
+      ? (url.endsWith("factors.json") ? { ...FACTORS, factors: [{ id: "income_pc", label: "Per-capita income", group: "Economic", unit: "$", direction: "negative", source: "ACS" }] }
+        : url.endsWith("countries.json") ? [{ iso3: "CA", iso_num: 6, name: "California", region: "West", tfr: 1.7, tfr_year: 2022, factors: { income_pc: 5 } }]
+        : { snapshotYear: 2022, countryCount: 1, withTfr: 1, coverage: { income_pc: 1 } })
+      : url.includes("us-states-10m.json") ? { type: "Topology", arcs: [], objects: { states: { type: "GeometryCollection", geometries: [] } } }
+      : url.endsWith("factors.json") ? FACTORS
+      : url.endsWith("countries.json") ? COUNTRIES
+      : url.endsWith("policies.json") ? POLICIES
+      : url.endsWith("meta.json") ? META
+      : TOPO;
+    return Promise.resolve({ ok: true, json: () => Promise.resolve(body) } as Response);
+  });
+  render(<App />);
+  await waitFor(() => expect(screen.getByTestId("r2-readout")).toBeInTheDocument());
+  // world scale: toggle present
+  expect(screen.getByLabelText(/pronatalist policy/i)).toBeInTheDocument();
+  // switch to US scale: toggle gone
+  fireEvent.click(screen.getByRole("button", { name: /united states/i }));
+  await waitFor(() => expect(screen.queryByLabelText(/pronatalist policy/i)).not.toBeInTheDocument());
+});

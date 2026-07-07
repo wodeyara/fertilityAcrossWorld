@@ -49,3 +49,23 @@ test("shows an experimental badge for Possibility-group factors", () => {
   );
   expect(screen.getByText(/^exp$/i)).toBeInTheDocument(); // anchored: avoid matching "Unexplained"
 });
+
+test("renders a pronatalist-policy toggle when onSetPolicy is provided", () => {
+  const onSetPolicy = vi.fn();
+  render(
+    <ControlPanel factors={[]} selected={new Set()} onToggleFactor={() => {}}
+      mode="residual" onSetMode={() => {}} r2={null} n={0}
+      policyOn={false} onSetPolicy={onSetPolicy} />
+  );
+  const cb = screen.getByLabelText(/pronatalist policy/i);
+  fireEvent.click(cb);
+  expect(onSetPolicy).toHaveBeenCalledWith(true);
+});
+
+test("no policy toggle when onSetPolicy is omitted", () => {
+  render(
+    <ControlPanel factors={[]} selected={new Set()} onToggleFactor={() => {}}
+      mode="residual" onSetMode={() => {}} r2={null} n={0} />
+  );
+  expect(screen.queryByLabelText(/pronatalist policy/i)).not.toBeInTheDocument();
+});

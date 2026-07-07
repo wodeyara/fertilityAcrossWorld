@@ -17,7 +17,8 @@ export async function loadPolicies(baseUrl = "/data"): Promise<Policy[]> {
   try {
     const res = await fetch(`${baseUrl}/policies.json`);
     if (!res.ok) return [];
-    return (await res.json()) as Policy[];
+    const data = await res.json();
+    return Array.isArray(data) ? (data as Policy[]) : [];
   } catch {
     return [];
   }

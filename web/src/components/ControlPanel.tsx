@@ -9,10 +9,12 @@ export interface ControlPanelProps {
   onSetMode: (mode: "raw" | "residual") => void;
   r2: number | null;
   n: number;
+  policyOn?: boolean;
+  onSetPolicy?: (v: boolean) => void;
 }
 
 export function ControlPanel(props: ControlPanelProps) {
-  const { factors, selected, onToggleFactor, mode, onSetMode, r2, n } = props;
+  const { factors, selected, onToggleFactor, mode, onSetMode, r2, n, policyOn, onSetPolicy } = props;
   const groups = [...new Set(factors.map((f) => f.group))];
 
   return (
@@ -23,6 +25,17 @@ export function ControlPanel(props: ControlPanelProps) {
         <button aria-pressed={mode === "raw"} onClick={() => onSetMode("raw")}
           style={toggleButtonStyle(mode === "raw")}>Raw fertility</button>
       </div>
+      {onSetPolicy && (
+        <label style={{ display: "block", marginBottom: 12, fontSize: 13 }}>
+          <input
+            type="checkbox"
+            aria-label="Pronatalist policy"
+            checked={!!policyOn}
+            onChange={(e) => onSetPolicy(e.target.checked)}
+          />{" "}
+          Pronatalist policy overlay
+        </label>
+      )}
       <div style={{ marginBottom: 12 }}>
         <span>explains </span>
         <strong data-testid="r2-readout">{r2 == null ? "—" : `${Math.round(r2 * 100)}%`}</strong>
