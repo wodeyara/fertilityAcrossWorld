@@ -14,6 +14,10 @@ import { TableView } from "./views/TableView";
 import { AboutView } from "./views/AboutView";
 import type { Bundle, Country } from "./types";
 
+// Base-relative data path so the app works both at the site root and under a
+// GitHub Pages project subpath (/<repo>/). BASE_URL always ends with "/".
+const DATA_BASE = `${import.meta.env.BASE_URL}data`;
+
 const DEFAULT_FACTORS = ["gdp_pc", "fem_sec_enroll", "flfp", "child_mortality", "urbanisation"];
 const DEFAULT_FACTORS_US = ["income_pc", "home_value", "fem_bachelors", "flfp", "urbanisation"];
 
@@ -35,15 +39,15 @@ export default function App() {
   const [usTopo, setUsTopo] = useState<object | null>(null);
 
   useEffect(() => {
-    loadBundle("/data").then(setBundle);
-    fetch("/data/countries-110m.json").then((r) => r.json()).then(setTopo);
-    loadPolicies("/data").then(setPolicies);
+    loadBundle(DATA_BASE).then(setBundle);
+    fetch(`${DATA_BASE}/countries-110m.json`).then((r) => r.json()).then(setTopo);
+    loadPolicies(DATA_BASE).then(setPolicies);
   }, []);
 
   // Lazy-load US assets on first switch
   useEffect(() => {
-    if (scale === "us" && !usBundle) loadBundle("/data/us").then(setUsBundle);
-    if (scale === "us" && !usTopo) fetch("/data/us-states-10m.json").then((r) => r.json()).then(setUsTopo);
+    if (scale === "us" && !usBundle) loadBundle(`${DATA_BASE}/us`).then(setUsBundle);
+    if (scale === "us" && !usTopo) fetch(`${DATA_BASE}/us-states-10m.json`).then((r) => r.json()).then(setUsTopo);
   }, [scale, usBundle, usTopo]);
 
   const dark = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches;
