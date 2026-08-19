@@ -14,9 +14,9 @@ Sources (all authoritative, keyed where noted; no hand-entered values):
   urbanisation                             <- 2020 Census DHC table P2 (urban pop / total pop, %)
   social_capital                           <- JEC Social Capital Project state index ("The Geography of
                                               Social Capital in America", 2018, Table 3), via the committed
-                                              lookup data/us_social_religion.csv.
-  religiosity                              <- left blank: Pew Religious Landscape Study state figures are
-                                              interactive-only (no fetchable table). Documented backfill.
+                                              lookup data/us_social_capital.csv.
+  smartphone                               <- Census ACS 2022 1-yr B28001 (households with a smartphone
+                                              B28001_005E / total households B28001_001E, %).
 
 Run from data-pipeline/:  CENSUS_API_KEY=... .venv/bin/python scripts/build_us_states.py
 """
@@ -70,6 +70,7 @@ DETAIL_VARS = [
     "B25077_001E",  # median home value
     "B15002_019E",  # female 25+ total
     "B15002_032E", "B15002_033E", "B15002_034E", "B15002_035E",  # female bachelor's/master's/prof/doctorate
+    "B28001_001E", "B28001_005E",  # households: total, with a smartphone
 ] + [f"B13016_{i:03d}E" for i in range(1, 18)]  # fertility: total, births-by-age, no-birth-by-age
 
 # B13016 age groups (births var, no-birth var, interval width in years).
@@ -128,18 +129,23 @@ def compute_fem_bachelors(row):
     return round(sum(parts) / total * 100.0, 1)
 
 
-def load_social_religion() -> dict[str, dict]:
-    """Committed static lookup: state social_capital (JEC 2018) + religiosity (blank, pending)."""
-    path = DATA / "us_social_religion.csv"
+def compute_smartphone(row):
+    total = _num(row, "B28001_001E")
+    with_phone = _num(row, "B28001_005E")
+    if total in (None, 0) or with_phone is None:
+        return None
+    return round(with_phone / total * 100.0, 1)
+
+
+def load_social_capital() -> dict[str, str]:
+    """Committed static lookup: state social_capital (JEC 2018), keyed by USPS code."""
+    path = DATA / "us_social_capital.csv"
     if not path.exists():
         return {}
     out = {}
     with open(path, newline="", encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
-            out[row["iso3"].strip().upper()] = {
-                "social_capital": (row.get("social_capital") or "").strip(),
-                "religiosity": (row.get("religiosity") or "").strip(),
-            }
+            out[row["iso3"].strip().upper()] = (row.get("social_capital") or "").strip()
     return out
 
 
@@ -151,11 +157,11 @@ def main():
     detail = fetch(ACS, DETAIL_VARS, key)
     profile = fetch(ACS_PROFILE, ["DP03_0011PE", "DP02_0154PE"], key)
     dec = fetch(DEC, ["P2_001N", "P2_002N"], key)
-    social_religion = load_social_religion()
+    social_capital = load_social_capital()
 
     header = ["iso3", "iso_num", "name", "region", "tfr", "tfr_year", "population", "broadband",
               "income_pc", "home_value", "fem_bachelors", "flfp", "urbanisation",
-              "social_capital", "religiosity"]
+              "social_capital", "smartphone"]
     rows = []
     for fips in sorted(STATES):
         usps, name, region = STATES[fips]
@@ -170,7 +176,6 @@ def main():
         def fmt(x):
             return "" if x is None else x
 
-        sr = social_religion.get(usps, {})
         rows.append([
             usps, str(int(fips)), name, region,
             fmt(compute_tfr(d)), TFR_YEAR,
@@ -178,7 +183,7 @@ def main():
             fmt(_num(d, "B19301_001E")), fmt(_num(d, "B25077_001E")),
             fmt(compute_fem_bachelors(d)), fmt(_num(p, "DP03_0011PE")),
             urbanisation,
-            sr.get("social_capital", ""), sr.get("religiosity", ""),
+            social_capital.get(usps, ""), fmt(compute_smartphone(d)),
         ])
 
     with open(DATA / "us_states.csv", "w", newline="", encoding="utf-8") as fh:

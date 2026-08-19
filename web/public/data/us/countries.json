@@ -13,7 +13,7 @@
       "flfp": 61.9,
       "urbanisation": 64.9,
       "social_capital": 0.39,
-      "religiosity": null,
+      "smartphone": 93.6,
       "possibility": 0.2079906780223983
     }
   },
@@ -31,7 +31,7 @@
       "flfp": 53.8,
       "urbanisation": 57.7,
       "social_capital": -0.94,
-      "religiosity": null,
+      "smartphone": 90.0,
       "possibility": -1.0858369784399804
     }
   },
@@ -49,7 +49,7 @@
       "flfp": 53.0,
       "urbanisation": 55.5,
       "social_capital": -1.29,
-      "religiosity": null,
+      "smartphone": 89.9,
       "possibility": -1.3292527417971876
     }
   },
@@ -67,7 +67,7 @@
       "flfp": 55.5,
       "urbanisation": 89.3,
       "social_capital": -1.33,
-      "religiosity": null,
+      "smartphone": 92.2,
       "possibility": 0.21473266397757892
     }
   },
@@ -85,7 +85,7 @@
       "flfp": 58.4,
       "urbanisation": 94.2,
       "social_capital": -0.85,
-      "religiosity": null,
+      "smartphone": 93.5,
       "possibility": 0.9989524045091757
     }
   },
@@ -103,7 +103,7 @@
       "flfp": 63.9,
       "urbanisation": 86.0,
       "social_capital": 1.14,
-      "religiosity": null,
+      "smartphone": 93.6,
       "possibility": 1.1174388351435613
     }
   },
@@ -121,7 +121,7 @@
       "flfp": 61.3,
       "urbanisation": 86.3,
       "social_capital": 0.61,
-      "religiosity": null,
+      "smartphone": 90.0,
       "possibility": 0.7772736009729746
     }
   },
@@ -139,7 +139,7 @@
       "flfp": 70.1,
       "urbanisation": 100.0,
       "social_capital": -0.7,
-      "religiosity": null,
+      "smartphone": 93.9,
       "possibility": 3.154915292449907
     }
   },
@@ -157,7 +157,7 @@
       "flfp": 58.9,
       "urbanisation": 82.6,
       "social_capital": -0.56,
-      "religiosity": null,
+      "smartphone": 91.3,
       "possibility": 0.37921634527270276
     }
   },
@@ -175,7 +175,7 @@
       "flfp": 55.1,
       "urbanisation": 91.5,
       "social_capital": -1.5,
-      "religiosity": null,
+      "smartphone": 92.4,
       "possibility": 0.2697099095437528
     }
   },
@@ -193,7 +193,7 @@
       "flfp": 59.4,
       "urbanisation": 74.1,
       "social_capital": -0.88,
-      "religiosity": null,
+      "smartphone": 92.6,
       "possibility": -0.14820652863550804
     }
   },
@@ -211,7 +211,7 @@
       "flfp": 59.0,
       "urbanisation": 86.1,
       "social_capital": -0.35,
-      "religiosity": null,
+      "smartphone": 91.8,
       "possibility": 0.7476122719026391
     }
   },
@@ -229,7 +229,7 @@
       "flfp": 62.6,
       "urbanisation": 63.2,
       "social_capital": 1.07,
-      "religiosity": null,
+      "smartphone": 90.2,
       "possibility": -0.41964225259753496
     }
   },
@@ -247,7 +247,7 @@
       "flfp": 57.1,
       "urbanisation": 69.2,
       "social_capital": 0.69,
-      "religiosity": null,
+      "smartphone": 92.1,
       "possibility": -0.15409393003202704
     }
   },
@@ -265,7 +265,7 @@
       "flfp": 60.4,
       "urbanisation": 86.9,
       "social_capital": -0.22,
-      "religiosity": null,
+      "smartphone": 91.1,
       "possibility": 0.3184501730345472
     }
   },
@@ -283,7 +283,7 @@
       "flfp": 59.0,
       "urbanisation": 71.2,
       "social_capital": 0.14,
-      "religiosity": null,
+      "smartphone": 90.3,
       "possibility": -0.4459374601851481
     }
   },
@@ -301,7 +301,7 @@
       "flfp": 60.9,
       "urbanisation": 72.3,
       "social_capital": 0.61,
-      "religiosity": null,
+      "smartphone": 91.2,
       "possibility": -0.2348381629565026
     }
   },
@@ -319,7 +319,7 @@
       "flfp": 55.5,
       "urbanisation": 58.7,
       "social_capital": -0.63,
-      "religiosity": null,
+      "smartphone": 89.0,
       "possibility": -0.8502101718936046
     }
   },
@@ -337,7 +337,7 @@
       "flfp": 56.1,
       "urbanisation": 71.5,
       "social_capital": -2.15,
-      "religiosity": null,
+      "smartphone": 89.4,
       "possibility": -1.1520489502062605
     }
   },
@@ -355,7 +355,7 @@
       "flfp": 63.3,
       "urbanisation": 91.3,
       "social_capital": 0.38,
-      "religiosity": null,
+      "smartphone": 90.6,
       "possibility": 1.101101752915551
     }
   },
@@ -373,7 +373,7 @@
       "flfp": 62.8,
       "urbanisation": 85.6,
       "social_capital": -0.09,
-      "religiosity": null,
+      "smartphone": 92.1,
       "possibility": 0.7443606272392553
     }
   },
@@ -391,7 +391,7 @@
       "flfp": 59.3,
       "urbanisation": 38.6,
       "social_capital": 1.09,
-      "religiosity": null,
+      "smartphone": 87.7,
       "possibility": -0.547014211167755
     }
   },
@@ -409,7 +409,7 @@
       "flfp": 57.3,
       "urbanisation": 73.5,
       "social_capital": -0.14,
-      "religiosity": null,
+      "smartphone": 90.4,
       "possibility": -0.1848158055210177
     }
   },
@@ -427,7 +427,7 @@
       "flfp": 64.2,
       "urbanisation": 71.9,
       "social_capital": 1.81,
-      "religiosity": null,
+      "smartphone": 91.3,
       "possibility": 0.22536061833033755
     }
   },
@@ -445,7 +445,7 @@
       "flfp": 58.9,
       "urbanisation": 69.5,
       "social_capital": -0.02,
-      "religiosity": null,
+      "smartphone": 90.1,
       "possibility": -0.47994703367302743
     }
   },
@@ -463,7 +463,7 @@
       "flfp": 53.6,
       "urbanisation": 46.3,
       "social_capital": -1.15,
-      "religiosity": null,
+      "smartphone": 89.2,
       "possibility": -1.8659659164431344
     }
   },
@@ -481,7 +481,7 @@
       "flfp": 60.3,
       "urbanisation": 53.4,
       "social_capital": 0.76,
-      "religiosity": null,
+      "smartphone": 88.6,
       "possibility": -0.7792060162340547
     }
   },
@@ -499,7 +499,7 @@
       "flfp": 58.1,
       "urbanisation": 66.7,
       "social_capital": -0.46,
-      "religiosity": null,
+      "smartphone": 90.9,
       "possibility": -0.2489537074565935
     }
   },
@@ -517,7 +517,7 @@
       "flfp": 64.5,
       "urbanisation": 61.0,
       "social_capital": 0.98,
-      "religiosity": null,
+      "smartphone": 90.6,
       "possibility": -0.5238945064471773
     }
   },
@@ -535,7 +535,7 @@
       "flfp": 63.5,
       "urbanisation": 73.0,
       "social_capital": 1.09,
-      "religiosity": null,
+      "smartphone": 90.5,
       "possibility": -0.0956836631238446
     }
   },
@@ -553,7 +553,7 @@
       "flfp": 61.9,
       "urbanisation": 58.3,
       "social_capital": 1.45,
-      "religiosity": null,
+      "smartphone": 90.3,
       "possibility": 0.4776640892239248
     }
   },
@@ -571,7 +571,7 @@
       "flfp": 60.9,
       "urbanisation": 93.8,
       "social_capital": -0.29,
-      "religiosity": null,
+      "smartphone": 91.3,
       "possibility": 0.8914629716016691
     }
   },
@@ -589,7 +589,7 @@
       "flfp": 54.2,
       "urbanisation": 74.5,
       "social_capital": -1.5,
-      "religiosity": null,
+      "smartphone": 88.7,
       "possibility": -0.6312133207909703
     }
   },
@@ -607,7 +607,7 @@
       "flfp": 58.6,
       "urbanisation": 94.1,
       "social_capital": -1.73,
-      "religiosity": null,
+      "smartphone": 93.2,
       "possibility": 0.352164766759952
     }
   },
@@ -625,7 +625,7 @@
       "flfp": 59.0,
       "urbanisation": 87.4,
       "social_capital": -0.98,
-      "religiosity": null,
+      "smartphone": 89.5,
       "possibility": 0.6441775820942208
     }
   },
@@ -643,7 +643,7 @@
       "flfp": 58.8,
       "urbanisation": 76.3,
       "social_capital": -0.26,
-      "religiosity": null,
+      "smartphone": 89.2,
       "possibility": -0.15083891924391246
     }
   },
@@ -661,7 +661,7 @@
       "flfp": 55.8,
       "urbanisation": 64.6,
       "social_capital": -0.71,
-      "religiosity": null,
+      "smartphone": 91.0,
       "possibility": -0.9040927867056998
     }
   },
@@ -679,7 +679,7 @@
       "flfp": 58.7,
       "urbanisation": 80.5,
       "social_capital": 0.79,
-      "religiosity": null,
+      "smartphone": 92.2,
       "possibility": 0.6209760121620307
     }
   },
@@ -697,7 +697,7 @@
       "flfp": 58.7,
       "urbanisation": 76.5,
       "social_capital": -0.01,
-      "religiosity": null,
+      "smartphone": 88.2,
       "possibility": -0.0490263211065897
     }
   },
@@ -715,7 +715,7 @@
       "flfp": 61.3,
       "urbanisation": 91.1,
       "social_capital": 0.24,
-      "religiosity": null,
+      "smartphone": 89.0,
       "possibility": 0.42908170007971985
     }
   },
@@ -733,7 +733,7 @@
       "flfp": 56.5,
       "urbanisation": 67.9,
       "social_capital": -0.64,
-      "religiosity": null,
+      "smartphone": 90.3,
       "possibility": -0.5345221724029834
     }
   },
@@ -751,7 +751,7 @@
       "flfp": 63.3,
       "urbanisation": 57.2,
       "social_capital": 1.01,
-      "religiosity": null,
+      "smartphone": 88.7,
       "possibility": -0.45217040909033035
     }
   },
@@ -769,7 +769,7 @@
       "flfp": 57.4,
       "urbanisation": 66.2,
       "social_capital": -0.7,
-      "religiosity": null,
+      "smartphone": 90.8,
       "possibility": -0.5468471856138469
     }
   },
@@ -787,7 +787,7 @@
       "flfp": 59.3,
       "urbanisation": 83.7,
       "social_capital": -1.0,
-      "religiosity": null,
+      "smartphone": 93.3,
       "possibility": 0.01777977921763957
     }
   },
@@ -805,7 +805,7 @@
       "flfp": 62.5,
       "urbanisation": 89.8,
       "social_capital": 2.08,
-      "religiosity": null,
+      "smartphone": 95.4,
       "possibility": 0.7368320160796324
     }
   },
@@ -823,7 +823,7 @@
       "flfp": 60.5,
       "urbanisation": 75.6,
       "social_capital": 0.63,
-      "religiosity": null,
+      "smartphone": 91.2,
       "possibility": 0.4375976200603853
     }
   },
@@ -841,7 +841,7 @@
       "flfp": 62.7,
       "urbanisation": 35.1,
       "social_capital": 1.37,
-      "religiosity": null,
+      "smartphone": 86.2,
       "possibility": -0.37311292067366486
     }
   },
@@ -859,7 +859,7 @@
       "flfp": 58.9,
       "urbanisation": 83.4,
       "social_capital": 0.73,
-      "religiosity": null,
+      "smartphone": 93.1,
       "possibility": 1.1605022470440494
     }
   },
@@ -877,7 +877,7 @@
       "flfp": 61.4,
       "urbanisation": 67.1,
       "social_capital": 1.61,
-      "religiosity": null,
+      "smartphone": 89.7,
       "possibility": -0.1006283966890407
     }
   },
@@ -895,7 +895,7 @@
       "flfp": 49.7,
       "urbanisation": 44.6,
       "social_capital": -0.45,
-      "religiosity": null,
+      "smartphone": 84.6,
       "possibility": -1.4487467384102222
     }
   },
@@ -913,7 +913,7 @@
       "flfp": 61.1,
       "urbanisation": 62.0,
       "social_capital": 0.86,
-      "religiosity": null,
+      "smartphone": 90.8,
       "possibility": -0.4328307932394297
     }
   }

@@ -57,11 +57,11 @@
       "source": "static"
     },
     {
-      "id": "religiosity",
-      "label": "Highly religious (Pew)",
-      "group": "Religiosity",
-      "unit": "% highly religious",
-      "direction": "positive",
+      "id": "smartphone",
+      "label": "Smartphone in household",
+      "group": "Connectivity",
+      "unit": "% of households",
+      "direction": "negative",
       "source": "static"
     },
     {
