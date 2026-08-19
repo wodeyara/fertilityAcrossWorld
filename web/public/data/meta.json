@@ -13,8 +13,9 @@
     "child_mortality": 195,
     "adolescent_fertility": 215,
     "urbanisation": 215,
+    "mobile_use": 209,
     "social_cohesion": 138,
-    "possibility": 212
+    "possibility": 211
   },
   "policyCoverage": 178
 }

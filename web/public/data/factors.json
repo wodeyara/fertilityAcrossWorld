@@ -89,6 +89,14 @@
       "source": "worldbank"
     },
     {
+      "id": "mobile_use",
+      "label": "Mobile subscriptions",
+      "group": "Connectivity",
+      "unit": "per 100 people",
+      "direction": "negative",
+      "source": "worldbank"
+    },
+    {
       "id": "social_cohesion",
       "label": "Social cohesion / support",
       "group": "Community",

@@ -7,7 +7,7 @@
     "tfr": 1.606,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 44558.9287594176,
+      "gdp_pc": 45428.0027283518,
       "gini": null,
       "fem_sec_enroll": 128.74852420307,
       "fem_years_schooling": null,
@@ -17,8 +17,9 @@
       "child_mortality": null,
       "adolescent_fertility": 18.021,
       "urbanisation": 61.7909396819594,
+      "mobile_use": 130.647974615427,
       "social_cohesion": null,
-      "possibility": 1.0189924863998874
+      "possibility": 1.2037823557918448
     }
   },
   {
@@ -29,7 +30,7 @@
     "tfr": 4.761,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 1983.81261992909,
+      "gdp_pc": 1964.45228895456,
       "gini": null,
       "fem_sec_enroll": 45.1596908569336,
       "fem_years_schooling": 1.174129963,
@@ -39,8 +40,9 @@
       "child_mortality": 53.0,
       "adolescent_fertility": 61.501,
       "urbanisation": 25.7007352636188,
+      "mobile_use": 60.0990815591219,
       "social_cohesion": 0.0,
-      "possibility": -0.8594881116008816
+      "possibility": -0.8030580651575728
     }
   },
   {
@@ -51,7 +53,7 @@
     "tfr": 5.048,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 8901.88736611562,
+      "gdp_pc": 8752.7974709833,
       "gini": 51.3,
       "fem_sec_enroll": 48.1175394651696,
       "fem_years_schooling": 4.462809114,
@@ -61,8 +63,9 @@
       "child_mortality": 49.0,
       "adolescent_fertility": 139.388,
       "urbanisation": 70.6551379036435,
+      "mobile_use": 69.7039467163584,
       "social_cohesion": null,
-      "possibility": -0.6098815530672435
+      "possibility": -0.5375276024553867
     }
   },
   {
@@ -73,7 +76,7 @@
     "tfr": 1.341,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 21641.0733223921,
+      "gdp_pc": 21640.9835773271,
       "gini": 29.4,
       "fem_sec_enroll": 106.71573638916,
       "fem_years_schooling": 9.811468219,
@@ -83,8 +86,9 @@
       "child_mortality": 9.2,
       "adolescent_fertility": 12.399,
       "urbanisation": 58.5463634043555,
+      "mobile_use": 89.1328603947682,
       "social_cohesion": 0.924,
-      "possibility": -0.00010970356633984712
+      "possibility": 0.13072748633910777
     }
   },
   {
@@ -95,7 +99,7 @@
     "tfr": 1.087,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 65928.3071971004,
+      "gdp_pc": 66232.7444195598,
       "gini": null,
       "fem_sec_enroll": 101.475868225098,
       "fem_years_schooling": 11.52258968,
@@ -105,8 +109,9 @@
       "child_mortality": 2.5,
       "adolescent_fertility": 3.4,
       "urbanisation": 88.8850044816278,
+      "mobile_use": 155.692108667529,
       "social_cohesion": null,
-      "possibility": 1.109259375706949
+      "possibility": 1.1953931190109082
     }
   },
   {
@@ -117,7 +122,7 @@
     "tfr": 1.213,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 69701.8047983545,
+      "gdp_pc": 69701.785835525,
       "gini": 26.4,
       "fem_sec_enroll": 100.110276412248,
       "fem_years_schooling": 12.58837032,
@@ -127,8 +132,9 @@
       "child_mortality": 4.8,
       "adolescent_fertility": 2.817,
       "urbanisation": 85.8171088279791,
+      "mobile_use": 203.206410299544,
       "social_cohesion": 1.164,
-      "possibility": 1.0969072444917571
+      "possibility": 0.949944584090415
     }
   },
   {
@@ -149,8 +155,9 @@
       "child_mortality": 9.5,
       "adolescent_fertility": 25.56,
       "urbanisation": 92.2742315972952,
+      "mobile_use": 140.234979049333,
       "social_cohesion": 1.381,
-      "possibility": 0.11890527127136474
+      "possibility": 0.032168785688959665
     }
   },
   {
@@ -171,8 +178,9 @@
       "child_mortality": 9.6,
       "adolescent_fertility": 12.823,
       "urbanisation": 65.8113671449901,
+      "mobile_use": 134.88694751567,
       "social_cohesion": 1.154,
-      "possibility": -0.1481257504481505
+      "possibility": -0.27572856172676363
     }
   },
   {
@@ -193,6 +201,7 @@
       "child_mortality": null,
       "adolescent_fertility": 34.749,
       "urbanisation": 80.9446986961818,
+      "mobile_use": null,
       "social_cohesion": null,
       "possibility": null
     }
@@ -205,7 +214,7 @@
     "tfr": 1.582,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 29371.637778586,
+      "gdp_pc": 29298.6474164727,
       "gini": null,
       "fem_sec_enroll": 109.004008633981,
       "fem_years_schooling": 10.3442228,
@@ -215,8 +224,9 @@
       "child_mortality": 9.1,
       "adolescent_fertility": 32.078,
       "urbanisation": 24.3906919254799,
+      "mobile_use": 200.540715208962,
       "social_cohesion": null,
-      "possibility": 0.5460676696811013
+      "possibility": 0.27434721072480905
     }
   },
   {
@@ -227,7 +237,7 @@
     "tfr": 1.481,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 60303.9817116245,
+      "gdp_pc": 60309.5831772339,
       "gini": 33.8,
       "fem_sec_enroll": 129.089096069336,
       "fem_years_schooling": 12.81058979,
@@ -237,8 +247,9 @@
       "child_mortality": 3.6,
       "adolescent_fertility": 6.419,
       "urbanisation": 87.6021469990446,
+      "mobile_use": 112.581025002429,
       "social_cohesion": 1.461,
-      "possibility": 0.35978742304779365
+      "possibility": 0.46715605702701124
     }
   },
   {
@@ -249,7 +260,7 @@
     "tfr": 1.31,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 63788.078678479,
+      "gdp_pc": 63787.9891749462,
       "gini": 31.2,
       "fem_sec_enroll": 99.9565505981445,
       "fem_years_schooling": 12.04894857,
@@ -259,8 +270,9 @@
       "child_mortality": 3.3,
       "adolescent_fertility": 3.605,
       "urbanisation": 69.4658181096788,
+      "mobile_use": 124.45929984531,
       "social_cohesion": 1.336,
-      "possibility": 0.574537244016035
+      "possibility": 0.6781106961049195
     }
   },
   {
@@ -271,7 +283,7 @@
     "tfr": 1.43,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 22072.1491157176,
+      "gdp_pc": 22090.5298026929,
       "gini": null,
       "fem_sec_enroll": 89.60752233538,
       "fem_years_schooling": 10.21799194,
@@ -281,8 +293,9 @@
       "child_mortality": 17.9,
       "adolescent_fertility": 34.856,
       "urbanisation": 58.573795837717,
+      "mobile_use": 109.543149535867,
       "social_cohesion": 0.876,
-      "possibility": 0.04432573096233068
+      "possibility": 0.08746146305140035
     }
   },
   {
@@ -293,7 +306,7 @@
     "tfr": 4.789,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 1051.25931339275,
+      "gdp_pc": 1048.05557098193,
       "gini": 37.5,
       "fem_sec_enroll": 49.2576387332398,
       "fem_years_schooling": 2.636837474,
@@ -303,8 +316,9 @@
       "child_mortality": 47.1,
       "adolescent_fertility": 52.49,
       "urbanisation": 24.8302838651025,
+      "mobile_use": 63.1631365759764,
       "social_cohesion": null,
-      "possibility": -0.8792622688503551
+      "possibility": -0.8426023764133946
     }
   },
   {
@@ -315,7 +329,7 @@
     "tfr": 1.44,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 63347.7858809235,
+      "gdp_pc": 63311.2766917178,
       "gini": 26.8,
       "fem_sec_enroll": 152.577819824219,
       "fem_years_schooling": 12.50440062,
@@ -325,8 +339,9 @@
       "child_mortality": 3.7,
       "adolescent_fertility": 3.504,
       "urbanisation": 87.6126557010527,
+      "mobile_use": 103.90465332676,
       "social_cohesion": 1.44,
-      "possibility": 0.2725615092559315
+      "possibility": 0.44261460537818786
     }
   },
   {
@@ -347,8 +362,9 @@
       "child_mortality": 74.7,
       "adolescent_fertility": 76.407,
       "urbanisation": 52.5455354818423,
+      "mobile_use": 125.940873932186,
       "social_cohesion": 0.128,
-      "possibility": -0.4348599641346572
+      "possibility": -0.5908782683395897
     }
   },
   {
@@ -359,7 +375,7 @@
     "tfr": 4.11,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2547.67232852209,
+      "gdp_pc": 2548.50247702504,
       "gini": 37.4,
       "fem_sec_enroll": 33.2389182465594,
       "fem_years_schooling": 1.634014826,
@@ -369,8 +385,9 @@
       "child_mortality": 74.9,
       "adolescent_fertility": 85.533,
       "urbanisation": 28.3352514896662,
+      "mobile_use": 116.5895933212,
       "social_cohesion": 0.685,
-      "possibility": -0.4748146102200767
+      "possibility": -0.6357261828366161
     }
   },
   {
@@ -391,8 +408,9 @@
       "child_mortality": 30.5,
       "adolescent_fertility": 70.813,
       "urbanisation": 32.6783196323307,
+      "mobile_use": 108.077037369691,
       "social_cohesion": 0.249,
-      "possibility": -0.17090666148565198
+      "possibility": -0.17559284531595387
     }
   },
   {
@@ -403,7 +421,7 @@
     "tfr": 1.72,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 34221.5294617032,
+      "gdp_pc": 34221.3866940362,
       "gini": 39.5,
       "fem_sec_enroll": 93.8516082763672,
       "fem_years_schooling": 11.50780964,
@@ -413,8 +431,9 @@
       "child_mortality": 5.7,
       "adolescent_fertility": 38.035,
       "urbanisation": 73.9499356882481,
+      "mobile_use": 118.067152838789,
       "social_cohesion": 1.469,
-      "possibility": 0.1376983988794112
+      "possibility": 0.16295229656608573
     }
   },
   {
@@ -425,7 +444,7 @@
     "tfr": 1.805,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 58891.8304860737,
+      "gdp_pc": 59060.1818363183,
       "gini": null,
       "fem_sec_enroll": 97.5734472078148,
       "fem_years_schooling": 10.78437042,
@@ -435,8 +454,9 @@
       "child_mortality": 8.8,
       "adolescent_fertility": 7.225,
       "urbanisation": 100.0,
+      "mobile_use": 159.536143577452,
       "social_cohesion": null,
-      "possibility": 0.8699029152277437
+      "possibility": 0.8775174623655339
     }
   },
   {
@@ -457,8 +477,9 @@
       "child_mortality": 12.4,
       "adolescent_fertility": 24.519,
       "urbanisation": 81.3249262966481,
+      "mobile_use": 96.6798992232414,
       "social_cohesion": null,
-      "possibility": 0.1478055168486882
+      "possibility": 0.32288798761528964
     }
   },
   {
@@ -469,7 +490,7 @@
     "tfr": 1.492,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 20527.6935527158,
+      "gdp_pc": 20578.4995446816,
       "gini": 30.3,
       "fem_sec_enroll": 90.4367218017578,
       "fem_years_schooling": 9.778189659,
@@ -479,8 +500,9 @@
       "child_mortality": 6.9,
       "adolescent_fertility": 10.783,
       "urbanisation": 52.1224302754935,
+      "mobile_use": 121.232373011893,
       "social_cohesion": 1.318,
-      "possibility": 0.09049617455244537
+      "possibility": 0.08806671896683349
     }
   },
   {
@@ -491,7 +513,7 @@
     "tfr": 1.217,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 29040.9725790425,
+      "gdp_pc": 29135.9465139232,
       "gini": 24.4,
       "fem_sec_enroll": 95.0767756373877,
       "fem_years_schooling": 12.26702163,
@@ -501,8 +523,9 @@
       "child_mortality": 2.3,
       "adolescent_fertility": 8.171,
       "urbanisation": 79.1551015210848,
+      "mobile_use": 131.123016605614,
       "social_cohesion": null,
-      "possibility": 0.2467006284734026
+      "possibility": 0.23252432071659992
     }
   },
   {
@@ -523,8 +546,9 @@
       "child_mortality": 12.7,
       "adolescent_fertility": 55.6,
       "urbanisation": 41.7532107338224,
+      "mobile_use": 67.1750266305468,
       "social_cohesion": null,
-      "possibility": -0.15782225156173507
+      "possibility": 0.10575005003579574
     }
   },
   {
@@ -535,7 +559,7 @@
     "tfr": 1.405,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 109311.936941299,
+      "gdp_pc": 104299.944358815,
       "gini": null,
       "fem_sec_enroll": 79.9730606079102,
       "fem_years_schooling": null,
@@ -545,8 +569,9 @@
       "child_mortality": null,
       "adolescent_fertility": 1.527,
       "urbanisation": 100.0,
+      "mobile_use": 96.6767745528807,
       "social_cohesion": null,
-      "possibility": 0.360707827656494
+      "possibility": 0.5452317052270796
     }
   },
   {
@@ -567,8 +592,9 @@
       "child_mortality": 15.7,
       "adolescent_fertility": 64.437,
       "urbanisation": 71.2361453773988,
+      "mobile_use": 98.0287940811943,
       "social_cohesion": 1.179,
-      "possibility": -0.054365311450527344
+      "possibility": 0.04462607171449009
     }
   },
   {
@@ -579,7 +605,7 @@
     "tfr": 1.614,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 19652.3654991704,
+      "gdp_pc": 19652.365499171,
       "gini": 50.3,
       "fem_sec_enroll": 105.251502990723,
       "fem_years_schooling": 8.486056479,
@@ -589,8 +615,9 @@
       "child_mortality": 14.2,
       "adolescent_fertility": 41.459,
       "urbanisation": 87.8958549533146,
+      "mobile_use": 101.926846460424,
       "social_cohesion": 1.269,
-      "possibility": -0.012557137127526933
+      "possibility": 0.0752208068438703
     }
   },
   {
@@ -601,7 +628,7 @@
     "tfr": 1.708,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 21837.7254102057,
+      "gdp_pc": 21557.5276350385,
       "gini": 34.1,
       "fem_sec_enroll": 106.336565096953,
       "fem_years_schooling": 10.35100499,
@@ -611,8 +638,9 @@
       "child_mortality": 9.8,
       "adolescent_fertility": 45.008,
       "urbanisation": 59.5397032429174,
+      "mobile_use": 114.580721030894,
       "social_cohesion": null,
-      "possibility": 0.10857458487475721
+      "possibility": 0.14342177869200787
     }
   },
   {
@@ -633,8 +661,9 @@
       "child_mortality": 9.9,
       "adolescent_fertility": 8.051,
       "urbanisation": 74.8983133873697,
+      "mobile_use": 118.130579766209,
       "social_cohesion": null,
-      "possibility": 0.39287907833019714
+      "possibility": 0.48164255972095354
     }
   },
   {
@@ -645,7 +674,7 @@
     "tfr": 1.449,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 14610.2959119536,
+      "gdp_pc": 15603.8871298469,
       "gini": 28.5,
       "fem_sec_enroll": 94.0369291275477,
       "fem_years_schooling": 5.211722545,
@@ -655,8 +684,9 @@
       "child_mortality": 17.2,
       "adolescent_fertility": 8.712,
       "urbanisation": 42.5645249803412,
+      "mobile_use": 99.7576826476519,
       "social_cohesion": null,
-      "possibility": 0.06300094295126477
+      "possibility": 0.18995974307043376
     }
   },
   {
@@ -667,7 +697,7 @@
     "tfr": 2.703,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 18068.5050714283,
+      "gdp_pc": 18107.614452913,
       "gini": 54.9,
       "fem_sec_enroll": 74.0652465820312,
       "fem_years_schooling": 10.36,
@@ -677,8 +707,9 @@
       "child_mortality": 33.3,
       "adolescent_fertility": 53.45,
       "urbanisation": 67.4623537838418,
+      "mobile_use": 163.999922257361,
       "social_cohesion": 0.969,
-      "possibility": -0.1538152271229525
+      "possibility": -0.42373715351126945
     }
   },
   {
@@ -699,8 +730,9 @@
       "child_mortality": 89.7,
       "adolescent_fertility": 161.348,
       "urbanisation": 44.1243555638904,
+      "mobile_use": 38.8217901039988,
       "social_cohesion": null,
-      "possibility": -1.0524409066261577
+      "possibility": -0.904137283613819
     }
   },
   {
@@ -711,7 +743,7 @@
     "tfr": 1.25,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 56706.8238031978,
+      "gdp_pc": 57534.0915185335,
       "gini": 31.5,
       "fem_sec_enroll": 104.46174621582,
       "fem_years_schooling": 13.96031896,
@@ -721,8 +753,9 @@
       "child_mortality": 5.4,
       "adolescent_fertility": 4.501,
       "urbanisation": 82.7002565766633,
+      "mobile_use": 94.1059718794246,
       "social_cohesion": 1.459,
-      "possibility": 0.33909646935530097
+      "possibility": 0.5947692225022704
     }
   },
   {
@@ -733,7 +766,7 @@
     "tfr": 1.29,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 82286.1801896488,
+      "gdp_pc": 85448.0585577007,
       "gini": 33.8,
       "fem_sec_enroll": 100.214630126953,
       "fem_years_schooling": 13.5494734,
@@ -743,8 +776,9 @@
       "child_mortality": 3.9,
       "adolescent_fertility": 1.48,
       "urbanisation": 85.4615370020764,
+      "mobile_use": 129.471369643132,
       "social_cohesion": 1.425,
-      "possibility": 0.6368201866732218
+      "possibility": 0.7316987998322346
     }
   },
   {
@@ -755,7 +789,7 @@
     "tfr": 1.14,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 30182.7871224714,
+      "gdp_pc": 30267.6440919907,
       "gini": 43.0,
       "fem_sec_enroll": 104.45320892334,
       "fem_years_schooling": 11.02533818,
@@ -765,8 +799,9 @@
       "child_mortality": 6.8,
       "adolescent_fertility": 5.608,
       "urbanisation": 88.9950908479196,
+      "mobile_use": 132.660408764665,
       "social_cohesion": 1.369,
-      "possibility": 0.2429183596453711
+      "possibility": 0.22384218499024167
     }
   },
   {
@@ -777,7 +812,7 @@
     "tfr": 1.013,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 23845.6197217259,
+      "gdp_pc": 23841.4769141817,
       "gini": 36.0,
       "fem_sec_enroll": null,
       "fem_years_schooling": 7.543190438,
@@ -787,8 +822,9 @@
       "child_mortality": 5.7,
       "adolescent_fertility": 5.202,
       "urbanisation": 65.8946980998325,
+      "mobile_use": 131.753932036803,
       "social_cohesion": 1.239,
-      "possibility": 0.24440124287130727
+      "possibility": 0.22538761944196864
     }
   },
   {
@@ -799,7 +835,7 @@
     "tfr": 4.23,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 6747.03796777388,
+      "gdp_pc": 6747.0379677706,
       "gini": 35.3,
       "fem_sec_enroll": 64.4785040152839,
       "fem_years_schooling": 3.055541139,
@@ -809,8 +845,9 @@
       "child_mortality": 64.5,
       "adolescent_fertility": 90.556,
       "urbanisation": 53.9733113940142,
+      "mobile_use": 183.875985110648,
       "social_cohesion": 0.578,
-      "possibility": -0.107187128567958
+      "possibility": -0.46163013896448274
     }
   },
   {
@@ -831,8 +868,9 @@
       "child_mortality": 64.8,
       "adolescent_fertility": 105.389,
       "urbanisation": 55.4031748609078,
+      "mobile_use": 108.213130152497,
       "social_cohesion": 0.856,
-      "possibility": -0.4098281473729924
+      "possibility": -0.4738036350844398
     }
   },
   {
@@ -843,7 +881,7 @@
     "tfr": 5.981,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 1602.074979895,
+      "gdp_pc": 1601.70926640422,
       "gini": 44.7,
       "fem_sec_enroll": 42.9527015686035,
       "fem_years_schooling": 5.849373167,
@@ -853,8 +891,9 @@
       "child_mortality": 89.7,
       "adolescent_fertility": 105.224,
       "urbanisation": 44.7455804408753,
+      "mobile_use": 58.532153345468,
       "social_cohesion": 0.665,
-      "possibility": -0.8206653921606005
+      "possibility": -0.746947732528422
     }
   },
   {
@@ -865,7 +904,7 @@
     "tfr": 4.109,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 6181.47071635967,
+      "gdp_pc": 6152.56509118442,
       "gini": null,
       "fem_sec_enroll": null,
       "fem_years_schooling": 7.242174036,
@@ -875,8 +914,9 @@
       "child_mortality": 39.1,
       "adolescent_fertility": 108.099,
       "urbanisation": 63.8866111699904,
+      "mobile_use": 95.5319320614796,
       "social_cohesion": 0.622,
-      "possibility": -0.4561276575870578
+      "possibility": -0.47031436150164524
     }
   },
   {
@@ -887,7 +927,7 @@
     "tfr": 1.634,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 18477.2146664536,
+      "gdp_pc": 18481.8374929368,
       "gini": 54.4,
       "fem_sec_enroll": 103.587738037109,
       "fem_years_schooling": 9.016329765,
@@ -897,8 +937,9 @@
       "child_mortality": 11.5,
       "adolescent_fertility": 58.393,
       "urbanisation": 78.5210811866115,
+      "mobile_use": 174.094289675393,
       "social_cohesion": 1.241,
-      "possibility": 0.22342022843351242
+      "possibility": -0.0010353777568731307
     }
   },
   {
@@ -909,7 +950,7 @@
     "tfr": 3.822,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3482.53486037478,
+      "gdp_pc": 3556.0384263801,
       "gini": 30.3,
       "fem_sec_enroll": 56.4125595092773,
       "fem_years_schooling": 5.222353096,
@@ -919,8 +960,9 @@
       "child_mortality": 39.0,
       "adolescent_fertility": 53.797,
       "urbanisation": 33.5392215673301,
+      "mobile_use": 109.855630436495,
       "social_cohesion": 0.328,
-      "possibility": -0.5127221871485637
+      "possibility": -0.6103681086247656
     }
   },
   {
@@ -931,7 +973,7 @@
     "tfr": 1.511,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 9848.95276350935,
+      "gdp_pc": 9825.53410093619,
       "gini": 42.4,
       "fem_sec_enroll": 103.582593697222,
       "fem_years_schooling": 5.807281856,
@@ -941,8 +983,9 @@
       "child_mortality": 11.1,
       "adolescent_fertility": 37.942,
       "urbanisation": 76.7721471004354,
+      "mobile_use": 111.84067886381,
       "social_cohesion": null,
-      "possibility": 0.008874430378089809
+      "possibility": 0.032054086730380855
     }
   },
   {
@@ -953,7 +996,7 @@
     "tfr": 1.318,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 26973.4361580719,
+      "gdp_pc": 27325.0470476503,
       "gini": 45.8,
       "fem_sec_enroll": 126.321907043457,
       "fem_years_schooling": 8.892390251,
@@ -963,8 +1006,9 @@
       "child_mortality": 10.4,
       "adolescent_fertility": 24.838,
       "urbanisation": 79.3107672397967,
+      "mobile_use": 136.024511151268,
       "social_cohesion": 1.373,
-      "possibility": 0.22486002677909242
+      "possibility": 0.1717787284351545
     }
   },
   {
@@ -985,8 +1029,9 @@
       "child_mortality": 8.6,
       "adolescent_fertility": 48.236,
       "urbanisation": 77.1664929228275,
+      "mobile_use": 72.930002350684,
       "social_cohesion": null,
-      "possibility": -0.30607000288437997
+      "possibility": -0.1290421317415392
     }
   },
   {
@@ -997,7 +1042,7 @@
     "tfr": 1.4,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 28762.058180431,
+      "gdp_pc": 28762.0581566389,
       "gini": null,
       "fem_sec_enroll": 94.2307662963867,
       "fem_years_schooling": null,
@@ -1007,8 +1052,9 @@
       "child_mortality": null,
       "adolescent_fertility": 12.469,
       "urbanisation": 91.4321812441765,
+      "mobile_use": 93.7975591472655,
       "social_cohesion": null,
-      "possibility": -0.039464693826224986
+      "possibility": 0.09179022893857817
     }
   },
   {
@@ -1019,7 +1065,7 @@
     "tfr": 1.525,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 79675.8568481808,
+      "gdp_pc": 80996.6506641666,
       "gini": null,
       "fem_sec_enroll": 84.3549078439777,
       "fem_years_schooling": null,
@@ -1029,8 +1075,9 @@
       "child_mortality": null,
       "adolescent_fertility": 10.525,
       "urbanisation": 100.0,
+      "mobile_use": 139.314997695241,
       "social_cohesion": null,
-      "possibility": 0.6868602659145664
+      "possibility": 0.7466038342506645
     }
   },
   {
@@ -1041,7 +1088,7 @@
     "tfr": 1.38,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 52635.58203125,
+      "gdp_pc": 52861.8359375,
       "gini": 31.8,
       "fem_sec_enroll": 106.717170715332,
       "fem_years_schooling": 12.41040993,
@@ -1051,8 +1098,9 @@
       "child_mortality": 5.0,
       "adolescent_fertility": 6.981,
       "urbanisation": 66.6824259192483,
+      "mobile_use": 156.218025662252,
       "social_cohesion": 1.217,
-      "possibility": 0.7670215477777458
+      "possibility": 0.7650313887011754
     }
   },
   {
@@ -1063,7 +1111,7 @@
     "tfr": 1.36,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 47963.8968485782,
+      "gdp_pc": 47972.53171792,
       "gini": 25.7,
       "fem_sec_enroll": 98.0195083618164,
       "fem_years_schooling": 12.77560331,
@@ -1073,8 +1121,9 @@
       "child_mortality": 2.6,
       "adolescent_fertility": 5.754,
       "urbanisation": 72.7947984592185,
+      "mobile_use": 126.600163061009,
       "social_cohesion": 1.511,
-      "possibility": -0.05135084678298492
+      "possibility": -0.1356904553355725
     }
   },
   {
@@ -1085,7 +1134,7 @@
     "tfr": 1.36,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 62554.5547232436,
+      "gdp_pc": 62654.602264023,
       "gini": 33.7,
       "fem_sec_enroll": 97.7090530395508,
       "fem_years_schooling": 13.99030018,
@@ -1095,8 +1144,9 @@
       "child_mortality": 3.7,
       "adolescent_fertility": 5.237,
       "urbanisation": 82.0211432579125,
+      "mobile_use": 129.150921864378,
       "social_cohesion": 1.39,
-      "possibility": 0.27693860324795255
+      "possibility": 0.2855646966130341
     }
   },
   {
@@ -1117,8 +1167,9 @@
       "child_mortality": 48.9,
       "adolescent_fertility": 19.098,
       "urbanisation": 72.9052635052978,
+      "mobile_use": 48.4504884885996,
       "social_cohesion": null,
-      "possibility": -0.4912246009230857
+      "possibility": -0.28636015180097674
     }
   },
   {
@@ -1139,8 +1190,9 @@
       "child_mortality": 35.7,
       "adolescent_fertility": 33.973,
       "urbanisation": 73.5449839980866,
+      "mobile_use": 85.1898961482058,
       "social_cohesion": null,
-      "possibility": 0.12915094710657804
+      "possibility": 0.311389976073685
     }
   },
   {
@@ -1151,7 +1203,7 @@
     "tfr": 1.47,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 71431.2926242287,
+      "gdp_pc": 71034.5789667138,
       "gini": 29.9,
       "fem_sec_enroll": 124.96704864502,
       "fem_years_schooling": 13.15695,
@@ -1161,8 +1213,9 @@
       "child_mortality": 4.0,
       "adolescent_fertility": 1.06,
       "urbanisation": 88.6960552688405,
+      "mobile_use": 126.686532566268,
       "social_cohesion": 1.52,
-      "possibility": 0.4285536843570089
+      "possibility": 0.5036153749696635
     }
   },
   {
@@ -1183,8 +1236,9 @@
       "child_mortality": 30.6,
       "adolescent_fertility": 50.163,
       "urbanisation": 72.4121874752151,
+      "mobile_use": 93.7095828968519,
       "social_cohesion": 1.272,
-      "possibility": -0.022672717479717677
+      "possibility": 0.11475226987622394
     }
   },
   {
@@ -1205,8 +1259,9 @@
       "child_mortality": 21.6,
       "adolescent_fertility": 8.582,
       "urbanisation": 75.2792907190618,
+      "mobile_use": 115.457278573892,
       "social_cohesion": 1.191,
-      "possibility": -0.14215531247640947
+      "possibility": -0.17426545068149094
     }
   },
   {
@@ -1217,7 +1272,7 @@
     "tfr": 1.806,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 13935.5391125402,
+      "gdp_pc": 13922.4222780744,
       "gini": 45.2,
       "fem_sec_enroll": 94.1827583420861,
       "fem_years_schooling": 8.920129776,
@@ -1227,8 +1282,9 @@
       "child_mortality": 12.9,
       "adolescent_fertility": 54.309,
       "urbanisation": 63.2376932397602,
+      "mobile_use": 101.598265014024,
       "social_cohesion": 1.151,
-      "possibility": -0.10273400496505317
+      "possibility": -0.057910737471704075
     }
   },
   {
@@ -1239,7 +1295,7 @@
     "tfr": 2.735,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 16798.151577864,
+      "gdp_pc": 16798.151577838,
       "gini": 28.5,
       "fem_sec_enroll": 83.9216814420657,
       "fem_years_schooling": 10.22875714,
@@ -1249,8 +1305,9 @@
       "child_mortality": 22.4,
       "adolescent_fertility": 41.126,
       "urbanisation": 42.8004363938404,
+      "mobile_use": 97.1295066037455,
       "social_cohesion": 0.996,
-      "possibility": -0.20653598963793424
+      "possibility": -0.16605795668714673
     }
   },
   {
@@ -1271,8 +1328,9 @@
       "child_mortality": 34.3,
       "adolescent_fertility": 65.157,
       "urbanisation": 34.5365524291992,
+      "mobile_use": 59.1248082166991,
       "social_cohesion": null,
-      "possibility": -0.9320198136339828
+      "possibility": -0.8890053758954539
     }
   },
   {
@@ -1293,8 +1351,9 @@
       "child_mortality": 3.2,
       "adolescent_fertility": 4.85,
       "urbanisation": 80.315199821207,
+      "mobile_use": 130.260997343256,
       "social_cohesion": 1.471,
-      "possibility": 0.34137359000907463
+      "possibility": 0.36431453342119835
     }
   },
   {
@@ -1305,7 +1364,7 @@
     "tfr": 1.18,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 41189.6675300734,
+      "gdp_pc": 41185.8348356109,
       "gini": 30.7,
       "fem_sec_enroll": 111.402633666992,
       "fem_years_schooling": 13.78102016,
@@ -1315,8 +1374,9 @@
       "child_mortality": 2.0,
       "adolescent_fertility": 4.675,
       "urbanisation": 70.6981161541961,
+      "mobile_use": 151.131825017309,
       "social_cohesion": 1.527,
-      "possibility": 0.24152769512116676
+      "possibility": 0.1327487212555799
     }
   },
   {
@@ -1327,7 +1387,7 @@
     "tfr": 3.909,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2892.22220168264,
+      "gdp_pc": 2892.22220162795,
       "gini": 31.1,
       "fem_sec_enroll": 33.3210265952712,
       "fem_years_schooling": 1.671867083,
@@ -1337,8 +1397,9 @@
       "child_mortality": 44.5,
       "adolescent_fertility": 68.198,
       "urbanisation": 23.6222839355469,
+      "mobile_use": 65.0825091944922,
       "social_cohesion": 0.915,
-      "possibility": -0.7415917575371932
+      "possibility": -0.6591077808135746
     }
   },
   {
@@ -1349,7 +1410,7 @@
     "tfr": 1.25,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 56123.1479579839,
+      "gdp_pc": 55901.3202296588,
       "gini": 27.4,
       "fem_sec_enroll": 150.736312866211,
       "fem_years_schooling": 13.11326253,
@@ -1359,8 +1420,9 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 2.987,
       "urbanisation": 74.2637190463636,
+      "mobile_use": 125.860954798649,
       "social_cohesion": 1.572,
-      "possibility": 0.4608661644566544
+      "possibility": 0.529209405618609
     }
   },
   {
@@ -1381,8 +1443,9 @@
       "child_mortality": 29.1,
       "adolescent_fertility": 20.905,
       "urbanisation": 59.0766602292457,
+      "mobile_use": 574.152332512188,
       "social_cohesion": null,
-      "possibility": 1.5741528846682669
+      "possibility": -0.24849096514565258
     }
   },
   {
@@ -1403,8 +1466,9 @@
       "child_mortality": 4.3,
       "adolescent_fertility": 3.302,
       "urbanisation": 78.7999750964116,
+      "mobile_use": 116.687800394775,
       "social_cohesion": 1.348,
-      "possibility": 0.18250436317895338
+      "possibility": 0.24006353359095167
     }
   },
   {
@@ -1415,7 +1479,7 @@
     "tfr": 1.9129,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 72059.580327154,
+      "gdp_pc": 72113.6513885269,
       "gini": null,
       "fem_sec_enroll": null,
       "fem_years_schooling": null,
@@ -1425,8 +1489,9 @@
       "child_mortality": null,
       "adolescent_fertility": 4.403,
       "urbanisation": 39.4132325882965,
+      "mobile_use": 105.80437318324,
       "social_cohesion": null,
-      "possibility": 0.5395970397894183
+      "possibility": 0.7252160860763619
     }
   },
   {
@@ -1437,7 +1502,7 @@
     "tfr": 2.743,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3824.1523439548,
+      "gdp_pc": 3911.26631940407,
       "gini": null,
       "fem_sec_enroll": null,
       "fem_years_schooling": 6.8911421,
@@ -1447,8 +1512,9 @@
       "child_mortality": 22.4,
       "adolescent_fertility": 43.692,
       "urbanisation": 22.4562830235421,
+      "mobile_use": 19.9885830493962,
       "social_cohesion": null,
-      "possibility": -0.9682520061887712
+      "possibility": -0.744904636918944
     }
   },
   {
@@ -1459,7 +1525,7 @@
     "tfr": 3.592,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 18923.6616611651,
+      "gdp_pc": 18923.6616609778,
       "gini": 38.0,
       "fem_sec_enroll": 72.0510629415333,
       "fem_years_schooling": 10.42,
@@ -1469,8 +1535,9 @@
       "child_mortality": 32.6,
       "adolescent_fertility": 89.467,
       "urbanisation": 91.8632094677575,
+      "mobile_use": 125.337107593999,
       "social_cohesion": 1.038,
-      "possibility": -0.0077162838882798845
+      "possibility": -0.06936827178488107
     }
   },
   {
@@ -1481,7 +1548,7 @@
     "tfr": 1.551,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 52621.1790252979,
+      "gdp_pc": 53412.0647163589,
       "gini": 32.4,
       "fem_sec_enroll": 113.658416748047,
       "fem_years_schooling": 13.44999981,
@@ -1491,8 +1558,9 @@
       "child_mortality": 4.7,
       "adolescent_fertility": 7.817,
       "urbanisation": 83.2429544416085,
+      "mobile_use": 121.643331373201,
       "social_cohesion": 1.326,
-      "possibility": 0.4310779579693739
+      "possibility": 0.5393515620453061
     }
   },
   {
@@ -1503,7 +1571,7 @@
     "tfr": 1.802,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 24883.9081161639,
+      "gdp_pc": 24146.6234108645,
       "gini": 33.9,
       "fem_sec_enroll": 97.8280378119792,
       "fem_years_schooling": 12.7620697,
@@ -1513,8 +1581,9 @@
       "child_mortality": 8.6,
       "adolescent_fertility": 19.373,
       "urbanisation": 61.0789605093733,
+      "mobile_use": 161.201784818537,
       "social_cohesion": 0.99,
-      "possibility": 0.31844572239946506
+      "possibility": 0.13356222897601497
     }
   },
   {
@@ -1525,7 +1594,7 @@
     "tfr": 3.344,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7055.62496009323,
+      "gdp_pc": 7072.79879594445,
       "gini": 43.5,
       "fem_sec_enroll": 76.4284133911133,
       "fem_years_schooling": 5.553439108,
@@ -1535,8 +1604,9 @@
       "child_mortality": 35.9,
       "adolescent_fertility": 57.447,
       "urbanisation": 58.3654868038581,
+      "mobile_use": 113.647966704673,
       "social_cohesion": 0.747,
-      "possibility": -0.03829738623892939
+      "possibility": -0.03472455393707842
     }
   },
   {
@@ -1557,8 +1627,9 @@
       "child_mortality": null,
       "adolescent_fertility": 8.534,
       "urbanisation": 100.0,
+      "mobile_use": 97.6042968438406,
       "social_cohesion": null,
-      "possibility": 1.0237062964458918
+      "possibility": 1.3694897301562243
     }
   },
   {
@@ -1569,7 +1640,7 @@
     "tfr": 4.131,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 4016.34191386072,
+      "gdp_pc": 4016.34191385979,
       "gini": 29.6,
       "fem_sec_enroll": null,
       "fem_years_schooling": 1.402865117,
@@ -1579,8 +1650,9 @@
       "child_mortality": 92.1,
       "adolescent_fertility": 116.768,
       "urbanisation": 38.0713036688655,
+      "mobile_use": 97.8794996455513,
       "social_cohesion": 0.622,
-      "possibility": -0.5116514570032488
+      "possibility": -0.564125144221988
     }
   },
   {
@@ -1591,7 +1663,7 @@
     "tfr": 3.907,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3057.68417746891,
+      "gdp_pc": 3057.6841778633,
       "gini": 38.8,
       "fem_sec_enroll": 116.372766553778,
       "fem_years_schooling": 3.672250032,
@@ -1601,8 +1673,9 @@
       "child_mortality": 42.4,
       "adolescent_fertility": 56.138,
       "urbanisation": 64.2994103409645,
+      "mobile_use": 126.243773523653,
       "social_cohesion": 0.684,
-      "possibility": -0.3169231296529746
+      "possibility": -0.44492320226280646
     }
   },
   {
@@ -1613,7 +1686,7 @@
     "tfr": 3.757,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2744.27981043716,
+      "gdp_pc": 2717.54206972499,
       "gini": 33.4,
       "fem_sec_enroll": null,
       "fem_years_schooling": 2.470246,
@@ -1623,8 +1696,9 @@
       "child_mortality": 67.3,
       "adolescent_fertility": 80.292,
       "urbanisation": 46.113204421822,
+      "mobile_use": 147.197631273872,
       "social_cohesion": null,
-      "possibility": -0.4044389831110153
+      "possibility": -0.6557141818667156
     }
   },
   {
@@ -1635,7 +1709,7 @@
     "tfr": 4.116,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 15454.428493564,
+      "gdp_pc": 14997.7564392976,
       "gini": 38.5,
       "fem_sec_enroll": null,
       "fem_years_schooling": 8.1781822,
@@ -1645,8 +1719,9 @@
       "child_mortality": 68.0,
       "adolescent_fertility": 152.865,
       "urbanisation": 71.3574028749806,
+      "mobile_use": 49.5380486763568,
       "social_cohesion": null,
-      "possibility": -0.45437057982625173
+      "possibility": -0.2455569361170216
     }
   },
   {
@@ -1667,8 +1742,9 @@
       "child_mortality": 3.8,
       "adolescent_fertility": 6.847,
       "urbanisation": 78.9967856500534,
+      "mobile_use": 113.597610306796,
       "social_cohesion": 1.276,
-      "possibility": -0.2511778944020285
+      "possibility": -0.31823125438983974
     }
   },
   {
@@ -1679,7 +1755,7 @@
     "tfr": 1.472,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 17751.5098662481,
+      "gdp_pc": 17484.5153919556,
       "gini": 43.8,
       "fem_sec_enroll": 101.705209063303,
       "fem_years_schooling": 9.79266232,
@@ -1689,8 +1765,9 @@
       "child_mortality": 18.0,
       "adolescent_fertility": 28.617,
       "urbanisation": 36.5628000454229,
+      "mobile_use": 95.759239776586,
       "social_cohesion": null,
-      "possibility": -0.05897011338917074
+      "possibility": 0.02506452886777276
     }
   },
   {
@@ -1711,8 +1788,9 @@
       "child_mortality": null,
       "adolescent_fertility": 35.05,
       "urbanisation": 88.3195347935238,
+      "mobile_use": 118.637256652974,
       "social_cohesion": null,
-      "possibility": -0.19554132443611982
+      "possibility": -0.2765701038921207
     }
   },
   {
@@ -1723,7 +1801,7 @@
     "tfr": 2.287,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 12640.8875023146,
+      "gdp_pc": 12643.9841235004,
       "gini": 45.2,
       "fem_sec_enroll": 50.4821609334209,
       "fem_years_schooling": 5.204884199,
@@ -1733,8 +1811,9 @@
       "child_mortality": 20.5,
       "adolescent_fertility": 67.865,
       "urbanisation": 55.9547027274763,
+      "mobile_use": 112.520863034346,
       "social_cohesion": 1.169,
-      "possibility": -0.2579975931245799
+      "possibility": -0.3048583140333751
     }
   },
   {
@@ -1755,8 +1834,9 @@
       "child_mortality": null,
       "adolescent_fertility": 31.509,
       "urbanisation": 94.1726346571831,
+      "mobile_use": null,
       "social_cohesion": null,
-      "possibility": -0.0059503525742378395
+      "possibility": -0.005895816756476792
     }
   },
   {
@@ -1767,7 +1847,7 @@
     "tfr": 2.395,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 70516.7215064805,
+      "gdp_pc": 70516.7027944836,
       "gini": null,
       "fem_sec_enroll": 91.9957253539941,
       "fem_years_schooling": 8.703121311,
@@ -1777,8 +1857,9 @@
       "child_mortality": 25.2,
       "adolescent_fertility": 68.46,
       "urbanisation": 26.477717988557,
+      "mobile_use": 112.56503784518,
       "social_cohesion": null,
-      "possibility": -0.19419778102004165
+      "possibility": -0.22531139307444903
     }
   },
   {
@@ -1789,7 +1870,7 @@
     "tfr": 0.841,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 66153.9746651078,
+      "gdp_pc": 66186.0448635456,
       "gini": null,
       "fem_sec_enroll": 105.643880208333,
       "fem_years_schooling": 11.99598026,
@@ -1799,8 +1880,9 @@
       "child_mortality": null,
       "adolescent_fertility": 1.151,
       "urbanisation": 100.0,
+      "mobile_use": 364.848981963231,
       "social_cohesion": 1.184,
-      "possibility": 1.7006202051262953
+      "possibility": 0.9224088303017375
     }
   },
   {
@@ -1811,7 +1893,7 @@
     "tfr": 2.476,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 6585.85535717861,
+      "gdp_pc": 6590.84384301553,
       "gini": 45.7,
       "fem_sec_enroll": 56.205606327767,
       "fem_years_schooling": 6.867461256,
@@ -1821,8 +1903,9 @@
       "child_mortality": 15.0,
       "adolescent_fertility": 81.254,
       "urbanisation": 58.7850728104829,
+      "mobile_use": 70.9397440517258,
       "social_cohesion": 1.035,
-      "possibility": -0.443731331077814
+      "possibility": -0.3358158657953476
     }
   },
   {
@@ -1833,7 +1916,7 @@
     "tfr": 1.46,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 42829.1978370384,
+      "gdp_pc": 42828.7997273569,
       "gini": 30.1,
       "fem_sec_enroll": 108.546096801758,
       "fem_years_schooling": 12.11152878,
@@ -1843,8 +1926,9 @@
       "child_mortality": 5.6,
       "adolescent_fertility": 6.309,
       "urbanisation": 57.5158981711443,
+      "mobile_use": 121.732525659138,
       "social_cohesion": 1.445,
-      "possibility": 0.4255550236295882
+      "possibility": 0.5050801468787381
     }
   },
   {
@@ -1855,7 +1939,7 @@
     "tfr": 2.625,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2809.64535578242,
+      "gdp_pc": 2783.79140882788,
       "gini": null,
       "fem_sec_enroll": null,
       "fem_years_schooling": 5.093575575,
@@ -1865,8 +1949,9 @@
       "child_mortality": 52.8,
       "adolescent_fertility": 49.26,
       "urbanisation": 55.0372652481002,
+      "mobile_use": 65.1889329311174,
       "social_cohesion": null,
-      "possibility": -0.583104977586825
+      "possibility": -0.482205691484597
     }
   },
   {
@@ -1877,7 +1962,7 @@
     "tfr": 1.41,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 40686.9319263343,
+      "gdp_pc": 40747.1986679668,
       "gini": 30.6,
       "fem_sec_enroll": 106.523567199707,
       "fem_years_schooling": 12.09698963,
@@ -1887,8 +1972,9 @@
       "child_mortality": 3.7,
       "adolescent_fertility": 17.392,
       "urbanisation": 70.491825943218,
+      "mobile_use": 104.58063059269,
       "social_cohesion": 1.528,
-      "possibility": 0.27905924836451645
+      "possibility": 0.4049225483347604
     }
   },
   {
@@ -1899,7 +1985,7 @@
     "tfr": 2.115,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 14470.4372020578,
+      "gdp_pc": 14470.7179806578,
       "gini": 34.9,
       "fem_sec_enroll": 98.6691707526139,
       "fem_years_schooling": 8.206930161,
@@ -1909,8 +1995,9 @@
       "child_mortality": 17.7,
       "adolescent_fertility": 25.646,
       "urbanisation": 58.7509635387997,
+      "mobile_use": 122.514946500491,
       "social_cohesion": 1.184,
-      "possibility": 0.017719454620919343
+      "possibility": -0.017245144859907136
     }
   },
   {
@@ -1931,8 +2018,9 @@
       "child_mortality": null,
       "adolescent_fertility": 8.498,
       "urbanisation": 52.1633405796294,
+      "mobile_use": null,
       "social_cohesion": null,
-      "possibility": 0.7673862607937271
+      "possibility": 0.7674529242288991
     }
   },
   {
@@ -1943,7 +2031,7 @@
     "tfr": 1.962,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 9818.04270686639,
+      "gdp_pc": 9416.05137044735,
       "gini": 25.5,
       "fem_sec_enroll": 78.7182686071249,
       "fem_years_schooling": 5.529439926,
@@ -1953,8 +2041,9 @@
       "child_mortality": 26.6,
       "adolescent_fertility": 13.036,
       "urbanisation": 35.3788972368389,
+      "mobile_use": 79.3526921826412,
       "social_cohesion": 0.653,
-      "possibility": -0.2340015656680728
+      "possibility": -0.07439157707384633
     }
   },
   {
@@ -1965,7 +2054,7 @@
     "tfr": 1.47,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 119037.731175443,
+      "gdp_pc": 118833.312071751,
       "gini": 29.0,
       "fem_sec_enroll": 136.129119873047,
       "fem_years_schooling": 11.86322577,
@@ -1975,8 +2064,9 @@
       "child_mortality": 3.9,
       "adolescent_fertility": 4.009,
       "urbanisation": 64.3470379255585,
+      "mobile_use": 112.638817343502,
       "social_cohesion": 1.39,
-      "possibility": 0.5468821639814305
+      "possibility": 0.7007162677199114
     }
   },
   {
@@ -1997,8 +2087,9 @@
       "child_mortality": 11.3,
       "adolescent_fertility": 25.787,
       "urbanisation": 77.0201263427734,
+      "mobile_use": 174.066388972063,
       "social_cohesion": 1.136,
-      "possibility": 0.21229810441190572
+      "possibility": -0.014808960777744642
     }
   },
   {
@@ -2009,7 +2100,7 @@
     "tfr": 3.221,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 12725.0431260393,
+      "gdp_pc": 12725.0431260364,
       "gini": 29.8,
       "fem_sec_enroll": null,
       "fem_years_schooling": 5.648159084,
@@ -2019,8 +2110,9 @@
       "child_mortality": 21.8,
       "adolescent_fertility": 57.308,
       "urbanisation": 69.8861494108913,
+      "mobile_use": 100.080276677726,
       "social_cohesion": 0.996,
-      "possibility": -0.14832016489637664
+      "possibility": -0.10756170859954561
     }
   },
   {
@@ -2031,7 +2123,7 @@
     "tfr": 1.56,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 67310.0573573616,
+      "gdp_pc": 68230.356652817,
       "gini": 26.8,
       "fem_sec_enroll": 106.320831298828,
       "fem_years_schooling": 13.86952972,
@@ -2041,8 +2133,9 @@
       "child_mortality": 2.8,
       "adolescent_fertility": 3.074,
       "urbanisation": 94.1819039916522,
+      "mobile_use": 120.927513243653,
       "social_cohesion": 1.617,
-      "possibility": 0.6880162481152894
+      "possibility": 0.8370329804358638
     }
   },
   {
@@ -2053,7 +2146,7 @@
     "tfr": 2.87,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 47338.8424624205,
+      "gdp_pc": 47388.7236682364,
       "gini": 38.3,
       "fem_sec_enroll": 98.6831588745117,
       "fem_years_schooling": 13.49055743,
@@ -2063,8 +2156,9 @@
       "child_mortality": 3.3,
       "adolescent_fertility": 5.695,
       "urbanisation": 91.536188843818,
+      "mobile_use": 177.393104798636,
       "social_cohesion": 1.513,
-      "possibility": 0.31337389606733645
+      "possibility": 0.0950863067496796
     }
   },
   {
@@ -2075,7 +2169,7 @@
     "tfr": 1.18,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 53265.0032474189,
+      "gdp_pc": 53284.8745049149,
       "gini": 34.3,
       "fem_sec_enroll": 100.401916503906,
       "fem_years_schooling": 10.60560989,
@@ -2085,8 +2179,9 @@
       "child_mortality": 2.7,
       "adolescent_fertility": 2.871,
       "urbanisation": 69.6047535143071,
+      "mobile_use": 132.575141676252,
       "social_cohesion": 1.328,
-      "possibility": 0.2825367541482324
+      "possibility": 0.2709350390425243
     }
   },
   {
@@ -2107,8 +2202,9 @@
       "child_mortality": 17.8,
       "adolescent_fertility": 36.095,
       "urbanisation": 58.9301585439922,
+      "mobile_use": 117.693907561175,
       "social_cohesion": 1.324,
-      "possibility": -0.04278995603214911
+      "possibility": -0.06087417343423959
     }
   },
   {
@@ -2119,7 +2215,7 @@
     "tfr": 2.604,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 9520.25064497454,
+      "gdp_pc": 10468.265334284,
       "gini": null,
       "fem_sec_enroll": 92.9268253048268,
       "fem_years_schooling": 10.07157993,
@@ -2129,8 +2225,9 @@
       "child_mortality": 12.9,
       "adolescent_fertility": 17.722,
       "urbanisation": 92.9501393764286,
+      "mobile_use": 69.6426153972396,
       "social_cohesion": 0.983,
-      "possibility": -0.48416582521261403
+      "possibility": -0.3800761332334717
     }
   },
   {
@@ -2141,7 +2238,7 @@
     "tfr": 1.15,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 46106.9229230044,
+      "gdp_pc": 47479.8448545667,
       "gini": 32.3,
       "fem_sec_enroll": 101.637001037598,
       "fem_years_schooling": 12.3520298,
@@ -2151,8 +2248,9 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 1.631,
       "urbanisation": 92.1901718034531,
+      "mobile_use": 178.432441299977,
       "social_cohesion": 1.354,
-      "possibility": 0.4753591149338232
+      "possibility": 0.2321615839210963
     }
   },
   {
@@ -2173,8 +2271,9 @@
       "child_mortality": 9.4,
       "adolescent_fertility": 17.436,
       "urbanisation": 62.072531584162,
+      "mobile_use": 127.085151242164,
       "social_cohesion": 1.457,
-      "possibility": 0.2136861181670667
+      "possibility": 0.21455722742997066
     }
   },
   {
@@ -2185,7 +2284,7 @@
     "tfr": 3.167,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 5845.20117717825,
+      "gdp_pc": 5841.59866001706,
       "gini": 38.5,
       "fem_sec_enroll": 84.7505339840655,
       "fem_years_schooling": 7.109600067,
@@ -2195,8 +2294,9 @@
       "child_mortality": 38.8,
       "adolescent_fertility": 54.498,
       "urbanisation": 31.8937831721599,
+      "mobile_use": 126.477706000949,
       "social_cohesion": 0.895,
-      "possibility": -0.42886883520511204
+      "possibility": -0.5859879017894501
     }
   },
   {
@@ -2207,7 +2307,7 @@
     "tfr": 2.6,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7048.98952111264,
+      "gdp_pc": 7210.57669830499,
       "gini": 27.5,
       "fem_sec_enroll": 92.5232415743903,
       "fem_years_schooling": 11.88298442,
@@ -2217,8 +2317,9 @@
       "child_mortality": 16.8,
       "adolescent_fertility": 27.534,
       "urbanisation": 34.7219977865937,
+      "mobile_use": 107.49229509732,
       "social_cohesion": 1.477,
-      "possibility": -0.0035190455750216927
+      "possibility": 0.03757556249950315
     }
   },
   {
@@ -2229,7 +2330,7 @@
     "tfr": 2.548,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7008.88934551726,
+      "gdp_pc": 7011.58146903703,
       "gini": null,
       "fem_sec_enroll": 63.098667348683,
       "fem_years_schooling": 4.373630047,
@@ -2239,8 +2340,9 @@
       "child_mortality": 18.4,
       "adolescent_fertility": 47.306,
       "urbanisation": 40.8727033252729,
+      "mobile_use": 116.091961125929,
       "social_cohesion": 1.019,
-      "possibility": -0.21420488223270837
+      "possibility": -0.26739582988642296
     }
   },
   {
@@ -2251,7 +2353,7 @@
     "tfr": 3.124,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3257.1362912531,
+      "gdp_pc": 3275.00186630433,
       "gini": 24.7,
       "fem_sec_enroll": 94.4197769165039,
       "fem_years_schooling": 9.292067793,
@@ -2261,8 +2363,9 @@
       "child_mortality": 53.1,
       "adolescent_fertility": 44.037,
       "urbanisation": 62.4620431275642,
+      "mobile_use": 53.5244353915461,
       "social_cohesion": null,
-      "possibility": -0.25446841869083064
+      "possibility": 0.06496527778132662
     }
   },
   {
@@ -2283,8 +2386,9 @@
       "child_mortality": 15.9,
       "adolescent_fertility": 36.413,
       "urbanisation": 31.795061903951,
+      "mobile_use": 118.893023653706,
       "social_cohesion": null,
-      "possibility": 0.6050260249918475
+      "possibility": 0.7431876811516986
     }
   },
   {
@@ -2305,8 +2409,9 @@
       "child_mortality": 2.8,
       "adolescent_fertility": 0.532,
       "urbanisation": 81.1682528469686,
+      "mobile_use": 172.520241179065,
       "social_cohesion": 1.178,
-      "possibility": 0.5953709628501982
+      "possibility": 0.4303223542883066
     }
   },
   {
@@ -2317,7 +2422,7 @@
     "tfr": 1.56,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 46137.4674254845,
+      "gdp_pc": 46664.2195116056,
       "gini": null,
       "fem_sec_enroll": 99.7793273925781,
       "fem_years_schooling": 8.272894602,
@@ -2327,8 +2432,9 @@
       "child_mortality": 8.1,
       "adolescent_fertility": 1.431,
       "urbanisation": 100.0,
+      "mobile_use": 167.68428501222,
       "social_cohesion": 1.364,
-      "possibility": 0.5887272693339662
+      "possibility": 0.4866067522061068
     }
   },
   {
@@ -2339,7 +2445,7 @@
     "tfr": 2.397,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 8600.32454665553,
+      "gdp_pc": 8600.3245466568,
       "gini": 34.7,
       "fem_sec_enroll": 50.9977217073246,
       "fem_years_schooling": 4.995009421,
@@ -2349,8 +2455,9 @@
       "child_mortality": 29.4,
       "adolescent_fertility": 81.928,
       "urbanisation": 39.5552154401406,
+      "mobile_use": 64.7588066942788,
       "social_cohesion": 0.846,
-      "possibility": -0.3802812008776018
+      "possibility": -0.17527054122862815
     }
   },
   {
@@ -2361,7 +2468,7 @@
     "tfr": 2.227,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 11330.2687387422,
+      "gdp_pc": 10469.2210966932,
       "gini": 35.5,
       "fem_sec_enroll": 67.5449829101562,
       "fem_years_schooling": 8.047852662,
@@ -2371,8 +2478,9 @@
       "child_mortality": 17.6,
       "adolescent_fertility": 20.667,
       "urbanisation": 90.703695784554,
+      "mobile_use": 74.0148340435503,
       "social_cohesion": 0.577,
-      "possibility": -0.2433680231496457
+      "possibility": -0.1002360969230771
     }
   },
   {
@@ -2393,8 +2501,9 @@
       "child_mortality": 86.4,
       "adolescent_fertility": 124.74,
       "urbanisation": 55.5387986654968,
+      "mobile_use": 32.0638885570006,
       "social_cohesion": 0.673,
-      "possibility": -0.8575900891670233
+      "possibility": -0.6007356237484663
     }
   },
   {
@@ -2415,8 +2524,9 @@
       "child_mortality": 9.8,
       "adolescent_fertility": 5.827,
       "urbanisation": 87.8854066107749,
+      "mobile_use": 192.97309381967,
       "social_cohesion": 1.1,
-      "possibility": 0.23637264095657132
+      "possibility": -0.0762010417031398
     }
   },
   {
@@ -2427,7 +2537,7 @@
     "tfr": 1.385,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 24252.4688588491,
+      "gdp_pc": 24699.9694711589,
       "gini": 43.7,
       "fem_sec_enroll": 91.621762558665,
       "fem_years_schooling": 8.837794323,
@@ -2437,8 +2547,9 @@
       "child_mortality": 17.2,
       "adolescent_fertility": 27.167,
       "urbanisation": 29.0973354237452,
+      "mobile_use": 98.6676436534083,
       "social_cohesion": null,
-      "possibility": 0.22604642000620495
+      "possibility": 0.36729746770357596
     }
   },
   {
@@ -2459,8 +2570,9 @@
       "child_mortality": null,
       "adolescent_fertility": 1.801,
       "urbanisation": 14.657584904886,
+      "mobile_use": 128.901429646351,
       "social_cohesion": null,
-      "possibility": 0.6301016960927703
+      "possibility": 0.7260540088293987
     }
   },
   {
@@ -2471,7 +2583,7 @@
     "tfr": 1.952,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 13752.836740386,
+      "gdp_pc": 13793.0669827677,
       "gini": 37.7,
       "fem_sec_enroll": 90.4491165297148,
       "fem_years_schooling": 11.12806034,
@@ -2481,8 +2593,9 @@
       "child_mortality": 5.9,
       "adolescent_fertility": 14.719,
       "urbanisation": 20.2996997058686,
+      "mobile_use": 132.548743018664,
       "social_cohesion": 1.179,
-      "possibility": -0.22905341426206954
+      "possibility": -0.36559287142809993
     }
   },
   {
@@ -2493,7 +2606,7 @@
     "tfr": 2.664,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2640.28544552536,
+      "gdp_pc": 2697.62738436647,
       "gini": 44.9,
       "fem_sec_enroll": 68.1387518596821,
       "fem_years_schooling": 8.189024107,
@@ -2503,8 +2616,9 @@
       "child_mortality": 60.0,
       "adolescent_fertility": 69.55,
       "urbanisation": 43.6780334209246,
+      "mobile_use": 70.328049309004,
       "social_cohesion": 0.851,
-      "possibility": -0.5559426739077505
+      "possibility": -0.47312106570674695
     }
   },
   {
@@ -2515,7 +2629,7 @@
     "tfr": 1.11,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 47165.3665643051,
+      "gdp_pc": 47462.0039386975,
       "gini": 36.0,
       "fem_sec_enroll": 103.863700866699,
       "fem_years_schooling": 13.58351994,
@@ -2525,8 +2639,9 @@
       "child_mortality": 3.4,
       "adolescent_fertility": 5.52,
       "urbanisation": 68.8285833315315,
+      "mobile_use": 138.728835196967,
       "social_cohesion": 1.454,
-      "possibility": 0.2717324510994089
+      "possibility": 0.21682655958616628
     }
   },
   {
@@ -2537,7 +2652,7 @@
     "tfr": 1.25,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 128475.279802738,
+      "gdp_pc": 128475.283540415,
       "gini": 33.6,
       "fem_sec_enroll": 109.880676269531,
       "fem_years_schooling": 12.93417865,
@@ -2547,8 +2662,9 @@
       "child_mortality": 2.2,
       "adolescent_fertility": 3.996,
       "urbanisation": 94.8438702866393,
+      "mobile_use": 144.474949556306,
       "social_cohesion": 1.355,
-      "possibility": 0.6403211358443222
+      "possibility": 0.6711982327816838
     }
   },
   {
@@ -2559,7 +2675,7 @@
     "tfr": 1.24,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 37611.6699359404,
+      "gdp_pc": 37615.0762450744,
       "gini": 34.0,
       "fem_sec_enroll": 102.101348876953,
       "fem_years_schooling": 13.64862723,
@@ -2569,8 +2685,9 @@
       "child_mortality": 2.5,
       "adolescent_fertility": 7.25,
       "urbanisation": 68.4839492628509,
+      "mobile_use": 121.262202363304,
       "social_cohesion": 1.508,
-      "possibility": 0.1569250487452769
+      "possibility": 0.17644594698735258
     }
   },
   {
@@ -2591,8 +2708,9 @@
       "child_mortality": null,
       "adolescent_fertility": 0.478,
       "urbanisation": 100.0,
+      "mobile_use": 201.136947388589,
       "social_cohesion": null,
-      "possibility": 2.468355989524964
+      "possibility": 2.674265669708947
     }
   },
   {
@@ -2613,6 +2731,7 @@
       "child_mortality": null,
       "adolescent_fertility": 13.22,
       "urbanisation": 100.0,
+      "mobile_use": null,
       "social_cohesion": null,
       "possibility": null
     }
@@ -2635,8 +2754,9 @@
       "child_mortality": 15.7,
       "adolescent_fertility": 24.763,
       "urbanisation": 62.7998124018197,
+      "mobile_use": 153.057260079672,
       "social_cohesion": 0.471,
-      "possibility": 0.3018964043237768
+      "possibility": 0.16460018869461543
     }
   },
   {
@@ -2657,8 +2777,9 @@
       "child_mortality": 2.7,
       "adolescent_fertility": 9.297,
       "urbanisation": 100.0,
+      "mobile_use": 107.400792109963,
       "social_cohesion": null,
-      "possibility": 2.625372000805212
+      "possibility": 3.3242140745654676
     }
   },
   {
@@ -2669,7 +2790,7 @@
     "tfr": 1.726,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 16376.6113704265,
+      "gdp_pc": 16393.8633257184,
       "gini": 26.8,
       "fem_sec_enroll": 99.3201300620751,
       "fem_years_schooling": 11.87922207,
@@ -2679,8 +2800,9 @@
       "child_mortality": 16.5,
       "adolescent_fertility": 22.661,
       "urbanisation": 43.516471862793,
+      "mobile_use": 120.083487069521,
       "social_cohesion": 1.277,
-      "possibility": -0.18453918826493781
+      "possibility": -0.24959837823983244
     }
   },
   {
@@ -2691,7 +2813,7 @@
     "tfr": 3.912,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 1657.04970622969,
+      "gdp_pc": 1659.15030770194,
       "gini": 36.8,
       "fem_sec_enroll": 35.2580222250234,
       "fem_years_schooling": 4.292349815,
@@ -2701,8 +2823,9 @@
       "child_mortality": 62.4,
       "adolescent_fertility": 128.691,
       "urbanisation": 32.4339893339844,
+      "mobile_use": 75.4562966735535,
       "social_cohesion": 0.823,
-      "possibility": -0.7465064710268822
+      "possibility": -0.7361431961953411
     }
   },
   {
@@ -2723,8 +2846,9 @@
       "child_mortality": 5.4,
       "adolescent_fertility": 5.027,
       "urbanisation": 41.9982152717385,
+      "mobile_use": 148.137074909198,
       "social_cohesion": null,
-      "possibility": 0.39005640170221917
+      "possibility": 0.3329017224683919
     }
   },
   {
@@ -2735,7 +2859,7 @@
     "tfr": 1.892,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 22039.6287019016,
+      "gdp_pc": 21970.3520412926,
       "gini": 42.6,
       "fem_sec_enroll": 109.978668212891,
       "fem_years_schooling": 9.096670151,
@@ -2745,8 +2869,9 @@
       "child_mortality": 13.1,
       "adolescent_fertility": 59.316,
       "urbanisation": 79.7538805976118,
+      "mobile_use": 116.486713265167,
       "social_cohesion": 1.241,
-      "possibility": -0.07462380467334981
+      "possibility": -0.0948298122798788
     }
   },
   {
@@ -2757,7 +2882,7 @@
     "tfr": 2.864,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7209.26654997536,
+      "gdp_pc": 7236.8679376649,
       "gini": 35.5,
       "fem_sec_enroll": 91.2586144359811,
       "fem_years_schooling": 12.74359657,
@@ -2767,8 +2892,9 @@
       "child_mortality": 26.7,
       "adolescent_fertility": 71.255,
       "urbanisation": 78.7325660244112,
+      "mobile_use": 39.7060658232902,
       "social_cohesion": null,
-      "possibility": -1.5183893698029458
+      "possibility": -1.527959397148126
     }
   },
   {
@@ -2779,7 +2905,7 @@
     "tfr": 1.4,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 24203.2859505244,
+      "gdp_pc": 24203.1855800189,
       "gini": 33.5,
       "fem_sec_enroll": 90.173713684082,
       "fem_years_schooling": 9.653639793,
@@ -2789,8 +2915,9 @@
       "child_mortality": 2.8,
       "adolescent_fertility": 12.425,
       "urbanisation": 62.5645376928533,
+      "mobile_use": 108.38712260883,
       "social_cohesion": 1.277,
-      "possibility": 0.025814335162700496
+      "possibility": 0.0699283579932555
     }
   },
   {
@@ -2801,7 +2928,7 @@
     "tfr": 5.51,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2916.18529537154,
+      "gdp_pc": 2917.93245883671,
       "gini": 35.7,
       "fem_sec_enroll": 37.1307560416794,
       "fem_years_schooling": 1.135959983,
@@ -2811,8 +2938,9 @@
       "child_mortality": 73.0,
       "adolescent_fertility": 135.911,
       "urbanisation": 31.6075621182225,
+      "mobile_use": 112.119852778009,
       "social_cohesion": 0.688,
-      "possibility": -0.44671960337622435
+      "possibility": -0.5694268102612917
     }
   },
   {
@@ -2823,7 +2951,7 @@
     "tfr": 1.01,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 62700.4942180461,
+      "gdp_pc": 62398.4892388947,
       "gini": 31.8,
       "fem_sec_enroll": 103.851119995117,
       "fem_years_schooling": 12.00041962,
@@ -2833,8 +2961,9 @@
       "child_mortality": 5.3,
       "adolescent_fertility": 10.0,
       "urbanisation": 95.6546264490509,
+      "mobile_use": 142.070062100751,
       "social_cohesion": 1.444,
-      "possibility": 0.8436303337916682
+      "possibility": 0.9577896953907853
     }
   },
   {
@@ -2855,8 +2984,9 @@
       "child_mortality": 36.9,
       "adolescent_fertility": 33.193,
       "urbanisation": 30.4499084074136,
+      "mobile_use": 114.329042129489,
       "social_cohesion": 0.988,
-      "possibility": -0.3090005576146661
+      "possibility": -0.4000560764164673
     }
   },
   {
@@ -2867,7 +2997,7 @@
     "tfr": 1.8,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 28105.7093264336,
+      "gdp_pc": 28105.5927726624,
       "gini": 34.3,
       "fem_sec_enroll": 95.1452331542969,
       "fem_years_schooling": 12.0696905,
@@ -2877,8 +3007,9 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 8.711,
       "urbanisation": 65.5422314706266,
+      "mobile_use": 221.687322527444,
       "social_cohesion": 1.318,
-      "possibility": 0.8479851096767673
+      "possibility": 0.5494436056705542
     }
   },
   {
@@ -2899,8 +3030,9 @@
       "child_mortality": 13.4,
       "adolescent_fertility": 19.045,
       "urbanisation": 70.9566040039062,
+      "mobile_use": 140.670025377351,
       "social_cohesion": 1.511,
-      "possibility": 0.08350934847142559
+      "possibility": -0.014181188895254332
     }
   },
   {
@@ -2921,8 +3053,9 @@
       "child_mortality": null,
       "adolescent_fertility": 25.313,
       "urbanisation": 92.0747260922394,
+      "mobile_use": null,
       "social_cohesion": null,
-      "possibility": -0.9426995364745809
+      "possibility": -0.9426850356960973
     }
   },
   {
@@ -2933,7 +3066,7 @@
     "tfr": 4.69,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 1500.31427446351,
+      "gdp_pc": 1500.70758504856,
       "gini": 49.6,
       "fem_sec_enroll": 35.2994499206543,
       "fem_years_schooling": 3.228760004,
@@ -2943,8 +3076,9 @@
       "child_mortality": 59.4,
       "adolescent_fertility": 151.875,
       "urbanisation": 36.4332337447237,
+      "mobile_use": 49.5047696961223,
       "social_cohesion": 0.883,
-      "possibility": -0.8795272434317927
+      "possibility": -0.7425134564006047
     }
   },
   {
@@ -2955,7 +3089,7 @@
     "tfr": 4.625,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 6482.69016724334,
+      "gdp_pc": 6482.69016635936,
       "gini": 32.0,
       "fem_sec_enroll": 36.1789325617578,
       "fem_years_schooling": 4.11278431,
@@ -2965,8 +3099,9 @@
       "child_mortality": 36.9,
       "adolescent_fertility": 87.574,
       "urbanisation": 60.6068586411829,
+      "mobile_use": 92.0748946443443,
       "social_cohesion": 0.705,
-      "possibility": -0.49142293308534607
+      "possibility": -0.49770613408248604
     }
   },
   {
@@ -2977,7 +3112,7 @@
     "tfr": 1.44,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 28011.1579806299,
+      "gdp_pc": 27844.8956114831,
       "gini": 36.8,
       "fem_sec_enroll": 93.3869460880397,
       "fem_years_schooling": 9.864661688,
@@ -2987,8 +3122,9 @@
       "child_mortality": 15.4,
       "adolescent_fertility": 19.204,
       "urbanisation": 39.0162147027917,
+      "mobile_use": 172.68356921857,
       "social_cohesion": 1.358,
-      "possibility": 0.2617353871081144
+      "possibility": -0.015576048973322215
     }
   },
   {
@@ -3009,8 +3145,9 @@
       "child_mortality": 48.8,
       "adolescent_fertility": 113.322,
       "urbanisation": 17.268503531213,
+      "mobile_use": 69.260530662121,
       "social_cohesion": 0.41,
-      "possibility": -0.761368359635424
+      "possibility": -0.7247408688944004
     }
   },
   {
@@ -3031,8 +3168,9 @@
       "child_mortality": 8.3,
       "adolescent_fertility": 5.72,
       "urbanisation": 76.9170296648992,
+      "mobile_use": 139.664651283564,
       "social_cohesion": 1.143,
-      "possibility": 0.32781409148213875
+      "possibility": 0.2960649899826444
     }
   },
   {
@@ -3043,7 +3181,7 @@
     "tfr": 3.211,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 10281.3356402988,
+      "gdp_pc": 10276.3686426386,
       "gini": 59.1,
       "fem_sec_enroll": 86.3728889011327,
       "fem_years_schooling": 7.515436441,
@@ -3053,8 +3191,9 @@
       "child_mortality": 39.5,
       "adolescent_fertility": 65.946,
       "urbanisation": 50.4088030252155,
+      "mobile_use": 85.1648988113055,
       "social_cohesion": 1.212,
-      "possibility": -0.2939547888979472
+      "possibility": -0.2174297005269475
     }
   },
   {
@@ -3075,8 +3214,9 @@
       "child_mortality": null,
       "adolescent_fertility": 11.7,
       "urbanisation": 67.9514695585577,
+      "mobile_use": 91.6763895612682,
       "social_cohesion": null,
-      "possibility": 0.07704690231072461
+      "possibility": 0.21484349771340755
     }
   },
   {
@@ -3087,7 +3227,7 @@
     "tfr": 5.935,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 1803.4369300532,
+      "gdp_pc": 1795.65266888022,
       "gini": 32.9,
       "fem_sec_enroll": 19.5379934744263,
       "fem_years_schooling": 0.965615989,
@@ -3097,8 +3237,9 @@
       "child_mortality": 110.7,
       "adolescent_fertility": 141.551,
       "urbanisation": 18.0497398450803,
+      "mobile_use": 60.5939862118112,
       "social_cohesion": 0.677,
-      "possibility": -0.8442591630824026
+      "possibility": -0.7864171112988463
     }
   },
   {
@@ -3109,7 +3250,7 @@
     "tfr": 4.382,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7994.21563861459,
+      "gdp_pc": 7994.03754470824,
       "gini": 33.9,
       "fem_sec_enroll": 47.4061508178711,
       "fem_years_schooling": 6.556469917,
@@ -3119,8 +3260,9 @@
       "child_mortality": 115.6,
       "adolescent_fertility": 83.959,
       "urbanisation": 62.9755675573659,
+      "mobile_use": 70.7619057835431,
       "social_cohesion": 1.075,
-      "possibility": -0.5852604116409099
+      "possibility": -0.5118712040194303
     }
   },
   {
@@ -3131,7 +3273,7 @@
     "tfr": 2.206,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7661.60202722818,
+      "gdp_pc": 7661.09410113202,
       "gini": null,
       "fem_sec_enroll": 70.6665573120117,
       "fem_years_schooling": 7.54,
@@ -3141,8 +3283,9 @@
       "child_mortality": 11.2,
       "adolescent_fertility": 93.174,
       "urbanisation": 59.2628402709961,
+      "mobile_use": 105.961143065351,
       "social_cohesion": 1.263,
-      "possibility": -0.2719933993297433
+      "possibility": -0.290605609750222
     }
   },
   {
@@ -3153,7 +3296,7 @@
     "tfr": 1.43,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 70498.8840396071,
+      "gdp_pc": 70493.9051219267,
       "gini": 25.7,
       "fem_sec_enroll": 140.839157104492,
       "fem_years_schooling": 12.3527298,
@@ -3163,8 +3306,9 @@
       "child_mortality": 3.9,
       "adolescent_fertility": 1.748,
       "urbanisation": 95.6396517079336,
+      "mobile_use": 128.538765867661,
       "social_cohesion": 1.462,
-      "possibility": 0.5680954857949783
+      "possibility": 0.6502828794334555
     }
   },
   {
@@ -3175,7 +3319,7 @@
     "tfr": 1.45,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 91105.246799623,
+      "gdp_pc": 94803.6704931641,
       "gini": 26.5,
       "fem_sec_enroll": 115.499160766602,
       "fem_years_schooling": 13.21011267,
@@ -3185,8 +3329,9 @@
       "child_mortality": 2.5,
       "adolescent_fertility": 1.284,
       "urbanisation": 83.3293737928469,
+      "mobile_use": 109.348606513576,
       "social_cohesion": 1.517,
-      "possibility": 0.4045519738428678
+      "possibility": 0.5387021214114645
     }
   },
   {
@@ -3197,7 +3342,7 @@
     "tfr": 1.961,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 5046.81592972946,
+      "gdp_pc": 5047.42449022702,
       "gini": 30.0,
       "fem_sec_enroll": 90.8899312933145,
       "fem_years_schooling": 3.424288376,
@@ -3207,8 +3352,9 @@
       "child_mortality": 25.1,
       "adolescent_fertility": 66.489,
       "urbanisation": 66.772343163029,
+      "mobile_use": 99.8471420273964,
       "social_cohesion": 0.99,
-      "possibility": -0.7043505794216985
+      "possibility": -0.8014613855081661
     }
   },
   {
@@ -3219,7 +3365,7 @@
     "tfr": 3.29,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 12468.7614524615,
+      "gdp_pc": 11957.8785504229,
       "gini": null,
       "fem_sec_enroll": 92.8211595890451,
       "fem_years_schooling": 9.327438733,
@@ -3229,8 +3375,9 @@
       "child_mortality": 8.3,
       "adolescent_fertility": 75.269,
       "urbanisation": 100.0,
+      "mobile_use": 87.1705787645115,
       "social_cohesion": null,
-      "possibility": -0.1869741946923222
+      "possibility": -0.09337770066329425
     }
   },
   {
@@ -3241,7 +3388,7 @@
     "tfr": 1.57,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 49316.3999433708,
+      "gdp_pc": 48325.3650985684,
       "gini": null,
       "fem_sec_enroll": 118.336837768555,
       "fem_years_schooling": 12.93587971,
@@ -3251,8 +3398,9 @@
       "child_mortality": 4.7,
       "adolescent_fertility": 10.254,
       "urbanisation": 83.9370658833132,
+      "mobile_use": 130.093457083544,
       "social_cohesion": 1.527,
-      "possibility": 0.4645337676713601
+      "possibility": 0.5130565774953005
     }
   },
   {
@@ -3263,7 +3411,7 @@
     "tfr": 2.508,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 36721.0804634186,
+      "gdp_pc": 36721.0804548374,
       "gini": null,
       "fem_sec_enroll": 94.5394515991211,
       "fem_years_schooling": 12.27042007,
@@ -3273,8 +3421,9 @@
       "child_mortality": 10.3,
       "adolescent_fertility": 5.646,
       "urbanisation": 79.4440302814714,
+      "mobile_use": 120.61105087402,
       "social_cohesion": null,
-      "possibility": 1.0803009434297977
+      "possibility": 1.4117910629821173
     }
   },
   {
@@ -3285,7 +3434,7 @@
     "tfr": 3.547,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 5500.32394824285,
+      "gdp_pc": 5502.0736120186,
       "gini": 33.5,
       "fem_sec_enroll": 46.4835415439493,
       "fem_years_schooling": 3.928515917,
@@ -3295,8 +3444,9 @@
       "child_mortality": 56.0,
       "adolescent_fertility": 39.856,
       "urbanisation": 39.1734368360905,
+      "mobile_use": 76.8544559649986,
       "social_cohesion": 0.6,
-      "possibility": -0.557787031155316
+      "possibility": -0.5070076509936227
     }
   },
   {
@@ -3307,7 +3457,7 @@
     "tfr": 2.106,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 36394.9175291147,
+      "gdp_pc": 36394.9235366316,
       "gini": 49.7,
       "fem_sec_enroll": 79.0785217285156,
       "fem_years_schooling": 10.94374988,
@@ -3317,8 +3467,9 @@
       "child_mortality": 15.3,
       "adolescent_fertility": 55.851,
       "urbanisation": 65.9958447685488,
+      "mobile_use": 156.586507591014,
       "social_cohesion": 1.392,
-      "possibility": 0.11488371450598973
+      "possibility": -0.05198020297362842
     }
   },
   {
@@ -3329,7 +3480,7 @@
     "tfr": 1.965,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 15661.7497711956,
+      "gdp_pc": 15708.8329440963,
       "gini": 40.1,
       "fem_sec_enroll": 108.98267364502,
       "fem_years_schooling": 9.449307529,
@@ -3339,8 +3490,9 @@
       "child_mortality": 12.9,
       "adolescent_fertility": 42.926,
       "urbanisation": 85.1912729600355,
+      "mobile_use": 124.623544414599,
       "social_cohesion": 1.18,
-      "possibility": 0.12099193799212651
+      "possibility": 0.1068464823175063
     }
   },
   {
@@ -3351,7 +3503,7 @@
     "tfr": 1.894,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 10375.9404179938,
+      "gdp_pc": 10378.1717703535,
       "gini": 39.3,
       "fem_sec_enroll": 86.1154588164975,
       "fem_years_schooling": 9.24822052,
@@ -3361,8 +3513,9 @@
       "child_mortality": 26.5,
       "adolescent_fertility": 31.316,
       "urbanisation": 55.4520983215477,
+      "mobile_use": 115.298749599352,
       "social_cohesion": 1.146,
-      "possibility": -0.17776953985486837
+      "possibility": -0.21801252781329603
     }
   },
   {
@@ -3373,7 +3526,7 @@
     "tfr": 1.883,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 16425.9722714446,
+      "gdp_pc": 18499.9921921281,
       "gini": null,
       "fem_sec_enroll": 94.839609483961,
       "fem_years_schooling": 13.34296124,
@@ -3383,8 +3536,9 @@
       "child_mortality": 21.4,
       "adolescent_fertility": 30.178,
       "urbanisation": 79.2095042878667,
+      "mobile_use": 135.386698256896,
       "social_cohesion": null,
-      "possibility": 0.43801741825457496
+      "possibility": 0.4545779620526066
     }
   },
   {
@@ -3395,7 +3549,7 @@
     "tfr": 3.072,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 4288.52828988176,
+      "gdp_pc": 4292.71205430013,
       "gini": null,
       "fem_sec_enroll": 48.1780291095574,
       "fem_years_schooling": 4.215786493,
@@ -3405,8 +3559,9 @@
       "child_mortality": 39.4,
       "adolescent_fertility": 53.518,
       "urbanisation": 15.4061816403333,
+      "mobile_use": 38.7651796406789,
       "social_cohesion": null,
-      "possibility": -0.898974781398849
+      "possibility": -0.7491821473444357
     }
   },
   {
@@ -3427,8 +3582,9 @@
       "child_mortality": 4.2,
       "adolescent_fertility": 5.849,
       "urbanisation": 59.9705468695101,
+      "mobile_use": 138.016156588197,
       "social_cohesion": 1.417,
-      "possibility": 0.05125689531220928
+      "possibility": -0.07253689386617468
     }
   },
   {
@@ -3439,7 +3595,7 @@
     "tfr": 0.92,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 44205.7494879255,
+      "gdp_pc": 44216.4333367133,
       "gini": null,
       "fem_sec_enroll": 82.970628221555,
       "fem_years_schooling": null,
@@ -3449,8 +3605,9 @@
       "child_mortality": null,
       "adolescent_fertility": 13.295,
       "urbanisation": 94.2539505199436,
+      "mobile_use": 126.426375391555,
       "social_cohesion": null,
-      "possibility": 0.3134645372235451
+      "possibility": 0.35187663666735597
     }
   },
   {
@@ -3471,8 +3628,9 @@
       "child_mortality": 16.7,
       "adolescent_fertility": 0.505,
       "urbanisation": 63.8589748211522,
+      "mobile_use": 24.1311041179361,
       "social_cohesion": null,
-      "possibility": -0.6207876107373752
+      "possibility": null
     }
   },
   {
@@ -3483,7 +3641,7 @@
     "tfr": 1.41,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 42197.2025135828,
+      "gdp_pc": 42228.1580446502,
       "gini": 33.9,
       "fem_sec_enroll": 121.013473510742,
       "fem_years_schooling": 9.607560158,
@@ -3493,8 +3651,9 @@
       "child_mortality": 3.2,
       "adolescent_fertility": 6.567,
       "urbanisation": 61.3281907341332,
+      "mobile_use": 124.129981203404,
       "social_cohesion": 1.368,
-      "possibility": 0.5478820995593523
+      "possibility": 0.6463848188221177
     }
   },
   {
@@ -3505,7 +3664,7 @@
     "tfr": 2.416,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 16296.2836189263,
+      "gdp_pc": 16367.4940166481,
       "gini": 44.2,
       "fem_sec_enroll": 80.8023312507795,
       "fem_years_schooling": 8.856229782,
@@ -3515,8 +3674,9 @@
       "child_mortality": 16.3,
       "adolescent_fertility": 70.22,
       "urbanisation": 69.8622585886961,
+      "mobile_use": 126.605481531224,
       "social_cohesion": 1.408,
-      "possibility": -0.07398717731715904
+      "possibility": -0.1429976378139086
     }
   },
   {
@@ -3527,7 +3687,7 @@
     "tfr": 3.25,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3845.50297375419,
+      "gdp_pc": 4190.90911333626,
       "gini": 36.4,
       "fem_sec_enroll": 92.1529721719084,
       "fem_years_schooling": 9.916460037,
@@ -3537,8 +3697,9 @@
       "child_mortality": 37.9,
       "adolescent_fertility": 35.326,
       "urbanisation": 87.1196014117004,
+      "mobile_use": 76.6918854204372,
       "social_cohesion": null,
-      "possibility": -0.21698202462742783
+      "possibility": -0.08021089525508845
     }
   },
   {
@@ -3559,8 +3720,9 @@
       "child_mortality": null,
       "adolescent_fertility": 23.844,
       "urbanisation": 61.7191984724331,
+      "mobile_use": 118.777524029055,
       "social_cohesion": null,
-      "possibility": -0.1384617347793676
+      "possibility": -0.20136948482185235
     }
   },
   {
@@ -3571,7 +3733,7 @@
     "tfr": 1.717,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 110889.792701691,
+      "gdp_pc": 111314.250355891,
       "gini": 35.1,
       "fem_sec_enroll": 99.5586624145508,
       "fem_years_schooling": 11.79638314,
@@ -3581,8 +3743,9 @@
       "child_mortality": 5.9,
       "adolescent_fertility": 5.491,
       "urbanisation": 99.3219891728394,
+      "mobile_use": 153.612474384296,
       "social_cohesion": null,
-      "possibility": 0.9050504624024812
+      "possibility": 0.9652095194869384
     }
   },
   {
@@ -3593,7 +3756,7 @@
     "tfr": 1.39,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 40504.0002945958,
+      "gdp_pc": 40503.8323253789,
       "gini": 29.8,
       "fem_sec_enroll": 81.8756637573242,
       "fem_years_schooling": 11.09125994,
@@ -3603,8 +3766,9 @@
       "child_mortality": 7.3,
       "adolescent_fertility": 32.78,
       "urbanisation": 52.1674778928768,
+      "mobile_use": 119.804862328273,
       "social_cohesion": 1.236,
-      "possibility": 0.13376871676569713
+      "possibility": 0.1549737382683437
     }
   },
   {
@@ -3615,7 +3779,7 @@
     "tfr": 1.418,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 41704.7109375,
+      "gdp_pc": 41891.171875,
       "gini": 33.0,
       "fem_sec_enroll": 91.6148817164136,
       "fem_years_schooling": 12.48219967,
@@ -3625,8 +3789,9 @@
       "child_mortality": 5.2,
       "adolescent_fertility": 12.157,
       "urbanisation": 75.1119136177067,
+      "mobile_use": 186.103787309059,
       "social_cohesion": 1.351,
-      "possibility": 0.4825234632218184
+      "possibility": 0.19226752929471783
     }
   },
   {
@@ -3637,7 +3802,7 @@
     "tfr": 3.645,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3264.64451474392,
+      "gdp_pc": 3325.00769683815,
       "gini": 39.4,
       "fem_sec_enroll": 53.3234802182678,
       "fem_years_schooling": 4.522069931,
@@ -3647,8 +3812,9 @@
       "child_mortality": 37.7,
       "adolescent_fertility": 30.587,
       "urbanisation": 29.8849714294083,
+      "mobile_use": 93.201462876722,
       "social_cohesion": null,
-      "possibility": -0.5588146645449786
+      "possibility": -0.5873977235167077
     }
   },
   {
@@ -3659,7 +3825,7 @@
     "tfr": 2.308,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 62792.7741476371,
+      "gdp_pc": 63194.4332528832,
       "gini": null,
       "fem_sec_enroll": 110.795878250097,
       "fem_years_schooling": 10.73622036,
@@ -3669,8 +3835,9 @@
       "child_mortality": 6.0,
       "adolescent_fertility": 11.076,
       "urbanisation": 84.4554020211443,
+      "mobile_use": 159.541370566589,
       "social_cohesion": 1.361,
-      "possibility": 0.2919324557609678
+      "possibility": 0.15501864895338657
     }
   },
   {
@@ -3691,8 +3858,9 @@
       "child_mortality": 61.6,
       "adolescent_fertility": 64.535,
       "urbanisation": 34.8673015510839,
+      "mobile_use": 70.2084038614961,
       "social_cohesion": null,
-      "possibility": -1.0342750805266516
+      "possibility": -1.07045442021196
     }
   },
   {
@@ -3703,7 +3871,7 @@
     "tfr": 3.765,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 4460.92372176318,
+      "gdp_pc": 4477.81736836258,
       "gini": 36.2,
       "fem_sec_enroll": 50.2150531512901,
       "fem_years_schooling": 2.344075379,
@@ -3713,8 +3881,9 @@
       "child_mortality": 36.5,
       "adolescent_fertility": 59.144,
       "urbanisation": 55.2368169057304,
+      "mobile_use": 123.894453697506,
       "social_cohesion": 0.751,
-      "possibility": -0.11640618934486899
+      "possibility": -0.20497948931472668
     }
   },
   {
@@ -3725,7 +3894,7 @@
     "tfr": 0.97,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 132569.525225795,
+      "gdp_pc": 134548.764138482,
       "gini": null,
       "fem_sec_enroll": 102.676070813741,
       "fem_years_schooling": 11.62705994,
@@ -3735,8 +3904,9 @@
       "child_mortality": 2.7,
       "adolescent_fertility": 2.214,
       "urbanisation": 100.0,
+      "mobile_use": 170.78256295407,
       "social_cohesion": 1.361,
-      "possibility": 1.2746142698356988
+      "possibility": 1.328993770010932
     }
   },
   {
@@ -3747,7 +3917,7 @@
     "tfr": 3.513,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2353.24808229243,
+      "gdp_pc": 2353.54960111186,
       "gini": null,
       "fem_sec_enroll": null,
       "fem_years_schooling": 5.509549573,
@@ -3757,8 +3927,9 @@
       "child_mortality": 20.0,
       "adolescent_fertility": 49.388,
       "urbanisation": 30.6617188562194,
+      "mobile_use": 62.0734995506142,
       "social_cohesion": null,
-      "possibility": -0.6793996933355493
+      "possibility": -0.5875027166865774
     }
   },
   {
@@ -3769,7 +3940,7 @@
     "tfr": 3.703,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3098.76290609663,
+      "gdp_pc": 3098.76290446676,
       "gini": 35.7,
       "fem_sec_enroll": 91.7119293212891,
       "fem_years_schooling": 2.426674879,
@@ -3779,8 +3950,9 @@
       "child_mortality": 90.5,
       "adolescent_fertility": 91.187,
       "urbanisation": 45.3626823156371,
+      "mobile_use": 107.882000873042,
       "social_cohesion": 0.566,
-      "possibility": -0.5483546408555491
+      "possibility": -0.6775982974914659
     }
   },
   {
@@ -3791,7 +3963,7 @@
     "tfr": 1.768,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 11669.0817135644,
+      "gdp_pc": 11647.0234480127,
       "gini": 39.8,
       "fem_sec_enroll": 61.1295384065253,
       "fem_years_schooling": 6.769279957,
@@ -3801,8 +3973,9 @@
       "child_mortality": 10.0,
       "adolescent_fertility": 53.452,
       "urbanisation": 75.0674905102199,
+      "mobile_use": 176.517423814642,
       "social_cohesion": 1.08,
-      "possibility": 0.13337910286255994
+      "possibility": -0.21145223305312774
     }
   },
   {
@@ -3813,7 +3986,7 @@
     "tfr": 1.158,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 70951.7895931976,
+      "gdp_pc": 70951.7919690715,
       "gini": null,
       "fem_sec_enroll": 59.5952023988006,
       "fem_years_schooling": 10.6984396,
@@ -3823,8 +3996,9 @@
       "child_mortality": 1.3,
       "adolescent_fertility": 1.173,
       "urbanisation": 97.1560555881096,
+      "mobile_use": 120.269873863303,
       "social_cohesion": null,
-      "possibility": 0.4490318701675883
+      "possibility": 0.5414757378710624
     }
   },
   {
@@ -3845,8 +4019,9 @@
       "child_mortality": 101.1,
       "adolescent_fertility": 115.425,
       "urbanisation": 54.6176465524521,
+      "mobile_use": 53.9579646939598,
       "social_cohesion": null,
-      "possibility": -0.7375482125694752
+      "possibility": -0.6209178788482996
     }
   },
   {
@@ -3857,7 +4032,7 @@
     "tfr": 1.64,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 26900.853091323,
+      "gdp_pc": 26900.7415340646,
       "gini": 32.8,
       "fem_sec_enroll": 88.5398788452148,
       "fem_years_schooling": 11.18731102,
@@ -3867,8 +4042,9 @@
       "child_mortality": 5.4,
       "adolescent_fertility": 13.11,
       "urbanisation": 62.3830029804177,
+      "mobile_use": 123.822194984291,
       "social_cohesion": 1.391,
-      "possibility": 0.1762846699863354
+      "possibility": 0.1833381402629397
     }
   },
   {
@@ -3889,8 +4065,9 @@
       "child_mortality": 96.7,
       "adolescent_fertility": 96.276,
       "urbanisation": 21.3768190444906,
+      "mobile_use": 46.6152369503945,
       "social_cohesion": null,
-      "possibility": -0.9330915438073891
+      "possibility": -0.8298156060905681
     }
   },
   {
@@ -3901,7 +4078,7 @@
     "tfr": 3.596,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 5491.29829852275,
+      "gdp_pc": 5511.87785469752,
       "gini": 40.7,
       "fem_sec_enroll": 95.1290435791016,
       "fem_years_schooling": 5.273353992,
@@ -3911,8 +4088,9 @@
       "child_mortality": 13.6,
       "adolescent_fertility": 85.183,
       "urbanisation": 68.8710170184884,
+      "mobile_use": 62.4367400312479,
       "social_cohesion": null,
-      "possibility": -0.4650454930778285
+      "possibility": -0.27330693001621326
     }
   },
   {
@@ -3923,7 +4101,7 @@
     "tfr": 2.231,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 19179.1018321639,
+      "gdp_pc": 19179.101839106,
       "gini": 39.2,
       "fem_sec_enroll": 78.089997077636,
       "fem_years_schooling": 8.558285912,
@@ -3933,8 +4111,9 @@
       "child_mortality": 15.8,
       "adolescent_fertility": 46.857,
       "urbanisation": 65.7641857200885,
+      "mobile_use": 142.122626416427,
       "social_cohesion": null,
-      "possibility": 0.09643608121737439
+      "possibility": -0.005045884387019639
     }
   },
   {
@@ -3945,7 +4124,7 @@
     "tfr": 1.46,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 40319.0547230873,
+      "gdp_pc": 40302.4514288424,
       "gini": 23.8,
       "fem_sec_enroll": 93.8056869506836,
       "fem_years_schooling": 12.98776118,
@@ -3955,8 +4134,9 @@
       "child_mortality": 6.3,
       "adolescent_fertility": 24.477,
       "urbanisation": 53.1919702985684,
+      "mobile_use": 139.967676092657,
       "social_cohesion": 1.54,
-      "possibility": 0.15007269161085454
+      "possibility": 0.046624279349909474
     }
   },
   {
@@ -3967,7 +4147,7 @@
     "tfr": 1.52,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 48648.9078834081,
+      "gdp_pc": 48658.0265180267,
       "gini": 24.7,
       "fem_sec_enroll": 108.57103729248,
       "fem_years_schooling": 12.93550703,
@@ -3977,8 +4157,9 @@
       "child_mortality": 2.3,
       "adolescent_fertility": 3.379,
       "urbanisation": 55.7577708405917,
+      "mobile_use": 130.86090177123,
       "social_cohesion": 1.502,
-      "possibility": 0.4245433433104262
+      "possibility": 0.45961815407844975
     }
   },
   {
@@ -3989,7 +4170,7 @@
     "tfr": 1.43,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 62978.9390459835,
+      "gdp_pc": 62558.4065876041,
       "gini": 29.3,
       "fem_sec_enroll": 141.029846191406,
       "fem_years_schooling": 12.84683271,
@@ -3999,8 +4180,9 @@
       "child_mortality": 2.4,
       "adolescent_fertility": 1.695,
       "urbanisation": 88.8559748346228,
+      "mobile_use": 140.686673016562,
       "social_cohesion": 1.501,
-      "possibility": 0.4728576755014268
+      "possibility": 0.47244895475189974
     }
   },
   {
@@ -4011,7 +4193,7 @@
     "tfr": 2.718,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 10380.3966630516,
+      "gdp_pc": 10386.2145717572,
       "gini": 54.6,
       "fem_sec_enroll": 82.1736533366008,
       "fem_years_schooling": 5.81,
@@ -4021,8 +4203,9 @@
       "child_mortality": 45.1,
       "adolescent_fertility": 68.156,
       "urbanisation": 26.2498461258639,
+      "mobile_use": 139.833459658744,
       "social_cohesion": 0.925,
-      "possibility": -0.2805404456337939
+      "possibility": -0.46520237753428006
     }
   },
   {
@@ -4033,7 +4216,7 @@
     "tfr": 1.44,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 47303.194758482,
+      "gdp_pc": 47303.1946453277,
       "gini": null,
       "fem_sec_enroll": null,
       "fem_years_schooling": null,
@@ -4043,8 +4226,9 @@
       "child_mortality": null,
       "adolescent_fertility": 16.636,
       "urbanisation": 100.0,
+      "mobile_use": 205.372695128029,
       "social_cohesion": null,
-      "possibility": 1.8953977298189697
+      "possibility": 1.9518007888538484
     }
   },
   {
@@ -4055,7 +4239,7 @@
     "tfr": 1.85,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 29241.7758048825,
+      "gdp_pc": 29288.019181519,
       "gini": 32.1,
       "fem_sec_enroll": 73.0632629394531,
       "fem_years_schooling": 12.03576,
@@ -4065,8 +4249,9 @@
       "child_mortality": 14.0,
       "adolescent_fertility": 53.47,
       "urbanisation": 45.2898622460415,
+      "mobile_use": 125.616862703001,
       "social_cohesion": null,
-      "possibility": 0.6743870059823374
+      "possibility": 0.7972867916631774
     }
   },
   {
@@ -4077,7 +4262,7 @@
     "tfr": 2.7,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 4454.85373271464,
+      "gdp_pc": 4579.43973633341,
       "gini": 26.4,
       "fem_sec_enroll": 41.8100318908691,
       "fem_years_schooling": 5.417379107,
@@ -4087,8 +4272,9 @@
       "child_mortality": 18.4,
       "adolescent_fertility": 38.618,
       "urbanisation": 72.0761345758254,
+      "mobile_use": 71.2231424453527,
       "social_cohesion": null,
-      "possibility": -0.10699982512489434
+      "possibility": 0.0837116892847502
     }
   },
   {
@@ -4109,6 +4295,7 @@
       "child_mortality": 4.7,
       "adolescent_fertility": 15.647,
       "urbanisation": 94.1670917861964,
+      "mobile_use": null,
       "social_cohesion": null,
       "possibility": null
     }
@@ -4121,7 +4308,7 @@
     "tfr": 6.028,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2412.865855392,
+      "gdp_pc": 2430.73298355271,
       "gini": 37.4,
       "fem_sec_enroll": 19.4390107130432,
       "fem_years_schooling": 1.2932629,
@@ -4131,8 +4318,9 @@
       "child_mortality": 97.3,
       "adolescent_fertility": 132.131,
       "urbanisation": 26.9315292389497,
+      "mobile_use": 72.9289782617702,
       "social_cohesion": 0.805,
-      "possibility": -0.5769098738781108
+      "possibility": -0.5119253217957466
     }
   },
   {
@@ -4143,7 +4331,7 @@
     "tfr": 4.121673,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 2960.77542569109,
+      "gdp_pc": 3351.24993111939,
       "gini": 37.9,
       "fem_sec_enroll": 59.0849653049812,
       "fem_years_schooling": 4.189005873,
@@ -4153,8 +4341,9 @@
       "child_mortality": 56.1,
       "adolescent_fertility": 76.383,
       "urbanisation": 43.8148491605996,
+      "mobile_use": 80.8035554767112,
       "social_cohesion": 0.586,
-      "possibility": -0.5560170126518387
+      "possibility": -0.5247278879847521
     }
   },
   {
@@ -4165,7 +4354,7 @@
     "tfr": 1.204,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 21740.5403219261,
+      "gdp_pc": 21882.2142474833,
       "gini": 33.3,
       "fem_sec_enroll": 94.0628144371624,
       "fem_years_schooling": 8.724169622,
@@ -4175,8 +4364,9 @@
       "child_mortality": 9.0,
       "adolescent_fertility": 25.045,
       "urbanisation": 61.8689338391321,
+      "mobile_use": 160.639312286761,
       "social_cohesion": 1.347,
-      "possibility": 0.2231790919049724
+      "possibility": 0.06377435401807938
     }
   },
   {
@@ -4197,8 +4387,9 @@
       "child_mortality": 28.1,
       "adolescent_fertility": 39.436,
       "urbanisation": 26.1788063651548,
+      "mobile_use": 76.215892145748,
       "social_cohesion": null,
-      "possibility": -0.4957584242484342
+      "possibility": -0.42638164533234973
     }
   },
   {
@@ -4209,7 +4400,7 @@
     "tfr": 2.661,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 18662.298799056,
+      "gdp_pc": 18470.7438450744,
       "gini": null,
       "fem_sec_enroll": 94.7373803445767,
       "fem_years_schooling": 10.83326343,
@@ -4219,8 +4410,9 @@
       "child_mortality": 39.0,
       "adolescent_fertility": 20.145,
       "urbanisation": 47.0875253910294,
+      "mobile_use": 88.1929367884543,
       "social_cohesion": null,
-      "possibility": -0.6539919282452364
+      "possibility": -0.6821328903304177
     }
   },
   {
@@ -4231,7 +4423,7 @@
     "tfr": 2.627,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3890.95763434187,
+      "gdp_pc": 3890.95754653453,
       "gini": null,
       "fem_sec_enroll": 89.3942621030436,
       "fem_years_schooling": 5.50932282,
@@ -4241,8 +4433,9 @@
       "child_mortality": 47.6,
       "adolescent_fertility": 26.784,
       "urbanisation": 28.6641074179574,
+      "mobile_use": 116.382391453038,
       "social_cohesion": null,
-      "possibility": -0.4801477853073256
+      "possibility": -0.6012314422663162
     }
   },
   {
@@ -4253,7 +4446,7 @@
     "tfr": 3.1,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7030.41917439715,
+      "gdp_pc": 7180.98743332878,
       "gini": 27.1,
       "fem_sec_enroll": 96.0905349794239,
       "fem_years_schooling": 10.95345124,
@@ -4263,8 +4456,9 @@
       "child_mortality": 9.5,
       "adolescent_fertility": 25.067,
       "urbanisation": 21.1505271125521,
+      "mobile_use": 61.7257858761257,
       "social_cohesion": null,
-      "possibility": -0.7846360659279031
+      "possibility": -0.71733396832749
     }
   },
   {
@@ -4285,8 +4479,9 @@
       "child_mortality": 18.8,
       "adolescent_fertility": 36.03,
       "urbanisation": 53.961056681951,
+      "mobile_use": 118.786668099235,
       "social_cohesion": null,
-      "possibility": 0.13725341033742253
+      "possibility": 0.16618721286512228
     }
   },
   {
@@ -4307,8 +4502,9 @@
       "child_mortality": 12.1,
       "adolescent_fertility": 4.207,
       "urbanisation": 70.3585355691955,
+      "mobile_use": 117.606816067203,
       "social_cohesion": 0.955,
-      "possibility": -0.011792191792912639
+      "possibility": -0.024925932892237174
     }
   },
   {
@@ -4329,8 +4525,9 @@
       "child_mortality": 9.6,
       "adolescent_fertility": 11.182,
       "urbanisation": 89.3443122873887,
+      "mobile_use": 107.826875714392,
       "social_cohesion": 1.175,
-      "possibility": -0.11454138744359921
+      "possibility": -0.10281846242189538
     }
   },
   {
@@ -4341,7 +4538,7 @@
     "tfr": 3.174,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 5812.39924537753,
+      "gdp_pc": 5592.18723602659,
       "gini": null,
       "fem_sec_enroll": 104.399323181049,
       "fem_years_schooling": 10.46696417,
@@ -4351,8 +4548,9 @@
       "child_mortality": 19.2,
       "adolescent_fertility": 26.789,
       "urbanisation": 64.7254793441291,
+      "mobile_use": 98.8590872698158,
       "social_cohesion": null,
-      "possibility": -1.0038991950649994
+      "possibility": -1.171085780451212
     }
   },
   {
@@ -4373,8 +4571,9 @@
       "child_mortality": 37.0,
       "adolescent_fertility": 112.612,
       "urbanisation": 36.1684458862992,
+      "mobile_use": 126.559163217786,
       "social_cohesion": 0.706,
-      "possibility": -0.45247813266464104
+      "possibility": -0.6158922764795196
     }
   },
   {
@@ -4395,8 +4594,9 @@
       "child_mortality": 48.7,
       "adolescent_fertility": 104.733,
       "urbanisation": 31.2777698213557,
+      "mobile_use": 83.165031466902,
       "social_cohesion": 1.151,
-      "possibility": -0.832235660635163
+      "possibility": -0.8806065722571463
     }
   },
   {
@@ -4407,7 +4607,7 @@
     "tfr": 0.988,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 16319.8447265625,
+      "gdp_pc": 16371.44140625,
       "gini": 25.6,
       "fem_sec_enroll": 86.3840713500977,
       "fem_years_schooling": 11.43926415,
@@ -4417,8 +4617,9 @@
       "child_mortality": 7.9,
       "adolescent_fertility": 10.939,
       "urbanisation": 69.5315643200148,
+      "mobile_use": 133.38012811971,
       "social_cohesion": 1.315,
-      "possibility": 0.8020383645537622
+      "possibility": 0.9192437645359101
     }
   },
   {
@@ -4429,7 +4630,7 @@
     "tfr": 1.397,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 32038.7727288227,
+      "gdp_pc": 32149.480073986,
       "gini": 40.0,
       "fem_sec_enroll": 125.241045093642,
       "fem_years_schooling": 9.333094784,
@@ -4439,8 +4640,9 @@
       "child_mortality": 7.4,
       "adolescent_fertility": 25.096,
       "urbanisation": 95.5981951588181,
+      "mobile_use": 145.501755749445,
       "social_cohesion": 1.431,
-      "possibility": 0.15011993661207648
+      "possibility": 0.04570214208899711
     }
   },
   {
@@ -4451,7 +4653,7 @@
     "tfr": 1.6265,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 75489.2664334817,
+      "gdp_pc": 75698.1773354629,
       "gini": 41.8,
       "fem_sec_enroll": 98.6511611938477,
       "fem_years_schooling": 13.65357018,
@@ -4461,8 +4663,9 @@
       "child_mortality": 6.5,
       "adolescent_fertility": 12.412,
       "urbanisation": 80.1247798047184,
+      "mobile_use": 113.190481805755,
       "social_cohesion": 1.392,
-      "possibility": 0.2856525124645464
+      "possibility": 0.40020351502014045
     }
   },
   {
@@ -4473,7 +4676,7 @@
     "tfr": 3.486,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 10450.2051402852,
+      "gdp_pc": 10997.1707291644,
       "gini": 34.6,
       "fem_sec_enroll": 96.4939184204858,
       "fem_years_schooling": 11.74777031,
@@ -4483,8 +4686,9 @@
       "child_mortality": 13.4,
       "adolescent_fertility": 34.138,
       "urbanisation": 50.9986686706543,
+      "mobile_use": 110.492018573638,
       "social_cohesion": 1.394,
-      "possibility": -0.05057850641106615
+      "possibility": -0.035767881295113206
     }
   },
   {
@@ -4505,8 +4709,9 @@
       "child_mortality": 11.3,
       "adolescent_fertility": 40.774,
       "urbanisation": 47.8487050456749,
+      "mobile_use": 108.354536057883,
       "social_cohesion": null,
-      "possibility": -0.019402433217558208
+      "possibility": 0.013591887986427985
     }
   },
   {
@@ -4527,8 +4732,9 @@
       "child_mortality": 24.2,
       "adolescent_fertility": 73.189,
       "urbanisation": 89.285859883201,
+      "mobile_use": 71.0075917225029,
       "social_cohesion": 1.321,
-      "possibility": -0.3949356662997583
+      "possibility": -0.27514852689265284
     }
   },
   {
@@ -4549,8 +4755,9 @@
       "child_mortality": 12.4,
       "adolescent_fertility": 15.143,
       "urbanisation": 56.5072068980827,
+      "mobile_use": 93.1316662866408,
       "social_cohesion": null,
-      "possibility": 0.42198578756476096
+      "possibility": 0.6390097399949617
     }
   },
   {
@@ -4571,8 +4778,9 @@
       "child_mortality": null,
       "adolescent_fertility": 31.142,
       "urbanisation": 95.3312197036061,
+      "mobile_use": 91.4619626157421,
       "social_cohesion": null,
-      "possibility": -0.31021631751431195
+      "possibility": -0.2541369087237259
     }
   },
   {
@@ -4583,7 +4791,7 @@
     "tfr": 1.895,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 14415.2159532813,
+      "gdp_pc": 14396.4217369473,
       "gini": 36.1,
       "fem_sec_enroll": 90.5445572317873,
       "fem_years_schooling": 8.138282269,
@@ -4593,8 +4801,9 @@
       "child_mortality": 17.3,
       "adolescent_fertility": 33.948,
       "urbanisation": 38.4900703430176,
+      "mobile_use": 127.606471743496,
       "social_cohesion": 1.267,
-      "possibility": -0.008206096777605918
+      "possibility": -0.06561837947266512
     }
   },
   {
@@ -4605,7 +4814,7 @@
     "tfr": 3.569,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 3172.04772751391,
+      "gdp_pc": 3837.03937446048,
       "gini": 32.3,
       "fem_sec_enroll": 134.925790252936,
       "fem_years_schooling": 6.59341665,
@@ -4615,8 +4824,9 @@
       "child_mortality": 17.1,
       "adolescent_fertility": 65.766,
       "urbanisation": 22.2866933360645,
+      "mobile_use": 89.2943082123161,
       "social_cohesion": null,
-      "possibility": -0.6044750988103595
+      "possibility": -0.6255564392224766
     }
   },
   {
@@ -4627,7 +4837,7 @@
     "tfr": 3.801,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 7686.24942571869,
+      "gdp_pc": 7687.23425552485,
       "gini": null,
       "fem_sec_enroll": 91.1509944232257,
       "fem_years_schooling": 11.76791141,
@@ -4637,8 +4847,9 @@
       "child_mortality": 14.9,
       "adolescent_fertility": 43.53,
       "urbanisation": 17.5029115108018,
+      "mobile_use": 62.398669522115,
       "social_cohesion": null,
-      "possibility": -0.7545996640104542
+      "possibility": -0.6592053120050554
     }
   },
   {
@@ -4659,8 +4870,9 @@
       "child_mortality": 38.1,
       "adolescent_fertility": 73.887,
       "urbanisation": 36.8077517596594,
+      "mobile_use": 50.8937810578557,
       "social_cohesion": 1.281,
-      "possibility": -0.8620459334707113
+      "possibility": -0.7617111373091322
     }
   },
   {
@@ -4681,8 +4893,9 @@
       "child_mortality": 35.1,
       "adolescent_fertility": 51.844,
       "urbanisation": 63.6917984858172,
+      "mobile_use": 179.336329840585,
       "social_cohesion": 1.369,
-      "possibility": 0.1861959431424075
+      "possibility": -0.0729388596447341
     }
   },
   {
@@ -4703,8 +4916,9 @@
       "child_mortality": 48.4,
       "adolescent_fertility": 115.479,
       "urbanisation": 45.4703838491279,
+      "mobile_use": 108.704779873813,
       "social_cohesion": 0.809,
-      "possibility": -0.6264406906576288
+      "possibility": -0.7469504529906309
     }
   },
   {
@@ -4715,7 +4929,7 @@
     "tfr": 3.674,
     "tfr_year": 2024,
     "factors": {
-      "gdp_pc": 5215.25301075742,
+      "gdp_pc": 5211.89755587954,
       "gini": 50.3,
       "fem_sec_enroll": null,
       "fem_years_schooling": 8.190792855,
@@ -4725,8 +4939,9 @@
       "child_mortality": 64.7,
       "adolescent_fertility": 95.524,
       "urbanisation": 39.8933716820696,
+      "mobile_use": 94.2451753366358,
       "social_cohesion": 0.85,
-      "possibility": -0.5911262625213459
+      "possibility": -0.6328358750650479
     }
   }
 ]
