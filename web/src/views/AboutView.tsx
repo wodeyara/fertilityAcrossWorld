@@ -64,8 +64,7 @@ export function AboutView({ bundle }: { bundle: Bundle }) {
         </p>
         <p>
           Sources: Census ACS (2022), CDC NCHS natality, the JEC Social Capital Project,
-          OpenStreetMap, and (where available) the Pew Religious Landscape Study. Missing
-          values are shown as "insufficient data," never imputed.
+          and OpenStreetMap. Missing values are shown as "insufficient data," never imputed.
         </p>
       </section>
 
