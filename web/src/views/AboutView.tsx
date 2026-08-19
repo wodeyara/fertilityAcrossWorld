@@ -69,6 +69,18 @@ export function AboutView({ bundle }: { bundle: Bundle }) {
         </p>
       </section>
 
+      <section>
+        <p>
+          Each scale includes a connectivity factor: for US states, the share of
+          households with a smartphone (Census ACS); for countries, mobile-phone
+          subscriptions per 100 people (World Bank). Because mobile subscriptions
+          and the internet-use component of the Possibility index are correlated,
+          selecting both the Possibility index and Mobile subscriptions together is
+          collinear — the model still fits, but their individual coefficients
+          become harder to interpret.
+        </p>
+      </section>
+
       <h3>Limitations</h3>
       <ul>
         <li>Coverage is uneven — countries missing a selected factor are shown as "insufficient data," never imputed.</li>
