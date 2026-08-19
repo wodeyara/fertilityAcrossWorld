@@ -82,7 +82,6 @@ def test_build_possibility_combines_osm_and_wb(tmp_path):
         table = {
             "SP.POP.TOTL": {"USA": (331_000_000, 2022), "ISR": (9_000_000, 2022), "NER": (25_000_000, 2022)},
             "IT.NET.USER.ZS": {"USA": (92.0, 2022), "ISR": (90.0, 2022), "NER": (10.0, 2022)},
-            "IT.CEL.SETS.P2": {"USA": (110.0, 2022), "ISR": (140.0, 2022), "NER": (60.0, 2022)},
             "EN.POP.DNST": {"USA": (36.0, 2022), "ISR": (400.0, 2022), "NER": (20.0, 2022)},
             "SM.POP.NETM": {"USA": (900_000, 2022), "ISR": (30_000, 2022), "NER": (-20_000, 2022)},
         }

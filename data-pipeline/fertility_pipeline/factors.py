@@ -19,6 +19,7 @@ GROUPS = [
     "Health & access",
     "Structure",
     "Community",
+    "Connectivity",
     "Possibility",
 ]
 
@@ -65,6 +66,8 @@ FACTORS = [
            code="SP.ADO.TFRT", direction="positive", unit="births per 1,000 women 15-19"),
     Factor(id="urbanisation", label="Urbanisation", group="Structure", source="worldbank",
            code="SP.URB.TOTL.IN.ZS", direction="negative", unit="% urban"),
+    Factor(id="mobile_use", label="Mobile subscriptions", group="Connectivity", source="worldbank",
+           code="IT.CEL.SETS.P2", direction="negative", unit="per 100 people"),
     Factor(id="social_cohesion", label="Social cohesion / support", group="Community", source="static",
            code="social_cohesion", direction="mixed", unit="index 0-100"),
     Factor(id="possibility", label="Possibility index", group="Possibility", source="computed",

@@ -1,6 +1,6 @@
 import numpy as np
 
-COMPONENTS = ["amenity_density", "internet", "mobile", "pop_density", "net_migration"]
+COMPONENTS = ["amenity_density", "internet", "pop_density", "net_migration"]
 MIN_COMPONENTS = 3
 
 

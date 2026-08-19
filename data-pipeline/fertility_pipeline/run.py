@@ -11,7 +11,6 @@ TRANSFORM_MIN_COVERAGE = 0.6
 
 POSSIBILITY_WB_CODES = {
     "internet": "IT.NET.USER.ZS",
-    "mobile": "IT.CEL.SETS.P2",
     "pop_density": "EN.POP.DNST",
     "net_migration": "SM.POP.NETM",
     "population": "SP.POP.TOTL",
@@ -55,7 +54,6 @@ def build_possibility(iso2_by_iso3, cache_dir, fetch=None, osm_fetch=None):
     components = {
         "amenity_density": amenity_density,
         "internet": {iso3: wb_val("internet", iso3) for iso3 in iso2_by_iso3},
-        "mobile": {iso3: wb_val("mobile", iso3) for iso3 in iso2_by_iso3},
         "pop_density": {iso3: wb_val("pop_density", iso3) for iso3 in iso2_by_iso3},
         "net_migration": net_migration_pc,
     }

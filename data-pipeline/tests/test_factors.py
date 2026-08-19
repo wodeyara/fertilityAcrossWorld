@@ -45,3 +45,17 @@ def test_possibility_factor_present_and_computed():
 
 def test_computed_factors_helper():
     assert [f.id for f in factors.computed_factors()] == ["possibility"]
+
+
+def test_mobile_use_is_a_worldbank_connectivity_factor():
+    f = next((f for f in factors.FACTORS if f.id == "mobile_use"), None)
+    assert f is not None
+    assert f.source == "worldbank"
+    assert f.code == "IT.CEL.SETS.P2"
+    assert f.group == "Connectivity"
+    assert "Connectivity" in factors.GROUPS
+
+
+def test_mobile_use_not_in_possibility_components():
+    from fertility_pipeline import possibility
+    assert "mobile" not in possibility.COMPONENTS

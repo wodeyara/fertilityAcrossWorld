@@ -19,7 +19,6 @@ def test_compute_requires_min_components():
     components = {
         "amenity_density": {"A": 10.0, "B": 1.0, "C": 5.0, "D": 8.0},
         "internet": {"A": 80.0, "B": None, "C": 50.0, "D": 70.0},
-        "mobile": {"A": 120.0, "B": None, "C": 90.0, "D": 110.0},
         "pop_density": {"A": 300.0, "B": None, "C": 100.0, "D": 200.0},
         "net_migration": {"A": 5.0, "B": None, "C": -2.0, "D": 1.0},
     }
