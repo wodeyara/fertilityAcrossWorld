@@ -70,6 +70,7 @@ export function AboutView({ bundle }: { bundle: Bundle }) {
       </section>
 
       <section>
+        <h3>Connectivity</h3>
         <p>
           Each scale includes a connectivity factor: for US states, the share of
           households with a smartphone (Census ACS); for countries, mobile-phone

@@ -36,6 +36,6 @@ test("explains the pronatalist-policy overlay and that it is not a covariate", (
 
 test("notes the connectivity factors and the collinearity caveat", () => {
   render(<AboutView bundle={bundle} />);
-  expect(screen.getByText(/connectivity/i)).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: /connectivity/i })).toBeInTheDocument();
   expect(screen.getByText(/collinear/i)).toBeInTheDocument();
 });
