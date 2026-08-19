@@ -6,7 +6,7 @@ Present-day snapshot only. Non-computed factors are columns in data/us_states.cs
 """
 from .factors import Factor
 
-GROUPS = ["Economic", "Education", "Women's work & agency", "Structure", "Community", "Religiosity", "Possibility"]
+GROUPS = ["Economic", "Education", "Women's work & agency", "Structure", "Community", "Connectivity", "Possibility"]
 
 REGIONS = ["Northeast", "Midwest", "South", "West"]  # US Census regions
 
@@ -28,8 +28,8 @@ FACTORS = [
            source="static", code="urbanisation", direction="negative", unit="% urban"),
     Factor(id="social_capital", label="Social Capital Project index", group="Community",
            source="static", code="social_capital", direction="mixed", unit="index (z-like)"),
-    Factor(id="religiosity", label="Highly religious (Pew)", group="Religiosity",
-           source="static", code="religiosity", direction="positive", unit="% highly religious"),
+    Factor(id="smartphone", label="Smartphone in household", group="Connectivity",
+           source="static", code="smartphone", direction="negative", unit="% of households"),
     Factor(id="possibility", label="Possibility index", group="Possibility",
            source="computed", code="possibility", direction="negative", unit="z-score index"),
 ]
