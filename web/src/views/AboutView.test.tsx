@@ -4,7 +4,7 @@ import type { Bundle } from "../types";
 
 const bundle: Bundle = {
   snapshotYear: 2023,
-  target: { id: "tfr", label: "Total fertility rate", transform: "log", unit: "births", source: "World Bank" },
+  target: { id: "tfr", label: "Total fertility rate", transform: "raw", unit: "births", source: "World Bank" },
   factors: [
     { id: "possibility", label: "Possibility index", group: "Possibility", unit: "z", direction: "negative", source: "computed" },
     { id: "gdp_pc", label: "GDP per capita", group: "Economic", unit: "$", direction: "negative", source: "World Bank" },
@@ -16,7 +16,7 @@ const bundle: Bundle = {
 test("renders methodology sections and the transform", () => {
   render(<AboutView bundle={bundle} />);
   expect(screen.getByRole("heading", { name: /methodology/i })).toBeInTheDocument();
-  expect(screen.getByText(/log total fertility rate/i)).toBeInTheDocument(); // transform surfaced
+  expect(screen.getByText(/total fertility rate/i)).toBeInTheDocument(); // transform surfaced
   expect(screen.getByRole("heading", { name: /limitations/i })).toBeInTheDocument();
   expect(screen.getByText("Possibility index")).toBeInTheDocument(); // factor listed
 });
@@ -38,4 +38,9 @@ test("notes the connectivity factors and the collinearity caveat", () => {
   render(<AboutView bundle={bundle} />);
   expect(screen.getByRole("heading", { name: /connectivity/i })).toBeInTheDocument();
   expect(screen.getByText(/collinear/i)).toBeInTheDocument();
+});
+
+test("explains the per-factor transforms", () => {
+  render(<AboutView bundle={bundle} />);
+  expect(screen.getByText(/log|quadratic|curv/i)).toBeInTheDocument();
 });

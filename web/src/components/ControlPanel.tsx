@@ -54,6 +54,10 @@ export function ControlPanel(props: ControlPanelProps) {
                 onChange={() => onToggleFactor(f.id)}
               />{" "}
               {f.label}
+              {f.transform === "log" && <span style={{ opacity: 0.6 }}> (log)</span>}
+              {f.quadratic && (
+                <span style={{ marginLeft: 4, fontSize: 10, padding: "0 4px", borderRadius: 4, background: "#8ecae644", color: "inherit" }}>curve</span>
+              )}
               {f.group === "Possibility" && (
                 <span style={{ marginLeft: 4, fontSize: 10, padding: "0 4px", borderRadius: 4, background: "#f0c98044", color: "inherit" }}>exp</span>
               )}

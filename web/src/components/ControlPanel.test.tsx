@@ -69,3 +69,16 @@ test("no policy toggle when onSetPolicy is omitted", () => {
   );
   expect(screen.queryByLabelText(/pronatalist policy/i)).not.toBeInTheDocument();
 });
+
+test("annotates logged and curved factors", () => {
+  const factors = [
+    { id: "gdp_pc", label: "GDP per capita", group: "Economic", unit: "$", direction: "negative", source: "WB", transform: "log", quadratic: false },
+    { id: "possibility", label: "Possibility index", group: "Possibility", unit: "z", direction: "negative", source: "computed", transform: "raw", quadratic: true },
+  ];
+  render(
+    <ControlPanel factors={factors as any} selected={new Set()} onToggleFactor={() => {}}
+      mode="residual" onSetMode={() => {}} r2={null} n={0} />
+  );
+  expect(screen.getByText(/\(log\)/)).toBeInTheDocument();
+  expect(screen.getByText("curve")).toBeInTheDocument();
+});

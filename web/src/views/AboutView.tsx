@@ -81,6 +81,18 @@ export function AboutView({ bundle }: { bundle: Bundle }) {
         </p>
       </section>
 
+      <section>
+        <h3>Non-linear factors</h3>
+        <p>
+          Some predictors relate non-linearly to fertility, so each factor is given a
+          data-chosen transform: a log transform where it straightens the relationship
+          (e.g. GDP per capita), and an added quadratic ("curve") term where the shape is
+          genuinely bent (e.g. the possibility index). These are picked empirically per
+          scale by the data-prep stage; quadratic terms add parameters, so they are used
+          conservatively — especially for US states, where the sample is small.
+        </p>
+      </section>
+
       <h3>Limitations</h3>
       <ul>
         <li>Coverage is uneven — countries missing a selected factor are shown as "insufficient data," never imputed.</li>
