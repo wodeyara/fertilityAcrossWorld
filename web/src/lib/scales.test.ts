@@ -1,16 +1,17 @@
 import { residualColor, rawColor, residualLegendStops, rawLegendStops } from "./scales";
 
 test("residual: positive is reddish, negative is bluish, differ", () => {
-  const pos = residualColor(1.0, 1.5, false);
-  const neg = residualColor(-1.0, 1.5, false);
+  const pos = residualColor(0.4, false);
+  const neg = residualColor(-0.4, false);
   expect(pos).not.toBe(neg);
   // red channel higher for positive residual than negative
   const red = (hex: string) => parseInt(hex.slice(1, 3), 16);
   expect(red(pos)).toBeGreaterThan(red(neg));
 });
 
-test("residual clamps beyond maxAbs", () => {
-  expect(residualColor(5, 1.5, false)).toBe(residualColor(1.5, 1.5, false));
+test("residual clamps at the fixed ±0.5 domain (saturates)", () => {
+  expect(residualColor(5, false)).toBe(residualColor(0.5, false));
+  expect(residualColor(-5, false)).toBe(residualColor(-0.5, false));
 });
 
 test("raw color is a valid hex over the domain", () => {
@@ -25,4 +26,11 @@ test("legend stops are non-empty and strictly ordered", () => {
   expect(raw.length).toBeGreaterThanOrEqual(5);
   for (let i = 1; i < res.length; i++) expect(res[i].value).toBeGreaterThan(res[i - 1].value);
   for (let i = 1; i < raw.length; i++) expect(raw[i].value).toBeGreaterThan(raw[i - 1].value);
+});
+
+test("residual legend has 13 grades spanning the fixed ±0.5 domain", () => {
+  const res = residualLegendStops();
+  expect(res.length).toBe(13);
+  expect(res[0].value).toBeCloseTo(-0.5, 10);
+  expect(res[res.length - 1].value).toBeCloseTo(0.5, 10);
 });

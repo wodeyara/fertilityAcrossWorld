@@ -1,10 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { Legend } from "./Legend";
 
-test("residual legend shows directional labels", () => {
+test("residual legend shows fixed numeric ticks", () => {
   render(<Legend mode="residual" />);
-  expect(screen.getByText(/lower than expected/i)).toBeInTheDocument();
-  expect(screen.getByText(/higher than expected/i)).toBeInTheDocument();
+  expect(screen.getByText("≤ -0.5")).toBeInTheDocument();
+  expect(screen.getByText("≥ +0.5")).toBeInTheDocument();
+  expect(screen.getByText("0")).toBeInTheDocument();
 });
 
 test("raw legend shows numeric bounds", () => {

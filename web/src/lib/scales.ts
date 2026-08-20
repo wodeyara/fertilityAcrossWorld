@@ -4,30 +4,28 @@ import { rgb } from "d3-color";
 
 const toHex = (c: string) => rgb(c).formatHex();
 
-// Residuals within this fraction of maxAbs render as a neutral grey in dark mode —
-// too close to zero to distinguish hue perceptually against a dark background.
+// Fixed residual color-scale half-range (births/woman vs. predicted). The scale is
+// deliberately independent of the fitted model, so the colorbar keeps a stable
+// meaning as factors are toggled; residuals beyond ±RESIDUAL_MAX saturate.
+export const RESIDUAL_MAX = 0.5;
+
+// Residuals within this fraction of RESIDUAL_MAX render as a neutral grey in dark
+// mode — too close to zero to distinguish hue perceptually against a dark background.
 const DARK_NEUTRAL_BAND = 0.08;
 const DARK_NEUTRAL = "#4a4c50";
 
 // rawColor has a fixed domain, so build its scale once.
 const rawScale = scaleSequential<string>(interpolateYlGnBu).domain([0.8, 7]).clamp(true);
 
-// residualColor's scale depends on maxAbs; memoize per distinct maxAbs to avoid
-// rebuilding it for every country on each map render.
-const residualScaleCache = new Map<number, (v: number) => string>();
-function residualScale(maxAbs: number): (v: number) => string {
-  let s = residualScaleCache.get(maxAbs);
-  if (!s) {
-    s = scaleDiverging<string>((t) => interpolateRdBu(1 - t)).domain([-maxAbs, 0, maxAbs]).clamp(true);
-    residualScaleCache.set(maxAbs, s);
-  }
-  return s;
-}
+// The residual scale is fixed (±RESIDUAL_MAX), so build it once.
+const residualScale = scaleDiverging<string>((t) => interpolateRdBu(1 - t))
+  .domain([-RESIDUAL_MAX, 0, RESIDUAL_MAX])
+  .clamp(true);
 
 // RdBu reversed: positive residual -> red (interpolateRdBu(0)), negative -> blue (interpolateRdBu(1)).
-export function residualColor(residual: number, maxAbs: number, dark: boolean): string {
-  if (dark && Math.abs(residual) < maxAbs * DARK_NEUTRAL_BAND) return DARK_NEUTRAL;
-  return toHex(residualScale(maxAbs)(residual));
+export function residualColor(residual: number, dark: boolean): string {
+  if (dark && Math.abs(residual) < RESIDUAL_MAX * DARK_NEUTRAL_BAND) return DARK_NEUTRAL;
+  return toHex(residualScale(residual));
 }
 
 export function rawColor(tfr: number, _dark: boolean): string {
@@ -39,11 +37,12 @@ export function INSUFFICIENT_COLOR(dark: boolean): string {
 }
 
 export function residualLegendStops(): { value: number; color: string }[] {
-  const maxAbs = 1.5;
-  return [-1.5, -0.9, -0.3, 0, 0.3, 0.9, 1.5].map((value) => ({
-    value,
-    color: residualColor(value, maxAbs, false),
-  }));
+  // 13 evenly-spaced grades spanning the fixed ±RESIDUAL_MAX domain (6 per side + centre).
+  const n = 13;
+  return Array.from({ length: n }, (_, i) => {
+    const value = -RESIDUAL_MAX + (i * (2 * RESIDUAL_MAX)) / (n - 1);
+    return { value, color: residualColor(value, false) };
+  });
 }
 
 export function rawLegendStops(): { value: number; color: string }[] {

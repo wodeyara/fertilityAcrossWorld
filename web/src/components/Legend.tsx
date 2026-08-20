@@ -2,19 +2,34 @@ import { residualLegendStops, rawLegendStops } from "../lib/scales";
 
 export function Legend({ mode, policyOn }: { mode: "raw" | "residual"; policyOn?: boolean }) {
   const stops = mode === "residual" ? residualLegendStops() : rawLegendStops();
-  const left = mode === "residual" ? "lower than expected" : "0.8";
-  const right = mode === "residual" ? "higher than expected" : "7+";
+  const bar = (
+    <div style={{ display: "flex", flex: 1, borderRadius: 3, overflow: "hidden" }}>
+      {stops.map((s) => (
+        <div key={s.value} style={{ flex: 1, height: 12, background: s.color }} />
+      ))}
+    </div>
+  );
   return (
     <div>
-      <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, marginTop: 6 }}>
-        <span>{left}</span>
-        <div style={{ display: "flex", flex: 1, borderRadius: 3, overflow: "hidden" }}>
-          {stops.map((s) => (
-            <div key={s.value} style={{ flex: 1, height: 12, background: s.color }} />
-          ))}
+      {mode === "raw" ? (
+        <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, marginTop: 6 }}>
+          <span>0.8</span>
+          {bar}
+          <span>7+</span>
         </div>
-        <span>{right}</span>
-      </div>
+      ) : (
+        <div style={{ fontSize: 11, marginTop: 6 }}>
+          {bar}
+          <div style={{ display: "flex", justifyContent: "space-between", marginTop: 2 }}>
+            <span>≤ -0.5</span>
+            <span>-0.25</span>
+            <span>0</span>
+            <span>+0.25</span>
+            <span>≥ +0.5</span>
+          </div>
+          <div style={{ opacity: 0.6, marginTop: 2 }}>residual vs. predicted (births/woman)</div>
+        </div>
+      )}
       {policyOn && (
         <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, marginTop: 6 }}>
           <svg width="18" height="12" aria-hidden="true">

@@ -23,13 +23,6 @@ export interface MapViewProps {
 const W = 880;
 const H = 440;
 
-function maxAbsResidual(fit: FitResult): number {
-  const abs = [...fit.fits.values()].map((f) => Math.abs(f.residualTfr)).sort((a, b) => a - b);
-  if (abs.length === 0) return 1.5;
-  const p95 = abs[Math.min(abs.length - 1, Math.floor(abs.length * 0.95))];
-  return Math.max(0.5, p95);
-}
-
 export function MapView(props: MapViewProps) {
   const { topo, byIsoNum, fit, mode, selectedIso3, onSelect, dark,
           projectionKind = "world", objectName = "countries", policyByIsoNum, policyOn } = props;
@@ -42,14 +35,13 @@ export function MapView(props: MapViewProps) {
     const projection = base.fitSize([W, H], { type: "FeatureCollection", features } as any);
     return geoPath(projection);
   }, [features, projectionKind]);
-  const maxAbs = maxAbsResidual(fit);
 
   const fillFor = (isoNum: number): string => {
     const c = byIsoNum.get(isoNum);
     if (!c) return INSUFFICIENT_COLOR(dark);
     if (mode === "raw") return c.tfr == null ? INSUFFICIENT_COLOR(dark) : rawColor(c.tfr, dark);
     const f = fit.fits.get(c.iso3);
-    return f ? residualColor(f.residualTfr, maxAbs, dark) : INSUFFICIENT_COLOR(dark);
+    return f ? residualColor(f.residualTfr, dark) : INSUFFICIENT_COLOR(dark);
   };
 
   return (
