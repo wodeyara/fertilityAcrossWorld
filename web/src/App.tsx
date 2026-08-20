@@ -58,13 +58,13 @@ export default function App() {
   const projectionKind = scale === "us" ? "albersUsa" : "world";
   const objectName = scale === "us" ? "states" : "countries";
 
-  const factorIds = useMemo(
-    () => (activeBundle ? activeBundle.factors.filter((f) => selected.has(f.id)).map((f) => f.id) : []),
+  const selectedFactors = useMemo(
+    () => (activeBundle ? activeBundle.factors.filter((f) => selected.has(f.id)) : []),
     [activeBundle, selected],
   );
   const fit = useMemo(
-    () => (activeBundle ? fitModel(activeBundle.countries, factorIds, activeBundle.target.transform) : null),
-    [activeBundle, factorIds],
+    () => (activeBundle ? fitModel(activeBundle.countries, selectedFactors, activeBundle.target.transform) : null),
+    [activeBundle, selectedFactors],
   );
   const byIsoNum = useMemo(
     () => (activeBundle ? indexByIsoNum(activeBundle.countries) : new Map<number, Country>()),

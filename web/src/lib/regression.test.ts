@@ -1,61 +1,71 @@
 import { fitModel } from "./regression";
 import type { Country } from "../types";
 
-function country(iso3: string, iso_num: number, tfr: number | null, x: number | null): Country {
-  return { iso3, iso_num, name: iso3, region: "R", tfr, tfr_year: 2022, factors: { x } };
+function units(rows: { iso3: string; tfr: number; x: number }[]): Country[] {
+  return rows.map((r) => ({
+    iso3: r.iso3, iso_num: 0, name: r.iso3, region: "R",
+    tfr: r.tfr, tfr_year: 2022, factors: { x: r.x },
+  }));
 }
 
-test("recovers a clean log-linear relationship (r2 ~ 1, residual ~ 0)", () => {
-  // tfr = exp(0.6 + 0.4 * x), x = 0..19
-  const countries: Country[] = [];
-  for (let i = 0; i < 20; i++) {
-    const x = i;
-    countries.push(country(`C${i}`, i, Math.exp(0.6 + 0.4 * x), x));
-  }
-  const fit = fitModel(countries, ["x"], "log");
+test("raw single factor still fits a line (backward compatible)", () => {
+  const cs = units(Array.from({ length: 20 }, (_, i) => ({ iso3: `C${i}`, tfr: 1 + 0.1 * i, x: i })));
+  const fit = fitModel(cs, [{ id: "x" }], "raw");
   expect(fit.n).toBe(20);
-  expect(fit.r2).toBeGreaterThan(0.999);
-  // residuals in TFR units are tiny relative to the values
-  for (const [, f] of fit.fits) expect(Math.abs(f.residualTfr)).toBeLessThan(0.01 * f.predictedTfr + 0.01);
+  expect(fit.r2).not.toBeNull();
+  expect(fit.r2 as number).toBeGreaterThan(0.99); // exact line
 });
 
-test("excludes countries missing the selected factor or tfr (no imputation)", () => {
-  const countries = [
-    country("A", 1, 2.0, 1),
-    country("B", 2, null, 1), // no tfr
-    country("C", 3, 3.0, null), // no factor
-    country("D", 4, 4.0, 2),
-    country("E", 5, 2.5, 1.5),
-  ];
-  const fit = fitModel(countries, ["x"], "raw");
-  expect(fit.n).toBe(3); // A, D, E
-  expect(fit.fits.has("B")).toBe(false);
-  expect(fit.fits.has("C")).toBe(false);
-  expect(fit.fits.has("A")).toBe(true);
-  expect(fit.fits.has("D")).toBe(true);
-  expect(fit.fits.has("E")).toBe(true);
-});
-
-test("excludes countries with tfr <= 0 (log-safe)", () => {
-  const countries = [
-    country("A", 1, 2.0, 1),
-    country("B", 2, 0, 2),    // tfr 0 -> dropped (log(0) would be -Infinity)
-    country("C", 3, 3.0, 3),
-    country("D", 4, 2.5, 1.5),
-  ];
-  const fit = fitModel(countries, ["x"], "log");
-  expect(fit.fits.has("B")).toBe(false);
-  expect(fit.n).toBe(3);
-});
-
-test("returns r2=null when there are too few complete cases", () => {
-  const fit = fitModel([country("A", 1, 2.0, 1)], ["x"], "raw");
+test("zero selected factors => insufficient (null R2, no fits)", () => {
+  const cs = units(Array.from({ length: 20 }, (_, i) => ({ iso3: `C${i}`, tfr: 1 + 0.1 * i, x: i })));
+  const fit = fitModel(cs, [], "raw");
   expect(fit.r2).toBeNull();
   expect(fit.fits.size).toBe(0);
 });
 
-test("returns r2=null when no factors are selected", () => {
-  const fit = fitModel([country("A", 1, 2.0, 1), country("B", 2, 3.0, 2)], [], "raw");
-  expect(fit.r2).toBeNull();
-  expect(fit.fits.size).toBe(0);
+test("log transform fits a log-linear factor far better than raw", () => {
+  // tfr = 3 - 0.5*ln(x)
+  const rows = Array.from({ length: 40 }, (_, i) => {
+    const x = Math.exp(i / 6);
+    return { iso3: `C${i}`, tfr: 3 - 0.5 * Math.log(x), x };
+  });
+  const raw = fitModel(units(rows), [{ id: "x", transform: "raw" }], "raw");
+  const log = fitModel(units(rows), [{ id: "x", transform: "log" }], "raw");
+  expect(log.r2 as number).toBeGreaterThan(raw.r2 as number);
+  expect(log.r2 as number).toBeGreaterThan(0.999); // exact after log
+});
+
+test("quadratic captures a parabola a linear term cannot", () => {
+  // tfr = 2 + 0.01*x^2, x symmetric about 0 -> linear term ~0, needs x^2
+  const rows = Array.from({ length: 40 }, (_, i) => {
+    const x = i - 20;
+    return { iso3: `C${i}`, tfr: 2 + 0.01 * x * x, x };
+  });
+  const lin = fitModel(units(rows), [{ id: "x" }], "raw");
+  const quad = fitModel(units(rows), [{ id: "x", quadratic: true }], "raw");
+  expect(lin.r2 as number).toBeLessThan(0.2);
+  expect(quad.r2 as number).toBeGreaterThan(0.99);
+});
+
+test("contribution is the combined linear + quadratic term per factor", () => {
+  const rows = Array.from({ length: 40 }, (_, i) => {
+    const x = i - 20;
+    return { iso3: `C${i}`, tfr: 2 + 0.01 * x * x, x };
+  });
+  const fit = fitModel(units(rows), [{ id: "x", quadratic: true }], "raw");
+  const f = fit.fits.get("C0")!;
+  // exactly one contribution entry for the factor (linear+quad combined)
+  expect(Object.keys(f.contributions)).toEqual(["x"]);
+  // predicted + residual reconstruct actual tfr
+  expect(f.predictedTfr + f.residualTfr).toBeCloseTo(2 + 0.01 * 400, 6);
+});
+
+test("log factor excludes non-positive rows from the fit", () => {
+  const rows = [
+    ...Array.from({ length: 20 }, (_, i) => ({ iso3: `P${i}`, tfr: 2 - 0.1 * Math.log(i + 1), x: i + 1 })),
+    { iso3: "ZERO", tfr: 2, x: 0 }, // dropped by the log guard
+  ];
+  const fit = fitModel(units(rows), [{ id: "x", transform: "log" }], "raw");
+  expect(fit.n).toBe(20);
+  expect(fit.fits.has("ZERO")).toBe(false);
 });

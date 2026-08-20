@@ -7,6 +7,8 @@ export interface FactorMeta {
   unit: string;
   direction: Direction;
   source: string;
+  transform?: "raw" | "log";
+  quadratic?: boolean;
 }
 
 export interface TargetMeta {
