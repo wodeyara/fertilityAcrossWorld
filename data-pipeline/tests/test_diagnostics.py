@@ -39,3 +39,44 @@ def test_raises_on_no_complete_records():
     records = [{"iso3": "A", "tfr": None, "factors": {"x": 1.0}}]
     with pytest.raises(ValueError, match="no complete records"):
         diagnostics.choose_tfr_transform(records, ["x"])
+
+
+def _recs(xs, ys, fid="f"):
+    return [{"tfr": y, "factors": {fid: x}} for x, y in zip(xs, ys)]
+
+
+def test_chooses_log_for_log_linear_factor():
+    # y = 2 - 0.3*log(x); x spans a wide positive range -> log wins
+    xs = [math.exp(i / 5) for i in range(60)]           # 1 .. ~e^11
+    ys = [2.0 - 0.3 * math.log(x) for x in xs]
+    out = diagnostics.choose_factor_transforms(_recs(xs, ys), ["f"], "raw", 0.02)
+    assert out["f"]["transform"] == "log"
+
+
+def test_chooses_raw_for_linear_factor():
+    xs = [float(i) for i in range(60)]
+    ys = [3.0 - 0.02 * x for x in xs]
+    out = diagnostics.choose_factor_transforms(_recs(xs, ys), ["f"], "raw", 0.02)
+    assert out["f"]["transform"] == "raw"
+    assert out["f"]["quadratic"] is False
+
+
+def test_no_log_when_a_value_is_non_positive():
+    xs = [float(i) for i in range(-5, 55)]               # includes 0 and negatives
+    ys = [2.0 - 0.01 * x for x in xs]
+    out = diagnostics.choose_factor_transforms(_recs(xs, ys), ["f"], "raw", 0.02)
+    assert out["f"]["transform"] == "raw"
+
+
+def test_flags_quadratic_for_curved_factor():
+    xs = [float(i) for i in range(-30, 30)]
+    ys = [2.0 + 0.002 * x * x for x in xs]               # pure parabola
+    out = diagnostics.choose_factor_transforms(_recs(xs, ys), ["f"], "raw", 0.02)
+    assert out["f"]["quadratic"] is True
+
+
+def test_small_n_is_raw_and_linear():
+    xs = [math.exp(i / 3) for i in range(10)]            # n < MIN_N
+    ys = [2.0 - 0.3 * math.log(x) for x in xs]
+    out = diagnostics.choose_factor_transforms(_recs(xs, ys), ["f"], "raw", 0.02)
+    assert out["f"] == {"transform": "raw", "quadratic": False}
