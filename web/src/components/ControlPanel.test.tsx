@@ -82,3 +82,11 @@ test("annotates logged and curved factors", () => {
   expect(screen.getByText(/\(log\)/)).toBeInTheDocument();
   expect(screen.getByText("curve")).toBeInTheDocument();
 });
+
+test("uses the given unit noun in the variation readout", () => {
+  render(
+    <ControlPanel factors={[]} selected={new Set()} onToggleFactor={() => {}}
+      mode="residual" onSetMode={() => {}} r2={0.66} n={51} unitNoun="states" />
+  );
+  expect(screen.getByText(/51 states/)).toBeInTheDocument();
+});

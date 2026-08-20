@@ -33,6 +33,11 @@ test("prompts when nothing selected", () => {
   expect(screen.getByText(/click a country/i)).toBeInTheDocument();
 });
 
+test("empty-state prompt uses the given unit noun", () => {
+  render(<DetailPanel country={null} fit={fit} factors={factors} unitNoun="state" />);
+  expect(screen.getByText(/click a state to inspect/i)).toBeInTheDocument();
+});
+
 test("shows the policy stance and measures when a policy is provided", () => {
   const country = { iso3: "FRA", iso_num: 250, name: "France", region: "Europe & Central Asia",
     tfr: 1.8, tfr_year: 2022, factors: { gdp_pc: 1 } };

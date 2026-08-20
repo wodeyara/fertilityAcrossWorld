@@ -9,12 +9,13 @@ export interface ControlPanelProps {
   onSetMode: (mode: "raw" | "residual") => void;
   r2: number | null;
   n: number;
+  unitNoun?: string;
   policyOn?: boolean;
   onSetPolicy?: (v: boolean) => void;
 }
 
 export function ControlPanel(props: ControlPanelProps) {
-  const { factors, selected, onToggleFactor, mode, onSetMode, r2, n, policyOn, onSetPolicy } = props;
+  const { factors, selected, onToggleFactor, mode, onSetMode, r2, n, unitNoun = "countries", policyOn, onSetPolicy } = props;
   const groups = [...new Set(factors.map((f) => f.group))];
 
   return (
@@ -39,7 +40,7 @@ export function ControlPanel(props: ControlPanelProps) {
       <div style={{ marginBottom: 12 }}>
         <span>explains </span>
         <strong data-testid="r2-readout">{r2 == null ? "—" : `${Math.round(r2 * 100)}%`}</strong>
-        <span> of variation ({n} countries)</span>
+        <span> of variation ({n} {unitNoun})</span>
       </div>
       <strong>Control for…</strong>
       {groups.map((group) => (

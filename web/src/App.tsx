@@ -50,7 +50,13 @@ export default function App() {
     if (scale === "us" && !usTopo) fetch(`${DATA_BASE}/us-states-10m.json`).then((r) => r.json()).then(setUsTopo);
   }, [scale, usBundle, usTopo]);
 
-  const dark = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+  // The app UI is light-only, so the map always uses the light palette. (Reading the
+  // OS dark-mode preference here made near-zero residuals render in a dark neutral-band
+  // grey on the white page — indistinguishable from "no data".) A reactive dark theme
+  // for the whole app would revisit this.
+  const dark = false;
+  const unitNoun = scale === "us" ? "states" : "countries";
+  const unitNounSingular = scale === "us" ? "state" : "country";
 
   // Active bundle/topo/projection derived from scale
   const activeBundle = scale === "us" ? usBundle : bundle;
@@ -118,6 +124,7 @@ export default function App() {
             onSetMode={setMode}
             r2={fit.r2}
             n={fit.n}
+            unitNoun={unitNoun}
             {...(scale === "world" ? { policyOn, onSetPolicy: setPolicyOn } : {})}
           />
           <div style={{ flex: 1 }}>
@@ -148,6 +155,7 @@ export default function App() {
                 country={selectedCountry}
                 fit={fit}
                 factors={activeBundle.factors}
+                unitNoun={unitNounSingular}
                 policy={scale === "world" && selectedCountry ? policyByIsoNum.get(selectedCountry.iso_num) ?? null : null}
               />
             </div>

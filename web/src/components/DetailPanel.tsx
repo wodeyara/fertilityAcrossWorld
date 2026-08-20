@@ -6,6 +6,7 @@ export interface DetailPanelProps {
   country: Country | null;
   fit: FitResult;
   factors: FactorMeta[];
+  unitNoun?: string;
   policy?: Policy | null;
 }
 
@@ -22,8 +23,8 @@ const MEASURE_LABEL: Record<string, string> = {
   tax_incentive: "Tax incentives",
 };
 
-export function DetailPanel({ country, fit, factors, policy }: DetailPanelProps) {
-  if (!country) return <div style={{ fontSize: 13 }}>Click a country to inspect it.</div>;
+export function DetailPanel({ country, fit, factors, unitNoun = "country", policy }: DetailPanelProps) {
+  if (!country) return <div style={{ fontSize: 13 }}>Click a {unitNoun} to inspect it.</div>;
   const cf = fit.fits.get(country.iso3);
   if (!cf) {
     return (
