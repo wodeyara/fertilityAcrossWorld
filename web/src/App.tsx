@@ -96,7 +96,7 @@ export default function App() {
   const selectedCountry = selectedIso3 ? activeBundle.countries.find((c) => c.iso3 === selectedIso3) ?? null : null;
 
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 16, fontFamily: "system-ui, sans-serif" }}>
+    <div style={{ maxWidth: "min(1680px, 96vw)", margin: "0 auto", padding: 16, fontFamily: "system-ui, sans-serif" }}>
       <h1 style={{ fontSize: 22 }}>Where fertility defies the numbers</h1>
       <nav aria-label="Scale" style={{ display: "flex", gap: 4, marginBottom: 8 }}>
         {(["world", "us"] as const).map((s) => (
