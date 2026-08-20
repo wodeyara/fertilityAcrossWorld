@@ -112,7 +112,10 @@ def run_pipeline(
     records = build.build_records(refs, tfr_result, wb_results, static_data, computed_data)
     choice, _details = diagnostics.choose_tfr_transform(records, _transform_factor_ids(records))
     policy_data = policies_mod.load_policies(policies_path) if os.path.exists(policies_path) else {}
-    return emit.write_bundle(records, choice, snapshot_year, out_dir, policies=policy_data)
+    factor_transforms = diagnostics.choose_factor_transforms(
+        records, registry.factor_ids(), choice, quad_min_gain=0.02)
+    return emit.write_bundle(records, choice, snapshot_year, out_dir,
+                             policies=policy_data, factor_transforms=factor_transforms)
 
 
 def main(argv=None):

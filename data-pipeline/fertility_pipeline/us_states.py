@@ -85,7 +85,10 @@ def run_us_pipeline(csv_path, out_dir, cache_dir, osm_fetch=None):
     computed = build_us_possibility(raw, osm_counts)
     records = build.build_records(refs, tfr, {}, raw, computed, registry=factors_us)
     choice, _ = diagnostics.choose_tfr_transform(records, _transform_factor_ids(records))
-    return emit.write_bundle(records, choice, SNAPSHOT_YEAR, out_dir, registry=factors_us)
+    factor_transforms = diagnostics.choose_factor_transforms(
+        records, factors_us.factor_ids(), choice, quad_min_gain=0.05)
+    return emit.write_bundle(records, choice, SNAPSHOT_YEAR, out_dir, registry=factors_us,
+                             factor_transforms=factor_transforms)
 
 
 def main(argv=None):

@@ -19,14 +19,16 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "label", "group", "unit", "direction", "source"],
+        "required": ["id", "label", "group", "unit", "direction", "source", "transform", "quadratic"],
         "properties": {
           "id": {"type": "string"},
           "label": {"type": "string"},
           "group": {"type": "string"},
           "unit": {"type": "string"},
           "direction": {"enum": ["positive", "negative", "mixed"]},
-          "source": {"type": "string"}
+          "source": {"type": "string"},
+          "transform": {"enum": ["raw", "log"]},
+          "quadratic": {"type": "boolean"}
         }
       }
     }

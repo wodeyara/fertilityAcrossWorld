@@ -99,3 +99,32 @@ def test_write_bundle_without_policies_emits_no_policies_json(tmp_path):
     meta = emit.write_bundle(records, "raw", 2022, tmp_path)
     assert not (tmp_path / "policies.json").exists()
     assert "policyCoverage" not in meta
+
+
+def test_factors_json_carries_transform_and_quadratic(tmp_path):
+    from fertility_pipeline import emit
+    records = [
+        {"iso3": "FRA", "iso_num": 250, "name": "France", "region": "Europe & Central Asia",
+         "tfr": 1.8, "tfr_year": 2022, "factors": {"gdp_pc": 1.0}},
+    ]
+    ft = {"gdp_pc": {"transform": "log", "quadratic": True}}
+    emit.write_bundle(records, "log", 2023, tmp_path, factor_transforms=ft)
+    import json
+    factors = json.loads((tmp_path / "factors.json").read_text())["factors"]
+    gdp = next(f for f in factors if f["id"] == "gdp_pc")
+    assert gdp["transform"] == "log"
+    assert gdp["quadratic"] is True
+
+
+def test_factors_json_defaults_transform_when_absent(tmp_path):
+    from fertility_pipeline import emit
+    records = [
+        {"iso3": "FRA", "iso_num": 250, "name": "France", "region": "Europe & Central Asia",
+         "tfr": 1.8, "tfr_year": 2022, "factors": {"gdp_pc": 1.0}},
+    ]
+    emit.write_bundle(records, "log", 2023, tmp_path)
+    import json
+    factors = json.loads((tmp_path / "factors.json").read_text())["factors"]
+    gdp = next(f for f in factors if f["id"] == "gdp_pc")
+    assert gdp["transform"] == "raw"
+    assert gdp["quadratic"] is False

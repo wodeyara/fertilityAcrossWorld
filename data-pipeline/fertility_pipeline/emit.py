@@ -9,7 +9,8 @@ from .policies import MEASURE_COLS
 SCHEMA_DIR = Path(__file__).resolve().parent.parent / "data" / "schema"
 
 
-def _build_factors_json(snapshot_year: int, transform_choice: str, registry) -> dict:
+def _build_factors_json(snapshot_year: int, transform_choice: str, registry, factor_transforms) -> dict:
+    ft = factor_transforms or {}
     return {
         "snapshotYear": snapshot_year,
         "target": {
@@ -21,7 +22,9 @@ def _build_factors_json(snapshot_year: int, transform_choice: str, registry) -> 
         },
         "factors": [
             {"id": f.id, "label": f.label, "group": f.group,
-             "unit": f.unit, "direction": f.direction, "source": f.source}
+             "unit": f.unit, "direction": f.direction, "source": f.source,
+             "transform": ft.get(f.id, {}).get("transform", "raw"),
+             "quadratic": ft.get(f.id, {}).get("quadratic", False)}
             for f in registry.FACTORS
         ],
     }
@@ -60,11 +63,12 @@ def _build_policies_json(records: list[dict], policies: dict) -> list[dict]:
     return out
 
 
-def write_bundle(records, transform_choice, snapshot_year, out_dir, registry=_default_registry, policies=None):
+def write_bundle(records, transform_choice, snapshot_year, out_dir, registry=_default_registry,
+                 policies=None, factor_transforms=None):
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
 
-    factors_json = _build_factors_json(snapshot_year, transform_choice, registry)
+    factors_json = _build_factors_json(snapshot_year, transform_choice, registry, factor_transforms)
     meta = _build_meta(records, snapshot_year, registry)
 
     _validate(records, "countries.schema.json")
