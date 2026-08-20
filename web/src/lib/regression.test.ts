@@ -56,8 +56,24 @@ test("contribution is the combined linear + quadratic term per factor", () => {
   const f = fit.fits.get("C0")!;
   // exactly one contribution entry for the factor (linear+quad combined)
   expect(Object.keys(f.contributions)).toEqual(["x"]);
-  // predicted + residual reconstruct actual tfr
-  expect(f.predictedTfr + f.residualTfr).toBeCloseTo(2 + 0.01 * 400, 6);
+  // predicted matches the true tfr at x=-20 (2 + 0.01*400 = 6)
+  expect(f.predictedTfr).toBeCloseTo(2 + 0.01 * 400, 4);
+});
+
+test("recovers a two-factor model with mixed linear + quadratic terms", () => {
+  // tfr = 1 + 0.05*a - 0.01*b^2 (all positive); needs the right column->coef mapping
+  const rows: Country[] = [];
+  let k = 0;
+  for (let a = 0; a < 8; a++)
+    for (let b = -8; b < 8; b++)
+      rows.push({
+        iso3: `C${k++}`, iso_num: 0, name: "x", region: "R",
+        tfr: 1 + 0.05 * a - 0.01 * b * b, tfr_year: 2022, factors: { a, b },
+      });
+  const fit = fitModel(rows, [{ id: "a" }, { id: "b", quadratic: true }], "raw");
+  expect(fit.r2 as number).toBeGreaterThan(0.999); // exact model => R²≈1 only if columns map to the right coefs
+  const f = fit.fits.get("C0")!;
+  expect(Object.keys(f.contributions).sort()).toEqual(["a", "b"]);
 });
 
 test("log factor excludes non-positive rows from the fit", () => {
