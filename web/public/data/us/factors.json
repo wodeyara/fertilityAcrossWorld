@@ -14,7 +14,9 @@
       "group": "Economic",
       "unit": "US$",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "home_value",
@@ -22,7 +24,9 @@
       "group": "Economic",
       "unit": "US$",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "fem_bachelors",
@@ -30,7 +34,9 @@
       "group": "Education",
       "unit": "% of women 25+",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "flfp",
@@ -38,7 +44,9 @@
       "group": "Women's work & agency",
       "unit": "% of women 16+",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": true
     },
     {
       "id": "urbanisation",
@@ -46,7 +54,9 @@
       "group": "Structure",
       "unit": "% urban",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": true
     },
     {
       "id": "social_capital",
@@ -54,7 +64,9 @@
       "group": "Community",
       "unit": "index (z-like)",
       "direction": "mixed",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "smartphone",
@@ -62,7 +74,9 @@
       "group": "Connectivity",
       "unit": "% of households",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "possibility",
@@ -70,7 +84,9 @@
       "group": "Possibility",
       "unit": "z-score index",
       "direction": "negative",
-      "source": "computed"
+      "source": "computed",
+      "transform": "raw",
+      "quadratic": false
     }
   ]
 }

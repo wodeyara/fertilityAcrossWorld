@@ -14,7 +14,9 @@
       "group": "Economic",
       "unit": "constant int'l $",
       "direction": "negative",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "log",
+      "quadratic": false
     },
     {
       "id": "gini",
@@ -22,7 +24,9 @@
       "group": "Economic",
       "unit": "index 0-100",
       "direction": "mixed",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "fem_sec_enroll",
@@ -30,7 +34,9 @@
       "group": "Education",
       "unit": "% gross",
       "direction": "negative",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "raw",
+      "quadratic": true
     },
     {
       "id": "fem_years_schooling",
@@ -38,7 +44,9 @@
       "group": "Education",
       "unit": "years",
       "direction": "negative",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "flfp",
@@ -46,7 +54,9 @@
       "group": "Women's work & agency",
       "unit": "% of women 15+",
       "direction": "negative",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "log",
+      "quadratic": true
     },
     {
       "id": "gii",
@@ -54,7 +64,9 @@
       "group": "Women's work & agency",
       "unit": "index 0-1",
       "direction": "positive",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": true
     },
     {
       "id": "contraceptive",
@@ -62,7 +74,9 @@
       "group": "Health & access",
       "unit": "% of women 15-49",
       "direction": "negative",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "child_mortality",
@@ -70,7 +84,9 @@
       "group": "Health & access",
       "unit": "per 1,000 live births",
       "direction": "positive",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "log",
+      "quadratic": true
     },
     {
       "id": "adolescent_fertility",
@@ -78,7 +94,9 @@
       "group": "Health & access",
       "unit": "births per 1,000 women 15-19",
       "direction": "positive",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "urbanisation",
@@ -86,7 +104,9 @@
       "group": "Structure",
       "unit": "% urban",
       "direction": "negative",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "mobile_use",
@@ -94,7 +114,9 @@
       "group": "Connectivity",
       "unit": "per 100 people",
       "direction": "negative",
-      "source": "worldbank"
+      "source": "worldbank",
+      "transform": "log",
+      "quadratic": false
     },
     {
       "id": "social_cohesion",
@@ -102,7 +124,9 @@
       "group": "Community",
       "unit": "index 0-100",
       "direction": "mixed",
-      "source": "static"
+      "source": "static",
+      "transform": "raw",
+      "quadratic": false
     },
     {
       "id": "possibility",
@@ -110,7 +134,9 @@
       "group": "Possibility",
       "unit": "z-score index",
       "direction": "negative",
-      "source": "computed"
+      "source": "computed",
+      "transform": "raw",
+      "quadratic": true
     }
   ]
 }
